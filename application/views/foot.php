@@ -5,44 +5,40 @@
 					<div class="col-md-9 py-5">
 						<div class="row">
 							<div class="col-md-4 mb-md-0 mb-4">
-								<h2 class="footer-heading">About us</h2>
-								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+								<h2 class="footer-heading">A propos de nous</h2>
+								<p>Nous sommes une pépinière des créateurs d'entreprises jouant le rôle de pivot-majeur du business en Afrique et donnant un sens aux projets et startups grâce à nos business-solutions.</p>
 								<ul class="ftco-footer-social p-0">
 		              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="fa fa-twitter"></span></a></li>
 		              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-facebook"></span></a></li>
 		              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="fa fa-instagram"></span></a></li>
+		              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Youtube"><span class="fa fa-youtube"></span></a></li>
 		            </ul>
 							</div>
 							<div class="col-md-8">
 								<div class="row justify-content-center">
 									<div class="col-md-12 col-lg-10">
 										<div class="row">
-											<div class="col-md-4 mb-md-0 mb-4">
+											<div class="col-md-6 mb-md-0 mb-4">
 												<h2 class="footer-heading">Services</h2>
 												<ul class="list-unstyled">
-						              <li><a href="#" class="py-1 d-block">Market Analysis</a></li>
-						              <li><a href="#" class="py-1 d-block">Accounting Advisor</a></li>
-						              <li><a href="#" class="py-1 d-block">General Consultancy</a></li>
-						              <li><a href="#" class="py-1 d-block">Structured Assestment</a></li>
-						            </ul>
+												<li><a href="#" class="py-1 d-block">Média</a></li>
+												<li><a href="#" class="py-1 d-block">Cabinet d'étude des projets</a></li>
+												<li><a href="#" class="py-1 d-block">Numérisation et transformation</a></li>
+												<li><a href="#" class="py-1 d-block">Crowd Funding</a></li>
+												<li><a href="#" class="py-1 d-block">Sucess Full</a></li>
+												</ul>
 											</div>
-											<div class="col-md-4 mb-md-0 mb-4">
-												<h2 class="footer-heading">Discover</h2>
+											
+											<div class="col-md-6 mb-md-0 mb-4">
+												<h2 class="footer-heading">Navigation</h2>
 												<ul class="list-unstyled">
-						              <li><a href="#" class="py-1 d-block">About us</a></li>
-						              <li><a href="#" class="py-1 d-block">Contract us</a></li>
-						              <li><a href="#" class="py-1 d-block">Terms &amp; Conditions</a></li>
-						              <li><a href="#" class="py-1 d-block">Policies</a></li>
-						            </ul>
-											</div>
-											<div class="col-md-4 mb-md-0 mb-4">
-												<h2 class="footer-heading">Resources</h2>
-												<ul class="list-unstyled">
-						              <li><a href="#" class="py-1 d-block">Security</a></li>
-						              <li><a href="#" class="py-1 d-block">Global</a></li>
-						              <li><a href="#" class="py-1 d-block">Charts</a></li>
-						              <li><a href="#" class="py-1 d-block">Privacy</a></li>
-						            </ul>
+													<li><a href="<?=site_url();?>" class="py-1 d-block">Accueil</a></li>
+													<li><a href="<?=site_url('services');?>" class="py-1 d-block">Services</a></li>
+													<li><a href="<?=site_url('about');?>" class="py-1 d-block">A propos</a></li>
+													<li><a href="<?=site_url('contact');?>" class="py-1 d-block">Contactez-nous</a></li>
+													<li><a href="<?=site_url();?>" class="py-1 d-block">Termes &amp; Conditions</a></li>
+													<li><a href="<?=site_url();?>" class="py-1 d-block">Politiques de confidentialités</a></li>
+												</ul>
 											</div>
 										</div>
 									</div>
@@ -52,30 +48,30 @@
 						<div class="row mt-md-5">
 							<div class="col-md-12">
 								<p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+					  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous droits réservées | créé avec <i class="fa fa-heart" aria-hidden="true"></i> par <a href="<?=site_url();?>">DIM BUSINESS</a>
 					  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-3 py-md-5 py-4 aside-stretch-right pl-lg-5">
-						<h2 class="footer-heading">Free consultation</h2>
+						<h2 class="footer-heading">Pour toutes vos requetes</h2>
 						<form action="#" class="form-consultation">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Email">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject">
-              </div>
-              <div class="form-group">
-                <textarea name="" id="" cols="30" rows="3" class="form-control" placeholder="Message"></textarea>
-              </div>
-              <div class="form-group">
-              	<button type="submit" class="form-control submit px-3">Send A Message</button>
-              </div>
-            </form>
+							<div class="form-group">
+								<input type="text" name="name" class="form-control" placeholder="Votre nom">
+							</div>
+							<div class="form-group">
+								<input type="text" name="email" class="form-control" placeholder="Votre email">
+							</div>
+							<div class="form-group">
+								<input type="text" name="sujet" class="form-control" placeholder="Sujet">
+							</div>
+							<div class="form-group">
+								<textarea name="message" id="" cols="30" rows="3" class="form-control" placeholder="Message"></textarea>
+							</div>
+							<div class="form-group">
+								<button type="submit" class="form-control submit px-3">Envoyer</button>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
