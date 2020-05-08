@@ -8,10 +8,10 @@
 	      </button>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav m-auto">
-	        	<li class="nav-item active"><a href="index.html" class="nav-link">Accueil</a></li>
-	        	<li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-	        	<li class="nav-item"><a href="about.html" class="nav-link">A propos</a></li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+	        	<li class="nav-item active"><a href="<?=site_url();?>" class="nav-link">Accueil</a></li>
+	        	<li class="nav-item"><a href="<?=site_url('services');?>" class="nav-link">Services</a></li>
+	        	<li class="nav-item"><a href="<?=site_url('about');?>" class="nav-link">A propos</a></li>
+	          <li class="nav-item"><a href="<?=site_url('contact');?>" class="nav-link">Contact</a></li>
 	          <!-- <li class="nav-item"><a href="cases.html" class="nav-link">Case Study</a></li>
 	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
 	        </ul>
