@@ -11,9 +11,9 @@
 	        	<li class="nav-item active"><a href="<?=site_url();?>" class="nav-link">Accueil</a></li>
 	        	<li class="nav-item"><a href="<?=site_url('services');?>" class="nav-link">Services</a></li>
 	        	<li class="nav-item"><a href="<?=site_url('about');?>" class="nav-link">A propos</a></li>
-	          <li class="nav-item"><a href="<?=site_url('contact');?>" class="nav-link">Contact</a></li>
-	          <!-- <li class="nav-item"><a href="cases.html" class="nav-link">Case Study</a></li>
-	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
+				<li class="nav-item"><a href="<?=site_url('contact');?>" class="nav-link">Contact</a></li>
+				<li class="nav-item"><a href="<?=site_url('gallery');?>" class="nav-link">Gallerie</a></li>
+				<li class="nav-item"><a href="<?=site_url('blog');?>" class="nav-link">Blog</a></li>
 	        </ul>
 	      </div>
 	    </div>
@@ -75,7 +75,7 @@
     	<div class="container">
     		<div class="row d-flex no-gutters">
     			<div class="col-md-6 d-flex">
-    				<div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-center mb-4 mb-sm-0" style="background-image:url(<?=base_url('assets/images/about.jpg');?>);">
+    				<div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-center mb-4 mb-sm-0" style="background-image:url(<?=base_url('assets/images/DSC_6794.jpg');?>);">
     				</div>
     			</div>
     			<div class="col-md-6 pl-md-5 py-md-5">
@@ -123,56 +123,6 @@
     	</div>
     </section>
 
-    <section class="ftco-section bg-light ftco-no-pt">
-    	<div class="container">
-    		<div class="row">
-          <div class="col-md-6 col-lg-3 d-flex services align-self-stretch px-4 ftco-animate">
-            <div class="d-block">
-              <div class="icon d-flex mr-2">
-            		<span class="flaticon-accounting-1"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading">Accounting</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>      
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex services align-self-stretch px-4 ftco-animate">
-            <div class="d-block">
-              <div class="icon d-flex mr-2">
-            		<span class="flaticon-tax"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading">Tax, Compliance &amp; Payroll</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>    
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex services align-self-stretch px-4 ftco-animate">
-            <div class="d-block">
-              <div class="icon d-flex mr-2">
-            		<span class="flaticon-loan"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading">Financial Services</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>      
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex services align-self-stretch px-4 ftco-animate">
-            <div class="d-block">
-              <div class="icon d-flex mr-2">
-            		<span class="flaticon-budget"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading">Growth &amp; Funding Access</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>      
-          </div>
-        </div>
-    	</div>
-    </section>
 
     <section class="ftco-counter bg-light ftco-no-pt" id="section-counter">
     	<div class="container">
@@ -227,135 +177,40 @@
     	</div>
     </section>
 
-    <section class="ftco-section testimony-section bg-light">
-    	<div class="overlay"></div>
-      <div class="container">
-        <div class="row justify-content-center pb-5 mb-3">
-          <div class="col-md-7 heading-section heading-section-white text-center ftco-animate">
-          	<span class="subheading">Testimonies</span>
-            <h2>Happy Clients &amp; Feedbacks</h2>
-          </div>
-        </div>
-        <div class="row ftco-animate">
-          <div class="col-md-12">
-            <div class="carousel-testimony owl-carousel ftco-owl">
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(<?=base_url('assets/images/person_1.jpg');?>)"></div>
-                    	<div class="pl-3">
-		                    <p class="name">Roger Scott</p>
-		                    <span class="position">Marketing Manager</span>
-		                  </div>
-	                  </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(<?=base_url('assets/images/person_2.jpg');?>)"></div>
-                    	<div class="pl-3">
-		                    <p class="name">Roger Scott</p>
-		                    <span class="position">Marketing Manager</span>
-		                  </div>
-	                  </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(<?=base_url('assets/images/person_3.jpg');?>)"></div>
-                    	<div class="pl-3">
-		                    <p class="name">Roger Scott</p>
-		                    <span class="position">Marketing Manager</span>
-		                  </div>
-	                  </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(<?=base_url('assets/images/person_1.jpg');?>)"></div>
-                    	<div class="pl-3">
-		                    <p class="name">Roger Scott</p>
-		                    <span class="position">Marketing Manager</span>
-		                  </div>
-	                  </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(<?=base_url('assets/images/person_2.jpg');?>)"></div>
-                    	<div class="pl-3">
-		                    <p class="name">Roger Scott</p>
-		                    <span class="position">Marketing Manager</span>
-		                  </div>
-	                  </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+
 
     <section class="ftco-section ftco-no-pt bg-light ftco-faqs">
     	<div class="container">
     		<div class="row">
     			<div class="col-lg-6">
     				<div class="img-faqs w-100">
-	    				<div class="img mb-4 mb-sm-0" style="background-image:url(<?=base_url('assets/images/about-2.jpg');?>);">
+	    				<div class="img mb-4 mb-sm-0" style="background-image:url(<?=base_url('assets/images/IMG_20191026_122120.jpg');?>);">
 	    				</div>
-	    				<div class="img img-2 mb-4 mb-sm-0" style="background-image:url(<?=base_url('assets/images/about-1.jpg');?>);">
+	    				<div class="img img-2 mb-4 mb-sm-0" style="background-image:url(<?=base_url('assets/images/IMG-20191231-WA0025.jpg');?>);">
 	    				</div>
 	    			</div>
     			</div>
     			<div class="col-lg-6 pl-lg-5">
     				<div class="heading-section mb-5 mt-5 mt-lg-0">
     					<span class="subheading">FAQs</span>
-	            <h2 class="mb-3">Frequently Asks Questions</h2>
-	            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+	            <h2 class="mb-3">Questions fréquemment posées</h2>
+	            <p>Nous vous proposons les réponses aux questions fréquemment posées par nos clients</p>
     				</div>
     				<div id="accordion" class="myaccordion w-100" aria-multiselectable="true">
 						  <div class="card">
 						    <div class="card-header p-0" id="headingOne">
 						      <h2 class="mb-0">
 						        <button href="#collapseOne" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
-						        	<p class="mb-0">How to fixed a problem?</p>
+						        	<p style="text-transform: none;" class="mb-0">Qu'est-ce que DIM BUSINESS ?</p>
 						          <i class="fa" aria-hidden="true"></i>
 						        </button>
 						      </h2>
 						    </div>
 						    <div class="collapse show" id="collapseOne" role="tabpanel" aria-labelledby="headingOne">
 						      <div class="card-body py-3 px-0">
-						      	<ol>
-						      		<li>Far far away, behind the word mountains</li>
-						      		<li>Consonantia, there live the blind texts</li>
-						      		<li>When she reached the first hills of the Italic Mountains</li>
-						      		<li>Bookmarksgrove, the headline of Alphabet Village</li>
-						      		<li>Separated they live in Bookmarksgrove right</li>
-						      	</ol>
+						      	<p style="font-size: 1.1em;" class="text-justify">Nous sommes une pépinière des créateurs d'entreprises jouant le rôle 
+								  de pivot-majeur du business en Afrique  et donnant un sens aux projets
+								  et startups grâce à notre business-solutions</p>
 						      </div>
 						    </div>
 						  </div>
@@ -364,7 +219,7 @@
 						    <div class="card-header p-0" id="headingTwo" role="tab">
 						      <h2 class="mb-0">
 						        <button href="#collapseTwo" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo">
-						        	<p class="mb-0">How to manage your business loans?</p>
+						        	<p style="text-transform: none;" class="mb-0">Qu'est-ce que le Crowd Funding ?</p>
 						          <i class="fa" aria-hidden="true"></i>
 						        </button>
 						      </h2>
@@ -386,7 +241,7 @@
 						    <div class="card-header p-0" id="headingThree" role="tab">
 						      <h2 class="mb-0">
 						        <button href="#collapseThree" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseThree">
-						        	<p class="mb-0">How to grow your investments funds?</p>
+						        	<p style="text-transform: none;" class="mb-0">Qu'est-ce que le Success Full ?</p>
 						          <i class="fa" aria-hidden="true"></i>
 						        </button>
 						      </h2>
@@ -408,7 +263,7 @@
 						    <div class="card-header p-0" id="headingFour" role="tab">
 						      <h2 class="mb-0">
 						        <button href="#collapseFour" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseFour">
-						        	<p class="mb-0">What are those requirements for businesses?</p>
+						        	<p style="text-transform: none;" class="mb-0">Comment participer au Crowd Funding?</p>
 						          <i class="fa" aria-hidden="true"></i>
 						        </button>
 						      </h2>
@@ -425,88 +280,4 @@
     	</div>
     </section>
 	
-
-    <section class="ftco-section bg-light">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5 mb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-          	<span class="subheading">Price &amp; Plans</span>
-            <h2>Affordable Packages</h2>
-          </div>
-        </div>
-    		<div class="row">
-    			<div class="col-md-6 col-lg-3 ftco-animate">
-	          <div class="block-7">
-	            <div class="text-center">
-	            	<span class="excerpt d-block">Personal</span>
-	            <span class="price"><sup>$</sup> <span class="number">49</span> <sub>/mos</sub></span>
-	            
-	            <ul class="pricing-text mb-5">
-	              <li><span class="fa fa-check mr-2"></span>Brand Strategy</li>
-	              <li><span class="fa fa-check mr-2"></span>Online Marketing</li>
-	              <li><span class="fa fa-check mr-2"></span>Branding Services</li>
-	              <li><span class="fa fa-check mr-2"></span>Creative Marketing</li>
-	              <li><span class="fa fa-check mr-2"></span>Sales Management</li>
-	            </ul>
-
-	            <a href="#" class="btn btn-primary d-block px-2 py-3">Get Started</a>
-	            </div>
-	          </div>
-	        </div>
-	        <div class="col-md-6 col-lg-3 ftco-animate">
-	          <div class="block-7">
-	            <div class="text-center">
-            	<span class="excerpt d-block">Business</span>
-	            <span class="price"><sup>$</sup> <span class="number">79</span> <sub>/mos</sub></span>
-	            
-	            <ul class="pricing-text mb-5">
-	              <li><span class="fa fa-check mr-2"></span>Brand Strategy</li>
-	              <li><span class="fa fa-check mr-2"></span>Online Marketing</li>
-	              <li><span class="fa fa-check mr-2"></span>Branding Services</li>
-	              <li><span class="fa fa-check mr-2"></span>Creative Marketing</li>
-	              <li><span class="fa fa-check mr-2"></span>Sales Management</li>
-	            </ul>
-
-	            <a href="#" class="btn btn-primary d-block px-2 py-3">Get Started</a>
-	            </div>
-	          </div>
-	        </div>
-	        <div class="col-md-6 col-lg-3 ftco-animate">
-	          <div class="block-7">
-	            <div class="text-center">
-	            	<span class="excerpt d-block">Ultimate</span>
-	            <span class="price"><sup>$</sup> <span class="number">109</span> <sub>/mos</sub></span>
-	            
-	            <ul class="pricing-text mb-5">
-	              <li><span class="fa fa-check mr-2"></span>Brand Strategy</li>
-	              <li><span class="fa fa-check mr-2"></span>Online Marketing</li>
-	              <li><span class="fa fa-check mr-2"></span>Branding Services</li>
-	              <li><span class="fa fa-check mr-2"></span>Creative Marketing</li>
-	              <li><span class="fa fa-check mr-2"></span>Sales Management</li>
-	            </ul>
-
-	            <a href="#" class="btn btn-primary d-block px-2 py-3">Get Started</a>
-	            </div>
-	          </div>
-	        </div>
-	        <div class="col-md-6 col-lg-3 ftco-animate">
-	          <div class="block-7">
-	            <div class="text-center">
-	            	<span class="excerpt d-block">Premium</span>
-	            <span class="price"><sup>$</sup> <span class="number">149</span> <sub>/mos</sub></span>
-	            
-	            <ul class="pricing-text mb-5">
-	              <li><span class="fa fa-check mr-2"></span>Brand Strategy</li>
-	              <li><span class="fa fa-check mr-2"></span>Online Marketing</li>
-	              <li><span class="fa fa-check mr-2"></span>Branding Services</li>
-	              <li><span class="fa fa-check mr-2"></span>Creative Marketing</li>
-	              <li><span class="fa fa-check mr-2"></span>Sales Management</li>
-	            </ul>
-
-	            <a href="#" class="btn btn-primary d-block px-2 py-3">Get Started</a>
-	            </div>
-	          </div>
-	        </div>
-	      </div>
-    	</div>
-    </section>
+	

@@ -20,7 +20,7 @@
 	  </nav>
     <!-- END nav -->
 
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_2.jpg');" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url(<?=base_url('assets/images/bg_2.jpg');?>);" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-end">
@@ -36,7 +36,7 @@
     	<div class="container">
     		<div class="row d-flex no-gutters">
     			<div class="col-md-6 d-flex">
-    				<div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-center mb-4 mb-sm-0" style="background-image:url(images/about.jpg);">
+    				<div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-center mb-4 mb-sm-0" style="background-image:url(<?=base_url('assets/images/IMG_20191026_121928.jpg');?>);">
     				</div>
     			</div>
     			<div class="col-md-6 pl-md-5 py-md-5">
@@ -51,52 +51,61 @@
     	</div>
     </section>
 
+
     <section class="ftco-counter bg-light ftco-no-pt" id="section-counter">
     	<div class="container">
+		<div class="row justify-content-center pb-5 mb-3">
+          <div class="col-md-7 heading-section heading-section-white text-center ftco-animate">
+          	<span class="subheading">Réalisation</span>
+            <h2>Statistique de nos réalisations</h2>
+          </div>
+        </div>
 				<div class="row">
           <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18 text-center">
               <div class="text">
-                <strong class="number" data-number="50">0</strong>
+                <strong class="number" data-number="10">0</strong>
               </div>
               <div class="text">
-              	<span>Years of Experienced</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18 text-center">
-              <div class="text">
-                <strong class="number" data-number="8500">0</strong>
-              </div>
-              <div class="text">
-              	<span>Cases Completed</span>
+              	<span>Jeunes entrepreneurs formés</span>
               </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18 text-center">
               <div class="text">
-                <strong class="number" data-number="20">0</strong>
+                <strong class="number" data-number="22">0</strong>
               </div>
               <div class="text">
-              	<span>Awards Won</span>
+              	<span>Startups créés</span>
               </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18 text-center">
               <div class="text">
-                <strong class="number" data-number="50">0</strong>
+                <strong class="number" data-number="4">0</strong>
               </div>
               <div class="text">
-              	<span>Expert Consultant</span>
+              	<span>Coopérative des jeunes</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 text-center">
+              <div class="text">
+                <strong class="number" data-number="5">0</strong>
+              </div>
+              <div class="text">
+              	<span>PME</span>
               </div>
             </div>
           </div>
         </div>
     	</div>
     </section>
+
+
 
 
 

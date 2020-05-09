@@ -21,7 +21,7 @@ class Blog extends CI_Controller {
 	public function index()
 	{
 		$this->load->view('head');
-		$this->load->view('blog');
+		$this->load->view('blog-single');
 		$this->load->view('foot');
 	}
 }
