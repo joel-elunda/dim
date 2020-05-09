@@ -18,10 +18,19 @@ class Blog extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
-	{
+	public function index() {
 		$this->load->view('head');
 		$this->load->view('blog-single');
 		$this->load->view('foot');
 	}
+
+	public function bloger() {
+		return array(
+			'name' => $this -> input -> post('name'),
+			'email' => $this -> input -> post('email'),
+			'message' => $this -> input -> post('message')
+		);
+	}
+
+	
 }
