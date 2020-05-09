@@ -260,6 +260,28 @@
 						  </div>
 
 						  <div class="card">
+						    <div class="card-header p-0" id="headingThree" role="tab">
+						      <h2 class="mb-0">
+						        <button href="#membre" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="membre">
+						        	<p style="text-transform: none;" class="mb-0">Comment devenir membre ?</p>
+						          <i class="fa" aria-hidden="true"></i>
+						        </button>
+						      </h2>
+						    </div>
+						    <div class="collapse" id="membre" role="tabpanel" aria-labelledby="headingTwo">
+						      <div class="card-body py-3 px-0">
+						      	<ol>
+						      		<li>Passer au bureau ou contacter notre administration</li>
+						      		<li>Informez-vous sur le règlement de notre plateforme</li>
+						      		<li>Remplissez le formulaire</li>
+						      		<li>Bookmarksgrove, the headline of Alphabet Village</li>
+						      		<li>Envoyez le à notre email ou déposez le a notre bureau après remplissage</li>
+						      	</ol>
+						      </div>
+						    </div>
+						  </div>
+
+						  <div class="card">
 						    <div class="card-header p-0" id="headingFour" role="tab">
 						      <h2 class="mb-0">
 						        <button href="#collapseFour" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseFour">

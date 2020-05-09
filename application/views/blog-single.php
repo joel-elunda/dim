@@ -187,20 +187,17 @@
           </div> <!-- .col-md-8 -->
           <div class="col-lg-4 sidebar pl-lg-5 ftco-animate">
             <div class="sidebar-box">
-              <form action="#" class="search-form">
-                <div class="form-group">
-                  <span class="fa fa-search"></span>
-                  <input type="text" class="form-control" placeholder="Type a keyword and hit enter">
-                </div>
-              </form>
+              
+              
             </div>
             <div class="sidebar-box ftco-animate">
               <div class="categories">
                 <h3>Services</h3>
-                <li><a href="#">Market Analysis <span class="fa fa-chevron-right"></span></a></li>
-                <li><a href="#">Accounting Advisor <span class="fa fa-chevron-right"></span></a></li>
-                <li><a href="#">General Consultancy <span class="fa fa-chevron-right"></span></a></li>
-                <li><a href="#">Structured Assesment <span class="fa fa-chevron-right"></span></a></li>
+                <li class="list-group-item-action"><a href="<?=site_url();?>">Médias <span class="fa fa-check mr-2"></span></a></li>
+                <li class="list-group-item-action"><a href="<?=site_url();?>">Cabinet d'étude des projets <span class="fa fa-check mr-2"></span></span></a></li>
+                <li class="list-group-item-action"><a href="<?=site_url();?>">Numérisation et transformation <span class="fa fa-check mr-2"></span></span></a></li>
+                <li class="list-group-item-action"><a href="<?=site_url();?>">Crowd Funding<span class="fa fa-check mr-2"></span></span></a></li>
+                <li class="list-group-item-action"><a href="<?=site_url();?>">Success Full<span class="fa fa-check mr-2"></span></span></a></li>
               </div>
             </div>
 
