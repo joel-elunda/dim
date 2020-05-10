@@ -114,7 +114,7 @@ class Account extends CI_Controller {
             $form_auth = $this -> load -> view('login', [], true);
             $user = array('page' => $form_auth);
 			
-			$this -> load -> view('login', $user);
+			$this -> login_view();
 			
         }
     }
@@ -126,12 +126,12 @@ class Account extends CI_Controller {
             $this -> load -> view('foot');
         }
         else {
-            redirect();
+            redirect('account/home');
         }
     }
 
     public function logout()   {
         $this -> session -> unset_userdata('is_connected');
-        redirect();
+        redirect('account/home');
     }
 }

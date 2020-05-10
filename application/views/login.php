@@ -2,13 +2,7 @@
 		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
 	    	<a class="navbar-brand p-3" href="<?=site_url();?>">DIM BUSINESS</a>
-
-			
-			<div class="searchform order-sm-start order-lg-last"> 
-				<a class="btn btn-primary" href="<?=site_url('account/login_view');?>" role="button">Se connecter</a>
-			</div>
-	    	
-	    	
+ 
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="fa fa-bars"></span> Menu
 	      </button>
@@ -33,6 +27,9 @@
 					      		 
 										<form method="POST" action="<?=site_url('account/login');?>" id="contactForm" name="contactForm" class="contactForm">
 											<div class="row"> 
+												<div class="col-md-12"> 
+													<small class="form-text text-muted"> <?= $this -> session -> error_login; ?> </small>
+												</div>
 												<div class="col-md-12"> 
 													<div class="form-group">
 														<label class="label" for="email">Adresse Email *</label>

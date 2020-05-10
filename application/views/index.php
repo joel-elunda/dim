@@ -4,7 +4,19 @@
 	    	<a class="navbar-brand" href="index.html">DIM BUSINESS</a>
 	    	 
           <div class="searchform order-sm-start order-lg-last"> 
-			<a class="btn btn-primary" href="<?=site_url('account/login');?>" role="button">Se connecter</a>
+			<a class="btn btn-primary" href="
+			<?php  if($this -> session -> is_connected)  { 
+				echo site_url('account/login');
+			} else {
+				echo site_url('account/logout');
+			} ?>" role="button">
+			
+			<?php  if($this -> session -> is_connected)  { 
+				echo 'Déconnexion'; 
+			} else {
+				echo 'Se connecter';
+			} ?> 
+			</a>
           </div>
          
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +48,7 @@
 		          	<div class="text w-100 text-center">
 		          		<h2>Nous faisons croître les entreprises</h2>
 			            <h1 class="mb-4">Nous sommes une pépinière de futurs créateurs d’entreprises</h1>
-			            <p><a href="#" class="btn btn-white">Contactez-nous</a></p>
+			            <p><a href="<?=site_url('contact');?>" class="btn btn-white">Contactez-nous</a></p>
 		            </div>
 		          </div>
 		        </div>
@@ -51,7 +63,7 @@
 		          	<div class="text w-100 text-center">
 		          		<h2>Nous soutenons les entreprises</h2>
 			            <h1 class="mb-4">Le meilleur soutien aux entreprises</h1>
-			            <p><a href="#" class="btn btn-white">Contactez-nous</a></p>
+			            <p><a href="<?=site_url('contact');?>" class="btn btn-white">Contactez-nous</a></p>
 		            </div>
 		          </div>
 		        </div>
@@ -66,7 +78,7 @@
 		          	<div class="text w-100 text-center">
 		          		<h2>Nous donnons des conseils</h2>
 			            <h1 class="mb-4">Experts en conseils financiers</h1>
-			            <p><a href="#" class="btn btn-white">Contactez-nous</a></p>
+			            <p><a href="<?=site_url('contact');?>" class="btn btn-white">Contactez-nous</a></p>
 		            </div>
 		          </div>
 		        </div>

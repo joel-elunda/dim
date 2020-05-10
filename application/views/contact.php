@@ -53,30 +53,34 @@
 					      		<div id="form-message-success" class="mb-4">
 								  Votre message a été envoyeé, merci ! 
 					      		</div>
-										<form method="POST" id="contactForm" name="contactForm" class="contactForm">
+										<form method="POST" action="<?=site_url('contact/send');?>" id="contactForm" name="contactForm" class="contactForm">
 											<div class="row">
 												<div class="col-md-6">
 													<div class="form-group">
 														<label class="label" for="name">Nom Complet</label>
-														<input type="text" class="form-control" name="name" id="name" placeholder="Nom Complet">
+														<input type="text" class="form-control" name="name"  value="<?=set_value('name');?>" id="name" placeholder="Nom Complet">
+														<small class="form-text text-muted"><?= form_error('name','<em>','</em>') ?></small>
 													</div>
 												</div>
 												<div class="col-md-6"> 
 													<div class="form-group">
 														<label class="label" for="email">Adresse Email</label>
-														<input type="email" class="form-control" name="email" id="email" placeholder="Email">
+														<input type="email" class="form-control" name="email"  value="<?=set_value('email');?>" id="email" placeholder="Email">
+														<small class="form-text text-muted"><?= form_error('email','<em>','</em>') ?></small>
 													</div>
 												</div>
 												<div class="col-md-12">
 													<div class="form-group">
 														<label class="label" for="subject">Sujet</label>
-														<input type="text" class="form-control" name="subject" id="subject" placeholder="Sujet">
+														<input type="text" class="form-control" name="subject"  value="<?=set_value('subject');?>" id="subject" placeholder="Sujet">
+														<small class="form-text text-muted"><?= form_error('subject','<em>','</em>') ?></small>
 													</div>
 												</div>
 												<div class="col-md-12">
 													<div class="form-group">
 														<label class="label" for="message">Message</label>
-														<textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+														<textarea name="message" value="<?=set_value('message');?>" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+														<small class="form-text text-muted"><?= form_error('message','<em>','</em>') ?></small>
 													</div>
 												</div>
 												<div class="col-md-12">
