@@ -14,6 +14,6 @@ class UserModel extends CI_Model {
         $query = $this -> db -> get($this -> table);
         $result = $query -> result();
         
-        return  $res;
+        return  $result;
     }
 }

@@ -3,6 +3,10 @@
 	    <div class="container">
 	    	<a class="navbar-brand" href="index.html">DIM BUSINESS</a>
 	    	
+			<div class="searchform order-sm-start order-lg-last"> 
+				<a class="btn btn-primary" href="<?=site_url('account/login_view');?>" role="button">Se connecter</a>
+			</div>
+	    	
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="fa fa-bars"></span> Menu
 	      </button>

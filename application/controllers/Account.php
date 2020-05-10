@@ -24,6 +24,12 @@ class Account extends CI_Controller {
 		$this->load->view('foot');
 	}
 
+	public function login_view() {
+		$this->load->view('head');
+		$this->load->view('login');
+		$this->load->view('foot');
+	}
+
 	private function sign_up_data() { 
 		return array(
 			'name' =>  $this -> input -> post('name'),
@@ -86,7 +92,6 @@ class Account extends CI_Controller {
             'password' => $password
         );
 
-        $this -> load -> model('UserModel');
         $result = $this -> UserModel -> check_authentification($user);
 
         if(count($result) > 0)  {
@@ -98,25 +103,27 @@ class Account extends CI_Controller {
 			);
 			
             $this -> session -> set_userdata($user);
-            redirect('utilisateur/accueil');
+            redirect('account/home');
         }
         else  {
             $user = array(
                 'error_email' => 'email ou mot de passe incorrect.'
             );
-            /*
+            
             $this -> session -> set_flashdata($user);
-            $form_auth = $this -> load -> view('utilisateur/form_authentification', [], true);
+            $form_auth = $this -> load -> view('login', [], true);
             $user = array('page' => $form_auth);
 			
-			$this -> load -> view('mokapi_home', $user);
-			*/
+			$this -> load -> view('login', $user);
+			
         }
     }
 
     public function home()  {
         if($this -> session -> is_connected)  {
-            $this -> load -> view('utilisateur/accueil');
+            $this -> load -> view('head');
+            $this -> load -> view('index');
+            $this -> load -> view('foot');
         }
         else {
             redirect();
