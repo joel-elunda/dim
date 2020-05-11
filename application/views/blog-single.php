@@ -16,6 +16,7 @@
 	        <ul class="navbar-nav m-auto">
 	        	<li class="nav-item"><a href="<?=site_url();?>" class="nav-link">Accueil</a></li>
 	        	<li class="nav-item"><a href="<?=site_url('services');?>" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="<?=site_url('release');?>" class="nav-link">Réalisations</a></li>
             <li class="nav-item"><a href="<?=site_url('contact');?>" class="nav-link">Contact</a></li>
             <li class="nav-item active"><a href="<?=site_url('blog');?>" class="nav-link">Blog</a></li> 
 	        </ul>
@@ -25,7 +26,7 @@
     <!-- END nav -->
 
 
-    <section class="hero-wrap hero-wrap-2" style="background-image: url(<?=base_url('assets/images/kindpng_1376977.png');?>);" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url(<?=base_url('assets/images/IMG_20191026_122032.jpg');?>);" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-end">
@@ -189,7 +190,7 @@
             <div class="sidebar-box ftco-animate">
               <h3>Blog récent</h3>
               <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" style="background-image: url(<?=base_url('assets/images/image_1.jpg');?>);"></a>
+                <a class="blog-img mr-4" style="background-image: url(<?=base_url('assets/images/IMG_20191026_122120.jpg');?>);"></a>
                 <div class="text">
                   <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
                   <div class="meta">
@@ -200,7 +201,7 @@
                 </div>
               </div>
               <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" style="background-image: url(<?=base_url('assets/images/image_2.jpg');?>);"></a>
+                <a class="blog-img mr-4" style="background-image: url(<?=base_url('assets/images/20200129_104308.jpg');?>);"></a>
                 <div class="text">
                   <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
                   <div class="meta">
@@ -211,7 +212,7 @@
                 </div>
               </div>
               <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" style="background-image: url(<?=base_url('assets/images/image_3.jpg');?>);"></a>
+                <a class="blog-img mr-4" style="background-image: url(<?=base_url('assets/images/IMG-20191010-WA0025.jpg');?>);"></a>
                 <div class="text">
                   <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
                   <div class="meta">

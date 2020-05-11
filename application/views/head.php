@@ -17,6 +17,9 @@
 
     <link rel="stylesheet" href="<?=base_url('assets/css/flaticon.css');?>">
     <link rel="stylesheet" href="<?=base_url('assets/css/style.css');?>">
+	
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url('assets/images/logo.png');?>">
   </head>
   <body>
 
