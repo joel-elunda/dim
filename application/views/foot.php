@@ -34,7 +34,6 @@
 												<ul class="list-unstyled">
 													<li><a href="<?=site_url();?>" class="py-1 d-block">Accueil</a></li>
 													<li><a href="<?=site_url('services');?>" class="py-1 d-block">Services</a></li>
-													<li><a href="<?=site_url('about');?>" class="py-1 d-block">A propos</a></li>
 													<li><a href="<?=site_url('contact');?>" class="py-1 d-block">Contactez-nous</a></li>
 													<li><a href="<?=site_url();?>" class="py-1 d-block">Termes &amp; Conditions</a></li>
 													<li><a href="<?=site_url();?>" class="py-1 d-block">Politiques de confidentialités</a></li>
