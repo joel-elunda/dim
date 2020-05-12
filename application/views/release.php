@@ -2,10 +2,7 @@
 		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
 	    	<a class="navbar-brand" href="index.html">DIM BUSINESS</a>
-	    	
-			<div class="searchform order-sm-start order-lg-last"> 
-				<a  class="btn btn-primary btn-sm" href="<?=site_url('account/login_view');?>" role="button">Se connecter</a>
-			</div>
+	    	 
 	    	
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="fa fa-bars"></span> Menu
@@ -25,7 +22,7 @@
 
 
 	
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_2.jpg');" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url(<?=base_url('assets/images/bg_2.jpg');?>);" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-end">
@@ -49,11 +46,24 @@
 
 			<?php 
 
-				for ($i=0; $i < 10; $i++) { 
+				// TODO : rest of date and the description projects
+				$images = array(
+					'assets/images/20200129_104308.jpg', 
+					'assets/images/IMG-20191231-WA0025.jpg',
+					'assets/images/IMG-20190621-WA0040.jpg',
+					'assets/images/DSC_0086.JPG',
+					'assets/images/IMG_20191026_122120.jpg',
+					'assets/images/IMG_20191026_122032.jpg'
+				);
+
+				$length = count($images);  
+
+				for ($i=0; $i < $length; $i++) { 
+					
 					echo '
 					<div class="col-md-4 d-flex ftco-animate">
 					<div class="blog-entry align-self-stretch">
-					  <a href="blog-single.html" class="block-20 rounded" style="background-image: url(assets/images/image_1.jpg);">
+					  <a href="blog-single.html" class="block-20 rounded" style="background-image: url('.$images[$i].');">
 					  </a>
 					  <div class="text p-4">
 						  <div class="meta mb-2">
