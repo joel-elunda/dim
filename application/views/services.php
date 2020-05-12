@@ -13,7 +13,7 @@
 	        	<li class="nav-item active"><a href="<?=site_url('services');?>" class="nav-link">Services</a></li>
 				<li class="nav-item"><a href="<?=site_url('release');?>" class="nav-link">Réalisations</a></li>
 				<li class="nav-item"><a href="<?=site_url('contact');?>" class="nav-link">Contact</a></li>
-				<li class="nav-item"><a href="<?=site_url('blog');?>" class="nav-link">Blog</a></li> 
+				<!-- <li class="nav-item"><a href="<?=site_url('blog');?>" class="nav-link">Blog</a></li>  -->
 	        </ul>
 	      </div>
 	    </div>
@@ -93,3 +93,153 @@
     	</div>
     </section>
  
+
+ 
+    <section class="ftco-section">
+ 
+        
+    	<div class="container">
+       
+       
+        <div class="row justify-content-center">
+        
+          <div class="card mb-3 rounded-0" style="max-width: 800px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="<?=base_url('assets/images/logo.png');?>" class="card-img p-4" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Pourquoi passer par un incubateur avant de lancer son projet</h5>
+                  <p class="card-text">
+                    Dans le secteur d’innovation, le développement et la commercialisation de chaque projet
+                    nécessite d’unir les compétences avec les professionnelles et experts qui
+                    accompagnent les futurs entrepreneurs dans la concrétisation de leurs projets, ceci
+                    requiert ce qui suit :
+                    </p>
+
+                    <ul>
+                      <li>Les compétences techniques qui cadrent avec les domaines de réalisation du projet.</li>
+                      <li>L’étude du marché et le préfinancement de la structure ou du projet.</li>
+                      <li>Les compétences marketing pour répondre exactement aux attentes de concernés pour faciliter la commercialisation.</li>
+                      <li>Le coaching dans le management des projets et gestion d’entreprise pour l’équipe de production afin d’assurer la vie à long terme de cette production.</li>
+                    </ul> 
+                </div>
+              </div>
+            </div>
+          </div> 
+
+        </div>
+
+
+
+        <div class="row justify-content-center m-5">
+        
+          <div class="card mb-3 rounded-0" style="max-width: 800px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="<?=base_url('assets/images/logo.png');?>" class="card-img p-4" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Pourquoi DIM a choisi l’agriculture et le numérique comme domaine de base.</h5>
+                  <p class="card-text">
+                  L’agriculture est parmi les secteurs de base du développement
+                    durable, il est au cœur de l’économie des pays surtout pour ceux qui
+                    sont en voie de développement (PMA), il représente une large part
+                    du produit intérieur brut (PIB) (de 30 à 60% dans les deux-tiers
+                    d’entre eux environs),en RDC tout comme dans les autres PMA, il
+                    emploie une proportion significative de la population active qui
+                    œuvre dans ce secteur constituant une source de subsistances et de
+                    revenus. DIM en tant que pépinière de créateurs d’entreprises et
+                    stimulateur de l’écosystème entrepreneurial congolais s’est mis sur
+                    la voie de l’expansion économique à travers la création d’une chaine
+                    de valeurs agricoles en mettant au point un cabinet d’agronomes
+                    (AGRODIM) avec diverses spécialités pour encadrer et
+                    accompagner tous les acteurs du domaines.</p> 
+                </div>
+              </div>
+            </div>
+          </div> 
+
+        </div>
+        
+        <div class="row justify-content-center m-5">
+        
+          <div class="card mb-3 rounded-0" style="max-width: 800px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="<?=base_url('assets/images/logo.png');?>" class="card-img p-4" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Comment se passe l’incubation</h5>
+                  <p class="card-text">
+                  L’incubation se passe en niveau selon l’apport du propriétaire du projet et celui de DIM, et
+                  ces apports sont sous forme d’aspects suivants : Idée, Amélioration de l’idée, Compétences
+                  techniques, Financement, Marketing, commercialisation et Coaching. Comme illustré
+                  clairement dans le tableau suivant :</p> 
+
+                  <table class="table table-sm table-hover table-striped">
+                    <tr>
+                      <th scope="col">Apport (s) du propriétaire du projet</th>
+                      <th scope="col">Apport (s) de DIM</th>
+                    </tr>
+                    <tr>
+                      <td>
+                        <ul>
+                          <li>Idée</li>
+                          <li>Compétences techniques</li>
+                          <li>Financement</li>
+                          <li>Marketing</li>
+                        </ul>
+                      </td>
+                      <td>
+                      <ul>
+                          <li>Amélioration de l'idée</li>
+                          <li>Compétences techniques</li>
+                          <li>Financement</li>
+                          <li>Marketing, Commercialisation et Coaching</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div> 
+
+        </div>
+
+
+
+        
+        <div class="row justify-content-center">
+        
+          <div class="card mb-3 rounded-0" style="max-width: 800px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="<?=base_url('assets/images/logo.png');?>" class="card-img p-4" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Affiliation d’une structure à notre plateforme</h5>
+                  <p class="card-text">
+                    DIM dispose d’un réseau d’entrepreneurs moyennement large, répartis dans 10 pays
+                    différents : la RDC, Zambie, Burkina-Faso, Inde, Pologne, Chypre, France, Chine,
+                    Afrique du sud, USA pouvant vous permettre de développer votre business et faciliter
+                    vos échanges entre plusieurs zones commerciales. 
+                    </p>
+ 
+                </div>
+              </div>
+            </div>
+          </div> 
+
+        </div>
+
+
+ 
+
+      </div>
+    </section>
