@@ -24,4 +24,6 @@ class Release extends CI_Controller {
 		$this->load->view('release');
 		$this->load->view('foot');
 	}
+
+	
 }

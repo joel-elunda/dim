@@ -24,13 +24,47 @@ class Blog extends CI_Controller {
 		$this->load->view('foot');
 	}
 
-	public function bloger() {
+	private function get_current_date() {
+		$data = getdate();
 		return array(
-			'name' => $this -> input -> post('name'),
-			'email' => $this -> input -> post('email'),
-			'message' => $this -> input -> post('message')
+			'weekday' => $data['weekday'],
+			'month' => $data['month'],
+			'day' => $data['mday']
 		);
 	}
 
-	
+	public function bloger_data() {
+		return array( 
+			'email' => $this -> input -> post('email'),
+			'message' => $this -> input -> post('message'),
+			'date' => get_current_date()
+		);
+	}
+
+	public function send_comment() {
+		 
+		$this -> form_validation -> set_rules('email', 'email',  'required|valid_email', 
+			array(
+				'required' => 'Le champ %s est obligatoire.',
+				'valid_email' => 'Saisissez un email valide.'
+			)
+		); 
+
+		$this -> form_validation -> set_rules('message', 'message', 'required', 
+			array(
+				'required' => 'Le champ %s est obligatoire.'
+			)
+		); 
+
+		if($this -> form_validation -> run()) {  
+
+			$this -> BlogModel -> add($this -> bloger_data());
+			$this -> BlogModel -> 
+			$this -> index();
+			 			
+		} else { 
+            $this -> index();
+		}
+
+	}
 }

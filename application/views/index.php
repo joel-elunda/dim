@@ -2,22 +2,7 @@
 		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
 	    	<a class="navbar-brand" href="index.html">DIM BUSINESS</a>
-	    	 
-          <div class="searchform order-sm-start order-lg-last"> 
-			<a class="btn btn-primary" href="
-			<?php  if($this -> session -> is_connected)  { 
-				echo site_url('account/login');
-			} else {
-				echo site_url('account/logout');
-			} ?>" role="button">
-			
-			<?php  if($this -> session -> is_connected)  { 
-				echo 'Déconnexion'; 
-			} else {
-				echo 'Se connecter';
-			} ?> 
-			</a>
-          </div>
+	    	  
          
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="fa fa-bars"></span> Menu
@@ -234,20 +219,18 @@
 						    <div class="card-header p-0" id="headingTwo" role="tab">
 						      <h2 class="mb-0">
 						        <button href="#collapseTwo" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo">
-						        	<p style="text-transform: none;" class="mb-0">Qu'est-ce que le Crowd Funding ?</p>
+						        	<p style="text-transform: none;" class="mb-0">Pourquoi passer par un incubateur avant de lancer son projet ?</p>
 						          <i class="fa" aria-hidden="true"></i>
 						        </button>
 						      </h2>
 						    </div>
 						    <div class="collapse" id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo">
 						      <div class="card-body py-3 px-0">
-						      	<ol>
-						      		<li>Far far away, behind the word mountains</li>
-						      		<li>Consonantia, there live the blind texts</li>
-						      		<li>When she reached the first hills of the Italic Mountains</li>
-						      		<li>Bookmarksgrove, the headline of Alphabet Village</li>
-						      		<li>Separated they live in Bookmarksgrove right</li>
-						      	</ol>
+						      <p style="font-size: 1.1em;" class="text-justify">
+							  	Dans le secteur d’innovation, le développement et la commercialisation de chaque projet
+								nécessite d’unir les compétences avec les professionnelles et experts qui
+								accompagnent les futurs entrepreneurs dans la concrétisation de leurs projets
+							  </p>
 						      </div>
 						    </div>
 						  </div>
@@ -256,20 +239,20 @@
 						    <div class="card-header p-0" id="headingThree" role="tab">
 						      <h2 class="mb-0">
 						        <button href="#collapseThree" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseThree">
-						        	<p style="text-transform: none;" class="mb-0">Qu'est-ce que le Success Full ?</p>
+						        	<p style="text-transform: none;" class="mb-0">Pourquoi DIM a choisi l’agriculture et le numérique comme domaine de base ?</p>
 						          <i class="fa" aria-hidden="true"></i>
 						        </button>
 						      </h2>
 						    </div>
 						    <div class="collapse" id="collapseThree" role="tabpanel" aria-labelledby="headingTwo">
 						      <div class="card-body py-3 px-0">
-						      	<ol>
-						      		<li>Far far away, behind the word mountains</li>
-						      		<li>Consonantia, there live the blind texts</li>
-						      		<li>When she reached the first hills of the Italic Mountains</li>
-						      		<li>Bookmarksgrove, the headline of Alphabet Village</li>
-						      		<li>Separated they live in Bookmarksgrove right</li>
-						      	</ol>
+						      	<p  style="font-size: 1.1em;" class="text-justify">DIM en tant que pépinière de créateurs d’entreprises et
+									stimulateur de l’écosystème entrepreneurial congolais s’est mis sur
+									la voie de l’expansion économique à travers la création d’une chaine
+									de valeurs agricoles en mettant au point un cabinet d’agronomes
+									(AGRODIM) avec diverses spécialités pour encadrer et
+									accompagner tous les acteurs du domaines.
+									</p>
 						      </div>
 						    </div>
 						  </div>
@@ -278,39 +261,22 @@
 						    <div class="card-header p-0" id="headingThree" role="tab">
 						      <h2 class="mb-0">
 						        <button href="#membre" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="membre">
-						        	<p style="text-transform: none;" class="mb-0">Comment devenir membre ?</p>
+						        	<p style="text-transform: none;" class="mb-0">Comment se passe l’incubation ?</p>
 						          <i class="fa" aria-hidden="true"></i>
 						        </button>
 						      </h2>
 						    </div>
 						    <div class="collapse" id="membre" role="tabpanel" aria-labelledby="headingTwo">
 						      <div class="card-body py-3 px-0">
-						      	<ol>
-						      		<li>Passer au bureau ou contacter notre administration</li>
-						      		<li>Informez-vous sur le règlement de notre plateforme</li>
-						      		<li>Remplissez le formulaire</li>
-						      		<li>Bookmarksgrove, the headline of Alphabet Village</li>
-						      		<li>Envoyez le à notre email ou déposez le a notre bureau après remplissage</li>
-						      	</ol>
+						      <p style="font-size: 1.1em;" class="text-justify">
+							  	L’incubation se passe en niveau selon l’apport du propriétaire du projet et celui de DIM, et
+								ces apports sont sous forme d’aspects suivants : Idée, Amélioration de l’idée, Compétences
+								techniques, Financement, Marketing, commercialisation et Coaching.
+							  </p>
 						      </div>
 						    </div>
 						  </div>
-
-						  <div class="card">
-						    <div class="card-header p-0" id="headingFour" role="tab">
-						      <h2 class="mb-0">
-						        <button href="#collapseFour" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseFour">
-						        	<p style="text-transform: none;" class="mb-0">Comment participer au Crowd Funding?</p>
-						          <i class="fa" aria-hidden="true"></i>
-						        </button>
-						      </h2>
-						    </div>
-						    <div class="collapse" id="collapseFour" role="tabpanel" aria-labelledby="headingTwo">
-						      <div class="card-body py-3 px-0">
-						      	<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-						      </div>
-						    </div>
-						  </div>
+ 
 						</div>
 	        </div>
         </div>

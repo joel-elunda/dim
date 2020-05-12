@@ -151,15 +151,11 @@
                 <h3 class="mb-5">Laisser un commentaire</h3>
                 <form action="#" class="">
                   <div class="form-group">
-                    <label for="name">Nom complet * (obligation)</label>
-                    <input type="text" class="form-control rounded-0" id="name">
-                  </div>
-                  <div class="form-group">
-                    <label for="email">Email * (obligation)</label>
+                    <label for="email">Email *</label>
                     <input type="email" class="form-control rounded-0" id="email">
                   </div> 
                   <div class="form-group">
-                    <label for="message">Message * (obligatoire)</label>
+                    <label for="message">Message *</label>
                     <textarea name="" id="message" cols="30" rows="10" class="form-control rounded-0"></textarea>
                   </div>
                   <div class="form-group">
