@@ -11,9 +11,10 @@
 	        <ul class="navbar-nav m-auto">
 	        	<li class="nav-item"><a href="<?=site_url();?>" class="nav-link">Accueil</a></li>
 	        	<li class="nav-item active"><a href="<?=site_url('services');?>" class="nav-link">Services</a></li>
-				<li class="nav-item"><a href="<?=site_url('release');?>" class="nav-link">Réalisations</a></li>
-				<li class="nav-item"><a href="<?=site_url('contact');?>" class="nav-link">Contact</a></li>
-				<!-- <li class="nav-item"><a href="<?=site_url('blog');?>" class="nav-link">Blog</a></li>  -->
+            <li class="nav-item"><a href="<?=site_url('release');?>" class="nav-link">Réalisations</a></li> 
+            <li class="nav-item"><a href="<?=site_url('actu');?>" class="nav-link">Actualités</a></li>
+            <li class="nav-item"><a href="<?=site_url('contact');?>" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="<?=site_url('blog');?>" class="nav-link">Blog</a></li> 
 	        </ul>
 	      </div>
 	    </div>
@@ -21,7 +22,7 @@
     <!-- END nav -->
 
 	
-    <section class="hero-wrap hero-wrap-2" style="background-image: url(<?=base_url('assets/images/bg_2.jpg');?>);" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url(<?=base_url('assets/images/photo_2020-05-12_14-51-20.jpg');?>);" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-end">
@@ -45,6 +46,7 @@
 			</div>
 
     		<div class="row">
+          
           <div class="col-md-6 col-lg-3 d-flex services align-self-stretch px-4 ftco-animate">
             <div class="d-block">
               <div class="icon d-flex mr-2">
@@ -56,6 +58,7 @@
               </div>
             </div>      
           </div>
+
           <div class="col-md-6 col-lg-3 d-flex services align-self-stretch px-4 ftco-animate">
             <div class="d-block">
               <div class="icon d-flex mr-2">
@@ -67,6 +70,7 @@
               </div>
             </div>    
           </div>
+
           <div class="col-md-6 col-lg-3 d-flex services align-self-stretch px-4 ftco-animate">
             <div class="d-block">
               <div class="icon d-flex mr-2">
@@ -78,6 +82,7 @@
               </div>
             </div>      
           </div>
+
           <div class="col-md-6 col-lg-3 d-flex services align-self-stretch px-4 ftco-animate">
             <div class="d-block">
               <div class="icon d-flex mr-2">
@@ -89,6 +94,7 @@
               </div>
             </div>      
           </div>
+          
         </div>
     	</div>
     </section>
@@ -100,15 +106,20 @@
         
     	<div class="container">
        
+			<div class="row justify-content-center pb-5 mb-3">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+          <img src="<?=base_url('assets/images/logo.png')?>" width="250px" alt="" srcset=""> 
+					<h2 class="m-3"> Développer, Illuminer, Magnanimiter  </h2>
+				</div>
+			</div>
+        
        
         <div class="row justify-content-center">
         
           <div class="card mb-3 rounded-0" style="max-width: 800px;">
             <div class="row no-gutters">
-              <div class="col-md-4">
-                <img src="<?=base_url('assets/images/logo.png');?>" class="card-img p-4" alt="...">
-              </div>
-              <div class="col-md-8">
+              
+              <div class="col-md-12">
                 <div class="card-body">
                   <h5 class="card-title">Pourquoi passer par un incubateur avant de lancer son projet</h5>
                   <p class="card-text">
@@ -131,16 +142,33 @@
 
         </div>
 
+        <div class="row justify-content-center">
+        
+          <div class="card mb-3 rounded-0" style="max-width: 800px;">
+            <div class="row no-gutters"> 
+              <div class="col-md-8">
+                <div class="card-body"> 
+                    <ul>
+                      <li>Les compétences techniques qui cadrent avec les domaines de réalisation du projet.</li>
+                      <li>L’étude du marché et le préfinancement de la structure ou du projet.</li>
+                      <li>Les compétences marketing pour répondre exactement aux attentes de concernés pour faciliter la commercialisation.</li>
+                      <li>Le coaching dans le management des projets et gestion d’entreprise pour l’équipe de production afin d’assurer la vie à long terme de cette production.</li>
+                    </ul> 
+                </div>
+              </div>
+            </div>
+          </div> 
+
+        </div>
+
 
 
         <div class="row justify-content-center m-5">
         
           <div class="card mb-3 rounded-0" style="max-width: 800px;">
             <div class="row no-gutters">
-              <div class="col-md-4">
-                <img src="<?=base_url('assets/images/logo.png');?>" class="card-img p-4" alt="...">
-              </div>
-              <div class="col-md-8">
+              
+              <div class="col-md-12">
                 <div class="card-body">
                   <h5 class="card-title">Pourquoi DIM a choisi l’agriculture et le numérique comme domaine de base.</h5>
                   <p class="card-text">
@@ -167,11 +195,8 @@
         <div class="row justify-content-center m-5">
         
           <div class="card mb-3 rounded-0" style="max-width: 800px;">
-            <div class="row no-gutters">
-              <div class="col-md-4">
-                <img src="<?=base_url('assets/images/logo.png');?>" class="card-img p-4" alt="...">
-              </div>
-              <div class="col-md-8">
+            <div class="row no-gutters"> 
+              <div class="col-md-12">
                 <div class="card-body">
                   <h5 class="card-title">Comment se passe l’incubation</h5>
                   <p class="card-text">
@@ -217,11 +242,8 @@
         <div class="row justify-content-center">
         
           <div class="card mb-3 rounded-0" style="max-width: 800px;">
-            <div class="row no-gutters">
-              <div class="col-md-4">
-                <img src="<?=base_url('assets/images/logo.png');?>" class="card-img p-4" alt="...">
-              </div>
-              <div class="col-md-8">
+            <div class="row no-gutters"> 
+              <div class="col-md-12">
                 <div class="card-body">
                   <h5 class="card-title">Affiliation d’une structure à notre plateforme</h5>
                   <p class="card-text">

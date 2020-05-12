@@ -12,8 +12,9 @@
 	        	<li class="nav-item"><a href="<?=site_url();?>" class="nav-link">Accueil</a></li>
 	        	<li class="nav-item"><a href="<?=site_url('services');?>" class="nav-link">Services</a></li>
 				<li class="nav-item  active"><a href="<?=site_url('release');?>" class="nav-link">Réalisations</a></li>
+            	<li class="nav-item"><a href="<?=site_url('actu');?>" class="nav-link">Actualités</a></li>
 				<li class="nav-item"><a href="<?=site_url('contact');?>" class="nav-link">Contact</a></li>
-				<!-- <li class="nav-item"><a href="<?=site_url('blog');?>" class="nav-link">Blog</a></li>  -->
+				<li class="nav-item"><a href="<?=site_url('blog');?>" class="nav-link">Blog</a></li> 
 	        </ul>
 	      </div>
 	    </div>
@@ -22,7 +23,7 @@
 
 
 	
-    <section class="hero-wrap hero-wrap-2" style="background-image: url(<?=base_url('assets/images/bg_2.jpg');?>);" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url(<?=base_url('assets/images/photo_2020-05-12_14-50-14.jpg');?>);" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-end">

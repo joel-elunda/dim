@@ -11,9 +11,10 @@
 	        <ul class="navbar-nav m-auto">
 	        	<li class="nav-item active"><a href="<?=site_url();?>" class="nav-link">Accueil</a></li>
 	        	<li class="nav-item"><a href="<?=site_url('services');?>" class="nav-link">Services</a></li>
-				<li class="nav-item"><a href="<?=site_url('release');?>" class="nav-link">Réalisations</a></li>
+				<li class="nav-item"><a href="<?=site_url('release');?>" class="nav-link">Réalisations</a></li> 
+            	<li class="nav-item"><a href="<?=site_url('actu');?>" class="nav-link">Actualités</a></li>
 				<li class="nav-item"><a href="<?=site_url('contact');?>" class="nav-link">Contact</a></li>
-				<!-- <li class="nav-item"><a href="<?=site_url('blog');?>" class="nav-link">Blog</a></li> -->
+				<li class="nav-item"><a href="<?=site_url('blog');?>" class="nav-link">Blog</a></li>
 	        </ul>
 	      </div>
 	    </div>
@@ -24,7 +25,7 @@
 
     <div class="hero-wrap">
 	    <div class="home-slider owl-carousel">
-	      <div class="slider-item" style="background-image:url(<?=base_url('assets/images/bg_1.jpg');?>);">
+	      <div class="slider-item" style="background-image:url(<?=base_url('assets/images/IMG_20191026_122120.jpg');?>);">
 	      	<div class="overlay"></div>
 	        <div class="container">
 	          <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -39,7 +40,7 @@
 	        </div>
 	      </div>
 
-	      <div class="slider-item" style="background-image:url(<?=base_url('assets/images/bg_2.jpg');?>);">
+	      <div class="slider-item" style="background-image:url(<?=base_url('assets/images/IMG_20191026_121928.jpg');?>);">
 	      	<div class="overlay"></div>
 	        <div class="container">
 	          <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -54,7 +55,7 @@
 	        </div>
 	      </div>
 
-	      <div class="slider-item" style="background-image:url(<?=base_url('assets/images/bg_3.jpg');?>);">
+	      <div class="slider-item" style="background-image:url(<?=base_url('assets/images/20200129_104308.jpg');?>);">
 	      	<div class="overlay"></div>
 	        <div class="container">
 	          <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -283,4 +284,51 @@
     	</div>
     </section>
 	
+	
+	<section class="ftco-section">
+      <div class="container">
+	  
+	  	<div class="row justify-content-center pb-5 mb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+          	<span class="subheading">News &amp; Blog</span>
+            <h2>Dernièrs news de notre blog </h2>
+          </div>
+        </div>
+
+        <div class="row d-flex">
+
+			<?php 
+
+				// TODO : rest of date and the description projects
+				$images = array(
+					'assets/images/20200129_104308.jpg', 
+					'assets/images/IMG-20191231-WA0025.jpg',
+					'assets/images/IMG-20190621-WA0040.jpg'
+				);
+
+				$length = count($images);  
+
+				for ($i=0; $i < $length; $i++) { 
+					
+					echo '
+					<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry align-self-stretch">
+					  <a href="blog-single.html" class="block-20 rounded" style="background-image: url('.$images[$i].');">
+					  </a>
+					  <div class="text p-4">
+						  <div class="meta mb-2">
+						  <div><a href="#">March 31, 2020</a></div>
+						  <div><a href="#">Admin</a></div>
+						  <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
+						</div>
+						<h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+					  </div>
+					</div>
+				  </div> '; 
+				}
+			?>
+ 
+      </div>
+    </section>
+
 	
