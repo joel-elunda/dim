@@ -136,23 +136,21 @@
    	<div  class="text-center">
 	   <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d62516.008028883625!2d27.447901062617458!3d-11.676650922400931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x19723eedb2cee413%3A0x31ed45b8a7f14bc5!2sInstitut%20Technique%20Salama%2C%20Lubumbashi!3m2!1d-11.676737099999999!2d27.4829208!5e0!3m2!1sen!2scd!4v1588944736717!5m2!1sen!2scd" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 	</div>
-<!--
+
     <section class="ftco-section ftco-no-pb ftco-no-pt bg-secondary">
       <div class="container py-5">
     		<div class="row">
           <div class="col-md-7 d-flex align-items-center">
-            <h2 class="mb-3 mb-sm-0" style="color:black; font-size: 22px;">S4inSign Up for Your Free 1st Accounting Consultation</h2>
+            <h2 class="mb-3 mb-sm-0" style="color:black; font-size: 22px;">Inscrivez-vous pour votre première consultation comptable gratuite</h2>
           </div>
           <div class="col-md-5 d-flex align-items-center">
-            <form action="#" class="subscribe-form">
+            <form action="<?=site_url('actu/suscribe');?>" class="subscribe-form">
               <div class="form-group d-flex">
-                <input type="text" class="form-control" placeholder="Enter email address">
-                <input type="submit" value="Subscribe" class="submit px-3">
+                <input type="text" class="form-control" placeholder="Votre adresse email">
+                <input type="submit" value="Souscrire" class="submit px-3">
               </div>
             </form>
           </div>
         </div>
       </div>
     </section>
-
--->

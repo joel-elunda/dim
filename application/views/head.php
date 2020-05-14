@@ -22,9 +22,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url('assets/images/logo.png');?>">
 
 	<style>
-		.bg-primary, .text-primary {
-			color: #1d3163;
-		}
+ 
 	</style>
   </head>
   <body>
@@ -58,3 +56,5 @@
 				</div>
 			</div>
 		</div>
+
+		

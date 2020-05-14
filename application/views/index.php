@@ -9,7 +9,7 @@
 	      </button>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav m-auto">
-	        	<li class="nav-item active"><a href="<?=site_url();?>" class="nav-link">Accueil</a></li>
+	        	<li class="nav-item"><a href="<?=site_url();?>" class="nav-link">Accueil</a></li>
 	        	<li class="nav-item"><a href="<?=site_url('services');?>" class="nav-link">Services</a></li>
 				<li class="nav-item"><a href="<?=site_url('release');?>" class="nav-link">Réalisations</a></li> 
             	<li class="nav-item"><a href="<?=site_url('actu');?>" class="nav-link">Actualités</a></li>
@@ -20,7 +20,6 @@
 	    </div>
 	  </nav>
     <!-- END nav -->
-
 
 
     <div class="hero-wrap">
@@ -63,7 +62,7 @@
 		          	<div class="text w-100 text-center">
 		          		<h2>Nous donnons des conseils</h2>
 			            <h1 class="mb-4">Experts en conseils financiers</h1>
-			            <p><a href="<?=site_url('contact');?>" class="btn btn-white">Contactez-nous</a></p>
+			            <p><a href="<?=site_url('contact');?>" class="btn btn-white" >Contactez-nous</a></p>
 		            </div>
 		          </div>
 		        </div>
@@ -88,12 +87,12 @@
 								nécessite d’unir les compétences avec les professionnelles et experts qui 
 								accompagnent les futurs entrepreneurs dans la concrétisation de leurs projets.</p>
 								<!-- <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.</p> -->
-								<p><a href="<?=site_url('contact');?>" class="btn btn-primary py-3 px-4">Contactez-nous</a></p>
+								<p><a href="<?=site_url('contact');?>" class="btn btn-primary py-3 px-4 border-0" style="background-color:#1d3163;">Contactez-nous</a></p>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-7 wrap-about pr-md-4 ftco-animate">
-          	<h2 class="mb-4">Développé Illuminé Magnanimité</h2>
+          				<h2 class="mb-4">Développé Illuminé Magnanimité</h2>
 						<p>Nous sommes une pépinière des créateurs d'entreprises jouant le rôle de pivot-majeur du business en 
 						Afrique et donnant un sens aux projets et startups grâce à nos business-solutions.</p>
 						<div class="row mt-5">
@@ -101,31 +100,33 @@
 								<div class="services active text-center"> 
 									<div class="mt-2 d-flex  justify-content-center align-items-center"><span class="flaticon-wealth" style="font-size: 70px; color: #1d3163;"></span></div>
 									<div class="text media-body">
-										<h3>Organization</h3>
-										<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+										<h3>MEDIA</h3>
+										<p>Promotion du potentiel de créativité de l'écosystème entrepreneurial congolais jusqu'à l'étranger.</p>
 									</div>
 								</div>
 								<div class="services text-center">
 									<div class="mt-2 d-flex  justify-content-center align-items-center"><span class="flaticon-wealth" style="font-size: 70px; color: #1d3163;"></span></div>
 									<div class="text media-body">
-										<h3>Risk Analysis</h3>
-										<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+										<h3>NUMERISATION ET TRANSFORMATION</h3>
+										<p>Réalisation des numériques, technologiques grâce aux  partenaires affilié à notre plateforme.</p>
 									</div>
 								</div>
+							
 							</div>
 							<div class="col-lg-6">
 								<div class="services text-center">
 									<div class="mt-2 d-flex  justify-content-center align-items-center"><span class="flaticon-wealth" style="font-size: 70px; color: #1d3163;"></span></div>
 									<div class="text media-body">
-										<h3>Marketing Strategy</h3>
-										<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+										<h3>CROWD FOUNDING</h3>
+										<p>Financement participatif des projets innovants et des actions bénévoles grâce à notre holding numérisé.</p>
 									</div>
 								</div>
+								
 								<div class="services text-center">
 									<div class="mt-2 d-flex  justify-content-center align-items-center"><span class="flaticon-wealth" style="font-size: 70px; color: #1d3163;"></span></div>
 									<div class="text media-body">
-										<h3>Capital Market</h3>
-										<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+										<h3>CABINET D'ETUDES DES PROJETS</h3>
+										<p>Agro-DIM projet d'incubation du secteur agricol accompagnant les acteurs du domaine dans la création des chainesd de valeurs.</p>
 									</div>
 								</div>
 							</div>
@@ -193,7 +194,7 @@
     	<div class="container">
 		<div class="row justify-content-center pb-5 mb-3">
           <div class="col-md-7 heading-section heading-section-white text-center ftco-animate">
-          	<span class="subheading">Réalisation</span>
+          	<span class="subheading m-5">Réalisation</span>
             <h2>Statistique de nos réalisations</h2>
           </div>
         </div>
@@ -201,7 +202,7 @@
           <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18 text-center">
               <div class="text">
-                <strong class="number" data-number="10">0</strong>
+                <strong class="number" data-number="10" style="color:#1d3163;">0</strong>
               </div>
               <div class="text">
               	<span>Jeunes entrepreneurs formés</span>
@@ -211,7 +212,7 @@
           <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18 text-center">
               <div class="text">
-                <strong class="number" data-number="22">0</strong>
+                <strong class="number" data-number="22" style="color:#1d3163;">0</strong>
               </div>
               <div class="text">
               	<span>Startups créés</span>
@@ -221,7 +222,7 @@
           <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18 text-center">
               <div class="text">
-                <strong class="number" data-number="4">0</strong>
+                <strong class="number" data-number="4" style="color:#1d3163;">0</strong>
               </div>
               <div class="text">
               	<span>Coopérative des jeunes</span>
@@ -231,7 +232,7 @@
           <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18 text-center">
               <div class="text">
-                <strong class="number" data-number="5">0</strong>
+                <strong class="number" data-number="5" style="color:#1d3163;">0</strong>
               </div>
               <div class="text">
               	<span>PME</span>
@@ -257,7 +258,7 @@
     			</div>
     			<div class="col-lg-6 pl-lg-5">
     				<div class="heading-section mb-5 mt-5 mt-lg-0">
-    					<span class="subheading">FAQs</span>
+    					<span class="subheading" style="color:#1d3163;">FAQs</span>
 	            <h2 class="mb-3">Questions fréquemment posées</h2>
 	            <p>Nous vous proposons les réponses aux questions fréquemment posées par nos clients</p>
     				</div>
@@ -265,8 +266,8 @@
 						  <div class="card">
 						    <div class="card-header p-0" id="headingOne">
 						      <h2 class="mb-0">
-						        <button href="#collapseOne" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
-						        	<p style="text-transform: none;" class="mb-0">Qu'est-ce que DIM BUSINESS ?</p>
+						        <button href="#collapseOne" style="background-color:#1d3163;  color: #d9d9d9;" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
+						        	<p class="mb-0">Qu'est-ce que DIM BUSINESS ?</p>
 						          <i class="fa" aria-hidden="true"></i>
 						        </button>
 						      </h2>
@@ -283,7 +284,7 @@
 						  <div class="card">
 						    <div class="card-header p-0" id="headingTwo" role="tab">
 						      <h2 class="mb-0">
-						        <button href="#collapseTwo" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo">
+						        <button href="#collapseTwo" style="background-color:#1d3163;  color: #d9d9d9;" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo">
 						        	<p style="text-transform: none;" class="mb-0">Pourquoi passer par un incubateur avant de lancer son projet ?</p>
 						          <i class="fa" aria-hidden="true"></i>
 						        </button>
@@ -303,7 +304,7 @@
 						  <div class="card">
 						    <div class="card-header p-0" id="headingThree" role="tab">
 						      <h2 class="mb-0">
-						        <button href="#collapseThree" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseThree">
+						        <button href="#collapseThree" style="background-color:#1d3163;  color: #d9d9d9;" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseThree">
 						        	<p style="text-transform: none;" class="mb-0">Pourquoi DIM a choisi l’agriculture et le numérique comme domaine de base ?</p>
 						          <i class="fa" aria-hidden="true"></i>
 						        </button>
@@ -325,7 +326,7 @@
 						  <div class="card">
 						    <div class="card-header p-0" id="headingThree" role="tab">
 						      <h2 class="mb-0">
-						        <button href="#membre" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="membre">
+						        <button href="#membre" style="background-color:#1d3163; color: #d9d9d9;" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="membre">
 						        	<p style="text-transform: none;" class="mb-0">Comment se passe l’incubation ?</p>
 						          <i class="fa" aria-hidden="true"></i>
 						        </button>
@@ -347,14 +348,39 @@
         </div>
     	</div>
     </section>
+
+
+    <section class="ftco-section">
+      <div class="container">
+	  	<div class="row justify-content-center pb-5 mb-3">
+          <div class="col-md-7 heading-section heading-section-white text-center ftco-animate">
+          	<span class="subheading">Entrepreneuriat</span>
+            <h2>Notre jeune entrepreneur de la semaine</h2>
+          </div>
+        </div>
+		<div class="row justify-content-center">
+			<div class="col-lg-10 ftco-animate">
+				<div class="cases-wrap d-md-flex align-items-center">
+					<div class="img" style="background-image: url(<?=base_url('assets/images/20200129_104308.jpg');?>);"></div>
+					<div class="text pl-md-5">
+						<span class="cat" style="color: #1d3163;">Strategy</span>
+						<h2>Business activities and care for the environment</h2>
+						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+						<p><a href="<?=site_url('actu');?>" class="btn btn-primary border-0" style="background-color:#1d3163;">Lire plus</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
 	
 	
-	<section class="ftco-section">
+	<section class="ftco-section bg-light">
       <div class="container">
 	  
 	  	<div class="row justify-content-center pb-5 mb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
-          	<span class="subheading">News &amp; Blog</span>
+          	<span class="subheading" style="color: #1d3163;">News &amp; Blog</span>
             <h2>Dernièrs news de notre blog </h2>
           </div>
         </div>
@@ -396,3 +422,20 @@
     </section>
 
 	
+    <section class="ftco-section ftco-no-pb ftco-no-pt bg-secondary">
+      <div class="container py-5">
+    		<div class="row">
+          <div class="col-md-7 d-flex align-items-center">
+            <h2 class="mb-3 mb-sm-0" style="color:black; font-size: 22px;">Inscrivez-vous pour votre première consultation comptable gratuite</h2>
+          </div>
+          <div class="col-md-5 d-flex align-items-center">
+            <form action="<?=site_url('actu/suscribe');?>" class="subscribe-form">
+              <div class="form-group d-flex">
+                <input type="text" class="form-control" placeholder="Votre adresse email">
+                <input type="submit" value="Souscrire" class="submit px-3">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>

@@ -20,8 +20,11 @@ class Actu extends CI_Controller {
 	 */
 	public function index() {
 		$this->load->view('head');
-		$this->load->view('actu');
+		$this->load->view('cases');
 		$this->load->view('foot');
-    }
-    
+	}
+
+	public function suscribe() {
+		
+	}
 }
