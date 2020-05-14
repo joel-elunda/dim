@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="<?=base_url('assets/css/magnific-popup.css');?>">
 
     <link rel="stylesheet" href="<?=base_url('assets/css/flaticon.css');?>">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?=base_url('assets/css/style.css');?>">
 	
 	<link rel="manifest" href="site.webmanifest">

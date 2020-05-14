@@ -80,12 +80,16 @@
 					<div class="col-md-5 order-md-last wrap-about align-items-stretch">
 						<div class="wrap-about-border ftco-animate">
 							<div class="img" style="background-image: url(<?=base_url('assets/images/DSC_6794.jpg');?>); border"></div>
-							<img class="img w-75 border" src="<?=base_url('assets/images/DSC_6794.jpg');?>" alt="" srcset="">
+							<img class="img w-50 border" src="<?=base_url('assets/images/DSC_6794.jpg');?>" alt="" srcset="">
 							<div class="text">
 								<h4>Pourquoi passer par un incubateur avant de lancer son projet ?</h4>
 								<p>Dans le secteur d’innovation, le développement et la commercialisation de chaque projet
 								nécessite d’unir les compétences avec les professionnelles et experts qui 
 								accompagnent les futurs entrepreneurs dans la concrétisation de leurs projets.</p>
+
+								<p>Ceci requiert le coaching dans la gestion d’entreprise
+								pour l’équipe de production afin de l’assurer  à long terme.
+								</p>
 								<!-- <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.</p> -->
 								<p><a href="<?=site_url('contact');?>" class="btn btn-primary py-3 px-4 border-0" style="background-color:#1d3163;">Contactez-nous</a></p>
 							</div>
@@ -98,14 +102,14 @@
 						<div class="row mt-5">
 							<div class="col-lg-6">
 								<div class="services active text-center"> 
-									<div class="mt-2 d-flex  justify-content-center align-items-center"><span class="flaticon-wealth" style="font-size: 70px; color: #1d3163;"></span></div>
+									<i class="fa fa-film fa-5x mb-3 text-center" style="color:#1d3163;" aria-hidden="true"></i>
 									<div class="text media-body">
 										<h3>MEDIA</h3>
 										<p>Promotion du potentiel de créativité de l'écosystème entrepreneurial congolais jusqu'à l'étranger.</p>
 									</div>
 								</div>
 								<div class="services text-center">
-									<div class="mt-2 d-flex  justify-content-center align-items-center"><span class="flaticon-wealth" style="font-size: 70px; color: #1d3163;"></span></div>
+									<i class="fa fa-cogs fa-5x mb-3 text-center" style="color:#1d3163;" aria-hidden="true"></i> 
 									<div class="text media-body">
 										<h3>NUMERISATION ET TRANSFORMATION</h3>
 										<p>Réalisation des numériques, technologiques grâce aux  partenaires affilié à notre plateforme.</p>
@@ -115,7 +119,7 @@
 							</div>
 							<div class="col-lg-6">
 								<div class="services text-center">
-									<div class="mt-2 d-flex  justify-content-center align-items-center"><span class="flaticon-wealth" style="font-size: 70px; color: #1d3163;"></span></div>
+								<i class="fa fa-money fa-5x mb-3 text-center" style="color:#1d3163;" aria-hidden="true"></i> 
 									<div class="text media-body">
 										<h3>CROWD FOUNDING</h3>
 										<p>Financement participatif des projets innovants et des actions bénévoles grâce à notre holding numérisé.</p>
@@ -123,7 +127,7 @@
 								</div>
 								
 								<div class="services text-center">
-									<div class="mt-2 d-flex  justify-content-center align-items-center"><span class="flaticon-wealth" style="font-size: 70px; color: #1d3163;"></span></div>
+									<i class="fa fa-book fa-5x mb-3 text-center" style="color:#1d3163;" aria-hidden="true"></i> 
 									<div class="text media-body">
 										<h3>CABINET D'ETUDES DES PROJETS</h3>
 										<p>Agro-DIM projet d'incubation du secteur agricol accompagnant les acteurs du domaine dans la création des chainesd de valeurs.</p>

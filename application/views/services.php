@@ -49,8 +49,8 @@
           
           <div class="col-md-6 col-lg-3 d-flex services align-self-stretch px-4 ftco-animate">
             <div class="d-block">
-              <div class="icon d-flex mr-2">
-            		<span class="flaticon-accounting-1"></span>
+              <div class="d-flex mr-2">
+                <i class="fa fa-film fa-5x mb-3 text-center" style="color:#1d3163;" aria-hidden="true"></i> 
               </div>
               <div class="media-body">
                 <h3 class="heading">MEDIA</h3>
@@ -61,8 +61,8 @@
 
           <div class="col-md-6 col-lg-3 d-flex services align-self-stretch px-4 ftco-animate">
             <div class="d-block">
-              <div class="icon d-flex mr-2">
-            		<span class="flaticon-tax"></span>
+              <div class="d-flex mr-2">
+              <i class="fa fa-book fa-5x mb-3 text-center" style="color:#1d3163;" aria-hidden="true"></i> 
               </div>
               <div class="media-body">
                 <h3 class="heading">CABINET D'ETUDE DES PROJETS</h3>
@@ -73,8 +73,10 @@
 
           <div class="col-md-6 col-lg-3 d-flex services align-self-stretch px-4 ftco-animate">
             <div class="d-block">
-              <div class="icon d-flex mr-2">
-            		<span class="flaticon-loan"></span>
+              <div class="d-flex mr-2"> 
+              <!-- circle-o-notch -->
+
+                <i class="fa fa-cogs fa-5x mb-3 text-center" style="color:#1d3163;" aria-hidden="true"></i> 
               </div>
               <div class="media-body">
                 <h3 class="heading">NUMERISATION ET TRANSFORMATION</h3>
@@ -85,8 +87,8 @@
 
           <div class="col-md-6 col-lg-3 d-flex services align-self-stretch px-4 ftco-animate">
             <div class="d-block">
-              <div class="icon d-flex mr-2">
-            		<span class="flaticon-budget"></span>
+              <div class="d-flex mr-2">
+                <i class="fa fa-money fa-5x mb-3 text-center" style="color:#1d3163;" aria-hidden="true"></i> 
               </div>
               <div class="media-body">
                 <h3 class="heading">CROWD FOUNDING</h3>
