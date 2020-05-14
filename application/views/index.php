@@ -2,7 +2,7 @@
 		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
 			<img  src="<?=site_url('assets/images/logo - Copie.png');?>" alt="" srcset="">
-			<a class=" pl-3 navbar-brand " href="<?=site_url();?>">DIM BUSINESS</a> 
+			<a class="pl-3 navbar-brand " href="<?=site_url();?>">DIM BUSINESS</a> 
          
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="fa fa-bars"></span> Menu
@@ -14,7 +14,7 @@
 				<li class="nav-item"><a href="<?=site_url('release');?>" class="nav-link">Réalisations</a></li> 
             	<li class="nav-item"><a href="<?=site_url('actu');?>" class="nav-link">Actualités</a></li>
 				<li class="nav-item"><a href="<?=site_url('contact');?>" class="nav-link">Contact</a></li>
-				<li class="nav-item"><a href="<?=site_url('blog');?>" class="nav-link">Blog</a></li>
+				<!-- <li class="nav-item"><a href="<?=site_url('blog');?>" class="nav-link">Blog</a></li> -->
 	        </ul>
 	      </div>
 	    </div>

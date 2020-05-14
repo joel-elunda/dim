@@ -23,7 +23,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url('assets/images/logo.png');?>">
 
 	<style>
- 
+	
 	</style>
   </head>
   <body>

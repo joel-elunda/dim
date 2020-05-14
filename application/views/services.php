@@ -1,7 +1,8 @@
 
 		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	    	<a class="navbar-brand" href="index.html">DIM BUSINESS</a>
+        <img  src="<?=site_url('assets/images/logo - Copie.png');?>" alt="" srcset="">
+	    	<a class="pl-3 navbar-brand" href="index.html">DIM BUSINESS</a>
 	    	 
 	    	
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,7 +15,7 @@
             <li class="nav-item"><a href="<?=site_url('release');?>" class="nav-link">Réalisations</a></li> 
             <li class="nav-item"><a href="<?=site_url('actu');?>" class="nav-link">Actualités</a></li>
             <li class="nav-item"><a href="<?=site_url('contact');?>" class="nav-link">Contact</a></li>
-            <li class="nav-item"><a href="<?=site_url('blog');?>" class="nav-link">Blog</a></li> 
+            <!-- <li class="nav-item"><a href="<?=site_url('blog');?>" class="nav-link">Blog</a></li>  -->
 	        </ul>
 	      </div>
 	    </div>
@@ -23,7 +24,7 @@
 
 	
     <section class="hero-wrap hero-wrap-2" style="background-image: url(<?=base_url('assets/images/photo_2020-05-12_14-51-20.jpg');?>);" data-stellar-background-ratio="0.5">
-      <div class="overlay"></div>
+      <div class="overlay  bg-light"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-end">
           <div class="col-md-9 ftco-animate pb-5">
@@ -110,7 +111,7 @@
        
 			<div class="row justify-content-center pb-5 mb-3">
 				<div class="col-md-7 heading-section text-center ftco-animate">
-          <img src="<?=base_url('assets/images/logo.png')?>" width="250px" alt="" srcset=""> 
+          <img src="<?=base_url('assets/images/logo.png')?>" width="300px" alt="" srcset=""> 
 					<h2 class="m-3"> Développer, Illuminer, Magnanimiter  </h2>
 				</div>
 			</div>

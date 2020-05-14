@@ -1,8 +1,8 @@
 
 		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container">
-			<img  src="<?=site_url('assets/images/logo - Copie.png');?>" alt="" srcset="">
-			<a class=" pl-3 navbar-brand " href="<?=site_url();?>">DIM BUSINESS</a> 
+	    <div class="container"> 
+        <img  src="<?=site_url('assets/images/logo - Copie.png');?>" alt="" srcset="">
+        <a class="pl-3 navbar-brand " href="<?=site_url();?>">DIM BUSINESS</a> 
          
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="fa fa-bars"></span> Menu
@@ -14,7 +14,7 @@
 				<li class="nav-item"><a href="<?=site_url('release');?>" class="nav-link">Réalisations</a></li> 
             	<li class="nav-item active"><a href="<?=site_url('actu');?>" class="nav-link">Actualités</a></li>
 				<li class="nav-item"><a href="<?=site_url('contact');?>" class="nav-link">Contact</a></li>
-				<li class="nav-item"><a href="<?=site_url('blog');?>" class="nav-link">Blog</a></li>
+				<!-- <li class="nav-item"><a href="<?=site_url('blog');?>" class="nav-link">Blog</a></li> -->
 	        </ul>
 	      </div>
 	    </div>
@@ -22,13 +22,13 @@
     <!-- END nav -->
 
 
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_2.jpg');" data-stellar-background-ratio="0.5">
-      <div class="overlay"></div>
+    <section class="hero-wrap hero-wrap-2" style="background-image: url(<?=base_url('assets/images/photo_2020-05-12_14-49-16.jpg');?>);" data-stellar-background-ratio="0.5">
+      <div class="overlay bg-light"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-end">
           <div class="col-md-9 ftco-animate pb-5">
-          	<p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Case Study <i class="ion-ios-arrow-forward"></i></span></p>
-            <h1 class="mb-0 bread">Case Study</h1>
+          	<p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.html">Accueil <i class="ion-ios-arrow-forward"></i></a></span> <span>Actualités <i class="ion-ios-arrow-forward"></i></span></p>
+            <h1 class="mb-0 bread">Actualités</h1>
           </div>
         </div>
       </div>
@@ -49,7 +49,7 @@
 						</div>
 
 						<div class="cases-wrap d-md-flex align-items-center">
-							<div class="img" style="background-image: url(images/image_2.jpg);"></div>
+							<div class="img" style="background-image: url(<?=base_url('assets/images/photo_2020-05-12_14-49-16.jpg');?>);"></div>
 							<div class="text pl-md-5">
 								<span class="cat">Strategy</span>
 								<h2>Business activities and care for the environment</h2>

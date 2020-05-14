@@ -1,7 +1,8 @@
 
 		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	    	<a class="navbar-brand" href="index.html">DIM BUSINESS</a>
+			<img  src="<?=site_url('assets/images/logo - Copie.png');?>" alt="" srcset="">
+	    	<a class="pl-3 navbar-brand" href="index.html">DIM BUSINESS</a>
  
 
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,7 +15,7 @@
 				<li class="nav-item"><a href="<?=site_url('release');?>" class="nav-link">Réalisations</a></li> 
             	<li class="nav-item"><a href="<?=site_url('actu');?>" class="nav-link">Actualités</a></li>
 				<li class="nav-item active"><a href="<?=site_url('contact');?>" class="nav-link">Contact</a></li>
-				<li class="nav-item"><a href="<?=site_url('blog');?>" class="nav-link">Blog</a></li> 
+				<!-- <li class="nav-item"><a href="<?=site_url('blog');?>" class="nav-link">Blog</a></li>  -->
 	        </ul>
 	      </div>
 	    </div>
@@ -24,7 +25,7 @@
 	
 	
     <section class="hero-wrap hero-wrap-2" style="background-image: url(<?=base_url('assets/images/kindpng_2549715.png');?>);" data-stellar-background-ratio="0.5">
-      <div class="overlay"></div>
+      <div class="overlay  bg-light"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-end">
           <div class="col-md-9 ftco-animate pb-5">
@@ -134,7 +135,7 @@
     </section>
 
    	<div  class="text-center">
-	   <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d62516.008028883625!2d27.447901062617458!3d-11.676650922400931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x19723eedb2cee413%3A0x31ed45b8a7f14bc5!2sInstitut%20Technique%20Salama%2C%20Lubumbashi!3m2!1d-11.676737099999999!2d27.4829208!5e0!3m2!1sen!2scd!4v1588944736717!5m2!1sen!2scd" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+	   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7814.4956141642915!2d27.48197067107271!3d-11.676842125488713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19723eedb2cee413%3A0x31ed45b8a7f14bc5!2sInstitut%20Technique%20Salama!5e0!3m2!1sen!2scd!4v1589454804988!5m2!1sen!2scd" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 	</div>
 
     <section class="ftco-section ftco-no-pb ftco-no-pt bg-secondary">
