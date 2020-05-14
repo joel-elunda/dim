@@ -20,6 +20,12 @@
 	
 	<link rel="manifest" href="site.webmanifest">
 	<link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url('assets/images/logo.png');?>">
+
+	<style>
+		.bg-primary, .text-primary {
+			color: #1d3163;
+		}
+	</style>
   </head>
   <body>
 
@@ -38,7 +44,7 @@
 								<div class="col-md-6 d-flex justify-content-md-end">
 									<div class="social-media">
 										<p class="mb-0 d-flex">
-											 <a href="https://web.facebook.com/dimeurclub/" target="_blank" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+											<a href="https://web.facebook.com/dimeurclub/" target="_blank" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
 											<a href="https://www.linkedin.com/in/dim-business-ab9221185" target="_blank" class="d-flex align-items-center justify-content-center"><span class="fa fa-linkedin"><i class="sr-only">LikedIn</i></span></a>
 											<a href="https://twitter.com/Danieldimilung1" target="_blank" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
 											<a href="https://www.instagram.com/dimbusinessfamily/" target="_blank" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>

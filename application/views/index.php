@@ -1,8 +1,8 @@
 
 		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	    	<a class="navbar-brand" href="index.html">DIM BUSINESS</a>
-	    	  
+			<img  src="<?=site_url('assets/images/logo - Copie.png');?>" alt="" srcset="">
+			<a class=" pl-3 navbar-brand " href="<?=site_url();?>">DIM BUSINESS</a> 
          
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="fa fa-bars"></span> Menu
@@ -72,6 +72,70 @@
 	    </div>
 	  </div>
    	
+
+
+
+	  <section class="ftco-section">
+			<div class="container">
+				<div class="row d-flex">
+					<div class="col-md-5 order-md-last wrap-about align-items-stretch">
+						<div class="wrap-about-border ftco-animate">
+							<div class="img" style="background-image: url(<?=base_url('assets/images/DSC_6794.jpg');?>); border"></div>
+							<img class="img w-75 border" src="<?=base_url('assets/images/DSC_6794.jpg');?>" alt="" srcset="">
+							<div class="text">
+								<h4>Pourquoi passer par un incubateur avant de lancer son projet ?</h4>
+								<p>Dans le secteur d’innovation, le développement et la commercialisation de chaque projet
+								nécessite d’unir les compétences avec les professionnelles et experts qui 
+								accompagnent les futurs entrepreneurs dans la concrétisation de leurs projets.</p>
+								<!-- <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.</p> -->
+								<p><a href="<?=site_url('contact');?>" class="btn btn-primary py-3 px-4">Contactez-nous</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-7 wrap-about pr-md-4 ftco-animate">
+          	<h2 class="mb-4">Développé Illuminé Magnanimité</h2>
+						<p>Nous sommes une pépinière des créateurs d'entreprises jouant le rôle de pivot-majeur du business en 
+						Afrique et donnant un sens aux projets et startups grâce à nos business-solutions.</p>
+						<div class="row mt-5">
+							<div class="col-lg-6">
+								<div class="services active text-center"> 
+									<div class="mt-2 d-flex  justify-content-center align-items-center"><span class="flaticon-wealth" style="font-size: 70px; color: #1d3163;"></span></div>
+									<div class="text media-body">
+										<h3>Organization</h3>
+										<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+									</div>
+								</div>
+								<div class="services text-center">
+									<div class="mt-2 d-flex  justify-content-center align-items-center"><span class="flaticon-wealth" style="font-size: 70px; color: #1d3163;"></span></div>
+									<div class="text media-body">
+										<h3>Risk Analysis</h3>
+										<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="services text-center">
+									<div class="mt-2 d-flex  justify-content-center align-items-center"><span class="flaticon-wealth" style="font-size: 70px; color: #1d3163;"></span></div>
+									<div class="text media-body">
+										<h3>Marketing Strategy</h3>
+										<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+									</div>
+								</div>
+								<div class="services text-center">
+									<div class="mt-2 d-flex  justify-content-center align-items-center"><span class="flaticon-wealth" style="font-size: 70px; color: #1d3163;"></span></div>
+									<div class="text media-body">
+										<h3>Capital Market</h3>
+										<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+<!--
     <section class="ftco-section ftco-no-pt bg-light">
     	<div class="container">
     		<div class="row d-flex no-gutters">
@@ -123,7 +187,7 @@
         </div>
     	</div>
     </section>
-
+-->
 
     <section class="ftco-counter bg-light ftco-no-pt" id="section-counter">
     	<div class="container">

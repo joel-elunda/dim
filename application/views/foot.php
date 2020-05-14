@@ -7,12 +7,14 @@
 							<div class="col-md-4 mb-md-0 mb-4">
 								<h2 class="footer-heading">A propos de nous</h2>
 								<p>Nous sommes une pépinière des créateurs d'entreprises jouant le rôle de pivot-majeur du business en Afrique et donnant un sens aux projets et startups grâce à nos business-solutions.</p>
+								 
 								<ul class="ftco-footer-social p-0">
-		              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="fa fa-twitter"></span></a></li>
-		              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-facebook"></span></a></li>
-		              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="fa fa-instagram"></span></a></li>
-		              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Youtube"><span class="fa fa-youtube"></span></a></li>
-		            </ul>
+								<li class="ftco-animate"><a href="https://web.facebook.com/dimeurclub/" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="fa fa-facebook"></span></a></li>
+								<li class="ftco-animate"><a href="https://www.linkedin.com/in/dim-business-ab9221185/" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-linkedin"></span></a></li>
+								<li class="ftco-animate"><a href="https://twitter.com/Danieldimilung1/" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="fa fa-twitter"></span></a></li>
+								<li class="ftco-animate"><a href="https://www.instagram.com/dimbusinessfamily/" data-toggle="tooltip" data-placement="top" title="Youtube"><span class="fa fa-instagram"></span></a></li>
+								<li class="ftco-animate"><a href="https://www.youtube.com/channel/UCCWswgrLvQ2HqJo-HnSZasQ/" data-toggle="tooltip" data-placement="top" title="Youtube"><span class="fa fa-youtube"></span></a></li>
+								</ul>
 							</div>
 							<div class="col-md-8">
 								<div class="row justify-content-center">
