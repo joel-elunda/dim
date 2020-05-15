@@ -39,7 +39,7 @@ class Blog extends CI_Controller {
 		return array( 
 			'email' => $this -> session -> email,
 			'message' => $this -> input -> post('message'),
-			'date' => get_current_date()
+			'date' => date("F j, Y, g:i a")
 		);
 	}
 
@@ -53,11 +53,13 @@ class Blog extends CI_Controller {
 		); 
 
 		if($this -> form_validation -> run()) {  
-
-			$this -> BlogModel -> add($this -> bloger_data()); 
+			
+			// $this -> BlogModel -> add($this -> bloger_data()); 
+			// print_r($this -> bloger_data());
 			$this -> index();
 			 			
 		} else { 
+			print_r($this -> bloger_data());
             $this -> index();
 		}
 

@@ -2,7 +2,7 @@
 		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
         <img  src="<?=site_url('assets/images/logo - Copie.png');?>" alt="" srcset="">
-	    	<a class="pl-3 navbar-brand" href="index.html">DIM BUSINESS</a>
+	    	<a class="pl-3 navbar-brand" href="<?=site_url();?>">DIM BUSINESS</a>
         
         
 
@@ -151,8 +151,8 @@
                   if(isset($user)) {
                     foreach ($user -> result() as $row) {
                       $user_data['id'] = $row -> id;
-                      $user_data['name'] = $row -> id;
-                      $user_data['email'] = $row -> id;
+                      $user_data['name'] = $row -> name;
+                      $user_data['email'] = $row -> email;
                     }
                   }
                   
@@ -192,16 +192,14 @@
                     echo '
                     <div class="comment-form-wrap pt-5">
                       <h3 class="mb-5">Laisser un commentaire</h3>
-                      <form action="'.site_url('blog/send_comment').'" class="">
+                      <form method="POST" action="'.site_url('blog/send_comment').'" class="">
                        
                         <div class="form-group">
-                          <label for="message">Message *</label>
-                          <textarea name="" id="message" cols="30" rows="10" class="form-control rounded-0"></textarea>
-                        </div>
-                       
-                        <div class="form-group">
+                          <label for="message">Message</label>
+                          <textarea name="message" id="message" value="'.set_value('message').'" cols="30" rows="10" class="form-control rounded-0"></textarea>
                           <small class="form-text text-danger">'. form_error('message','.<em>.','.</em>.').'</small> 
                         </div>
+                        
                         <div class="form-group">
                           <input type="submit" value="Poster votre commentaire" class="btn py-3 px-4 btn-primary rounded-0">
                         </div>

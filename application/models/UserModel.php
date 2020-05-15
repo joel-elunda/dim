@@ -18,10 +18,6 @@ class UserModel extends CI_Model {
         return  $result;
     }
 
-    public function get_user_by_id($id) {
-        $query = $this -> db -> query('SELECT');
-    }
-
     public function delete() {
         $this -> db -> where('id', $id);
         return $this -> db -> delete($this -> table);
