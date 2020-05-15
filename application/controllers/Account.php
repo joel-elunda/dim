@@ -75,7 +75,24 @@ class Account extends CI_Controller {
 		if($this -> form_validation -> run()) {  
 
 			$this -> UserModel -> add($this -> sign_up_data());
-			$this -> home_view();
+
+			$user = $this -> sign_up_data();
+			$result = $this -> UserModel -> check_authentification($user);
+
+			if(count($result) > 0)  {
+				$user = $result[0];
+				$user = array(
+					'id' => $user -> id,
+					'name' => $user -> name,
+					'is_connected' => true
+				);
+				
+				$this -> session -> set_userdata($user);
+				redirect('account/home');
+			}
+
+
+			// $this -> home_view();
 			 			
 		} else { 
             $this -> index();

@@ -15,12 +15,17 @@ class BlogModel extends CI_Model {
     }
 
     public function fetch_data() {
-        $query = $this ->db ->query("SELECT * FROM user LIMIT 1;");
+        $query = $this -> db -> query("SELECT * FROM user LIMIT 1;");
         if($query != NULL || isset($query)) {
             return $query -> result_array();
         } else {
             return NULL;
         }
+    }
+
+    public function fetch_blog_messages(){
+        $query = $this -> db -> get($this -> table);
+        return $query;
     }
 
     public function delele($id) {

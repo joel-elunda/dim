@@ -11,10 +11,10 @@
 	        <ul class="navbar-nav m-auto">
 	        	<li class="nav-item"><a href="<?=site_url();?>" class="nav-link">Accueil</a></li>
 	        	<li class="nav-item"><a href="<?=site_url('services');?>" class="nav-link">Services</a></li>
-				<li class="nav-item"><a href="<?=site_url('release');?>" class="nav-link">Réalisations</a></li> 
-            	<li class="nav-item active"><a href="<?=site_url('actu');?>" class="nav-link">Actualités</a></li>
-				<li class="nav-item"><a href="<?=site_url('contact');?>" class="nav-link">Contact</a></li>
-				<!-- <li class="nav-item"><a href="<?=site_url('blog');?>" class="nav-link">Blog</a></li> -->
+				    <li class="nav-item"><a href="<?=site_url('release');?>" class="nav-link">Réalisations</a></li> 
+            <li class="nav-item active"><a href="<?=site_url('actu');?>" class="nav-link">Actualités</a></li>
+            <li class="nav-item"><a href="<?=site_url('contact');?>" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="<?=site_url('blog');?>" class="nav-link">Blog</a></li>
 	        </ul>
 	      </div>
 	    </div>

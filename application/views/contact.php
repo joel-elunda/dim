@@ -15,7 +15,7 @@
 				<li class="nav-item"><a href="<?=site_url('release');?>" class="nav-link">Réalisations</a></li> 
             	<li class="nav-item"><a href="<?=site_url('actu');?>" class="nav-link">Actualités</a></li>
 				<li class="nav-item active"><a href="<?=site_url('contact');?>" class="nav-link">Contact</a></li>
-				<!-- <li class="nav-item"><a href="<?=site_url('blog');?>" class="nav-link">Blog</a></li>  -->
+				<li class="nav-item"><a href="<?=site_url('blog');?>" class="nav-link">Blog</a></li> 
 	        </ul>
 	      </div>
 	    </div>
@@ -55,28 +55,28 @@
 													<div class="form-group">
 														<label class="label" for="name">Nom Complet</label>
 														<input type="text" class="form-control" name="name"  value="<?=set_value('name');?>" id="name" placeholder="Nom Complet">
-														<small class="form-text text-muted"><?= form_error('name','<em>','</em>') ?></small>
+														<small class="form-text text-danger"><?= form_error('name','<em>','</em>') ?></small>
 													</div>
 												</div>
 												<div class="col-md-6"> 
 													<div class="form-group">
 														<label class="label" for="email">Adresse Email</label>
 														<input type="email" class="form-control" name="email"  value="<?=set_value('email');?>" id="email" placeholder="Email">
-														<small class="form-text text-muted"><?= form_error('email','<em>','</em>') ?></small>
+														<small class="form-text text-danger"><?= form_error('email','<em>','</em>') ?></small>
 													</div>
 												</div>
 												<div class="col-md-12">
 													<div class="form-group">
 														<label class="label" for="subject">Sujet</label>
 														<input type="text" class="form-control" name="subject"  value="<?=set_value('subject');?>" id="subject" placeholder="Sujet">
-														<small class="form-text text-muted"><?= form_error('subject','<em>','</em>') ?></small>
+														<small class="form-text text-danger"><?= form_error('subject','<em>','</em>') ?></small>
 													</div>
 												</div>
 												<div class="col-md-12">
 													<div class="form-group">
 														<label class="label" for="message">Message</label>
 														<textarea name="message" value="<?=set_value('message');?>" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
-														<small class="form-text text-muted"><?= form_error('message','<em>','</em>') ?></small>
+														<small class="form-text text-danger"><?= form_error('message','<em>','</em>') ?></small>
 													</div>
 												</div>
 												<div class="col-md-12">

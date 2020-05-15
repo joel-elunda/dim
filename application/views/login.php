@@ -41,7 +41,7 @@
 												<div class="col-md-12">
 													<div class="form-group">
 														<label class="label" for="password">Mot de passe *</label>
-														<input type="text" class="form-control" name="password" id="password" placeholder="Mot de passe">
+														<input type="password" class="form-control" name="password" id="password" placeholder="Mot de passe">
 														<small class="form-text text-danger"><?= form_error('password','<em>','</em>') ?></small>
 														<small class="form-text text-muted">Assurez-vous qu'il s'agit d'au moins 15 caractères OU d'au moins 8 caractères.</small>
 													</div>

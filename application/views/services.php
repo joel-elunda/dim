@@ -15,7 +15,7 @@
             <li class="nav-item"><a href="<?=site_url('release');?>" class="nav-link">Réalisations</a></li> 
             <li class="nav-item"><a href="<?=site_url('actu');?>" class="nav-link">Actualités</a></li>
             <li class="nav-item"><a href="<?=site_url('contact');?>" class="nav-link">Contact</a></li>
-            <!-- <li class="nav-item"><a href="<?=site_url('blog');?>" class="nav-link">Blog</a></li>  -->
+            <li class="nav-item"><a href="<?=site_url('blog');?>" class="nav-link">Blog</a></li> 
 	        </ul>
 	      </div>
 	    </div>
@@ -109,12 +109,12 @@
         
     	<div class="container">
        
-			<div class="row justify-content-center pb-5 mb-3">
-				<div class="col-md-7 heading-section text-center ftco-animate">
-          <img src="<?=base_url('assets/images/logo.png')?>" width="300px" alt="" srcset=""> 
-					<h2 class="m-3"> Développer, Illuminer, Magnanimiter  </h2>
-				</div>
-			</div>
+        <div class="row justify-content-center pb-5 mb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <img src="<?=base_url('assets/images/logo.png')?>" width="300px" alt="" srcset=""> 
+            <h2 class="m-3"> Développer, Illuminer, Magnanimiter  </h2>
+          </div>
+        </div>
         
        
         <div class="row justify-content-center">
@@ -124,7 +124,7 @@
               
               <div class="col-md-12">
                 <div class="card-body">
-                  <h5 class="card-title">Pourquoi passer par un incubateur avant de lancer son projet</h5>
+                  <h5 class="card-title">Pourquoi passer par un incubateur avant de lancer son projet ?</h5>
                   <p class="card-text">
                     Dans le secteur d’innovation, le développement et la commercialisation de chaque projet
                     nécessite d’unir les compétences avec les professionnelles et experts qui
@@ -142,38 +142,16 @@
               </div>
             </div>
           </div> 
+ 
+ 
 
-        </div>
-
-        <div class="row justify-content-center">
-        
-          <div class="card mb-3 rounded-0" style="max-width: 800px;">
-            <div class="row no-gutters"> 
-              <div class="col-md-8">
-                <div class="card-body"> 
-                    <ul>
-                      <li>Les compétences techniques qui cadrent avec les domaines de réalisation du projet.</li>
-                      <li>L’étude du marché et le préfinancement de la structure ou du projet.</li>
-                      <li>Les compétences marketing pour répondre exactement aux attentes de concernés pour faciliter la commercialisation.</li>
-                      <li>Le coaching dans le management des projets et gestion d’entreprise pour l’équipe de production afin d’assurer la vie à long terme de cette production.</li>
-                    </ul> 
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        </div>
-
-
-
-        <div class="row justify-content-center m-5">
-        
+ 
           <div class="card mb-3 rounded-0" style="max-width: 800px;">
             <div class="row no-gutters">
               
               <div class="col-md-12">
                 <div class="card-body">
-                  <h5 class="card-title">Pourquoi DIM a choisi l’agriculture et le numérique comme domaine de base.</h5>
+                  <h5 class="card-title">Pourquoi DIM a choisi l’agriculture et le numérique comme domaine de base ?</h5>
                   <p class="card-text">
                   L’agriculture est parmi les secteurs de base du développement
                     durable, il est au cœur de l’économie des pays surtout pour ceux qui
@@ -188,27 +166,34 @@
                     de valeurs agricoles en mettant au point un cabinet d’agronomes
                     (AGRODIM) avec diverses spécialités pour encadrer et
                     accompagner tous les acteurs du domaines.</p> 
+                    <p> 
+                    Aujourd’hui le numérique est en expansion et rend la vie intelligente
+                    à travers plusieurs solutions intégrées dans divers domaines
+                    notamment dans le finance, la médecine, la communication,
+                    l’agriculture, l’armée, l’industrie…, tout cela dans l’objectif de
+                    simplifier certaines tâches quotidiennes. Vu sa capacité de
+                    croissance rapide dans tous les domaines sans exception, DIM a
+                    trouvé ce secteur l’un des moyens efficaces pour participer au
+                    développement.
+                    </p>
                 </div>
               </div>
             </div>
           </div> 
-
-        </div>
-        
-        <div class="row justify-content-center m-5">
-        
+ 
+         
           <div class="card mb-3 rounded-0" style="max-width: 800px;">
             <div class="row no-gutters"> 
               <div class="col-md-12">
                 <div class="card-body">
-                  <h5 class="card-title">Comment se passe l’incubation</h5>
+                  <h5 class="card-title">Comment se passe l’incubation ?</h5>
                   <p class="card-text">
                   L’incubation se passe en niveau selon l’apport du propriétaire du projet et celui de DIM, et
                   ces apports sont sous forme d’aspects suivants : Idée, Amélioration de l’idée, Compétences
                   techniques, Financement, Marketing, commercialisation et Coaching. Comme illustré
                   clairement dans le tableau suivant :</p> 
 
-                  <table class="table table-sm table-hover table-striped">
+                  <table class="table table-sm table-hover table-striped table-responsive">
                     <tr>
                       <th scope="col">Apport (s) du propriétaire du projet</th>
                       <th scope="col">Apport (s) de DIM</th>
@@ -236,13 +221,7 @@
               </div>
             </div>
           </div> 
-
-        </div>
-
-
-
-        
-        <div class="row justify-content-center">
+ 
         
           <div class="card mb-3 rounded-0" style="max-width: 800px;">
             <div class="row no-gutters"> 

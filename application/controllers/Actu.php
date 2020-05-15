@@ -24,7 +24,26 @@ class Actu extends CI_Controller {
 		$this->load->view('foot');
 	}
 
+	
 	public function suscribe() {
+		$user_email = $this -> input -> post('email');
+
+		$this -> form_validation -> set_rules('email', 'email',  'required|valid_email', 
+			array(
+				'required' => 'Le champ %s est obligatoire.',
+				'valid_email' => 'Saisissez un email valide.'
+			)
+		);  
 		
+		if($this -> form_validation -> run()) {  
+
+			$this -> BlogModel -> add_suscriber($user_email); 
+			$this -> index();
+						
+		} else { 
+			$this -> index();
+		}
 	}
+
+
 }
