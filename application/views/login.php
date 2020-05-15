@@ -54,6 +54,14 @@
 												</div>
 												 
 											
+											 
+												<div class="col-md-12">
+													<div class="form-group">
+														<small class="form-text text-muted"><a href="<?=site_url('account/sign_up');?>"> <strong>Inscrivez-vous</strong> </a> à l'équipe DIM BUSINESS</small>
+													</div>
+												</div>
+												 
+											
 											</div>
 										</form>
 									</div>

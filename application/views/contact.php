@@ -47,7 +47,7 @@
 										<h3 class="mb-4">Entrer en contact avec l'équipe DIM BUSINESS</h3>
 										<div id="form-message-warning" class="mb-4"></div> 
 					      		<div id="form-message-success" class="mb-4">
-								  Votre message a été envoyeé, merci ! 
+								  <!-- Votre message a été envoyeé, merci !  -->
 					      		</div>
 										<form method="POST" action="<?=site_url('contact/send');?>" id="contactForm" name="contactForm" class="contactForm">
 											<div class="row">

@@ -54,7 +54,7 @@
 	        </div>
 	      </div>
 
-	      <div class="slider-item" style="background-image:url(<?=base_url('assets/images/20200129_104308.jpg');?>);">
+	      <div class="slider-item" style="background-image:url(<?=base_url('assets/images/photo_2020-05-12_14-42-13.jpg');?>);">
 	      	<div class="overlay"></div>
 	        <div class="container">
 	          <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -77,10 +77,10 @@
 	  <section class="ftco-section">
 			<div class="container">
 				<div class="row d-flex">
-					<div class="col-md-5 order-md-last wrap-about align-items-stretch">
+					<div class="col-md-5 order-md-last wrap-about align-items-stretch border">
 						<div class="wrap-about-border ftco-animate">
-							<div class="img" style="background-image: url(<?=base_url('assets/images/DSC_6794.jpg');?>); border"></div>
-							<img class="img w-50 border" src="<?=base_url('assets/images/DSC_6794.jpg');?>" alt="" srcset="">
+							<div class="img m-3" style="background-image: url(<?=base_url('assets/images/Untitled-design-3.jpg');?>); border"></div>
+							<img class="img  border" src="<?=base_url('assets/images/Untitled-design-3.jpg');?>" alt="" srcset="">
 							<div class="text">
 								<h4>Pourquoi passer par un incubateur avant de lancer son projet ?</h4>
 								<p>Dans le secteur d’innovation, le développement et la commercialisation de chaque projet
@@ -256,7 +256,7 @@
     				<div class="img-faqs w-100">
 	    				<div class="img mb-4 mb-sm-0" style="background-image:url(<?=base_url('assets/images/IMG_20191026_122120.jpg');?>);">
 	    				</div>
-	    				<div class="img img-2 mb-4 mb-sm-0" style="background-image:url(<?=base_url('assets/images/IMG-20191231-WA0025.jpg');?>);">
+	    				<div class="img img-2 mb-4 mb-sm-0" style="background-image:url(<?=base_url('assets/images/photo_2020-05-12_14-42-19.jpg');?>);">
 	    				</div>
 	    			</div>
     			</div>
@@ -323,6 +323,16 @@
 									(AGRODIM) avec diverses spécialités pour encadrer et
 									accompagner tous les acteurs du domaines.
 									</p>
+									<p  style="font-size: 1.1em;" class="text-justify">
+									Aujourd’hui le numérique est en expansion et rend la vie intelligente
+									à travers plusieurs solutions intégrées dans divers domaines
+									notamment dans le finance, la médecine, la communication,
+									l’agriculture, l’armée, l’industrie…, tout cela dans l’objectif de
+									simplifier certaines tâches quotidiennes. Vu sa capacité de
+									croissance rapide dans tous les domaines sans exception, DIM a
+									trouvé ce secteur l’un des moyens efficaces pour participer au
+									développement.
+									</p>
 						      </div>
 						    </div>
 						  </div>
@@ -367,9 +377,9 @@
 				<div class="cases-wrap d-md-flex align-items-center">
 					<div class="img" style="background-image: url(<?=base_url('assets/images/20200129_104308.jpg');?>);"></div>
 					<div class="text pl-md-5">
-						<span class="cat" style="color: #1d3163;">Strategy</span>
-						<h2>Business activities and care for the environment</h2>
-						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+						<span class="cat" style="color: #1d3163;">Madame Clarisse</span>
+						<h2>Production des maïs avec Madame Clarisse</h2>
+						<!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p> -->
 						<p><a href="<?=site_url('actu');?>" class="btn btn-primary border-0" style="background-color:#1d3163;">Lire plus</a></p>
 					</div>
 				</div>
@@ -397,9 +407,21 @@
 				$images = array(
 					'assets/images/20200129_104308.jpg', 
 					'assets/images/IMG-20191231-WA0025.jpg',
-					'assets/images/IMG-20190621-WA0040.jpg'
+					'assets/images/IMG-20190621-WA0040.jpg',
+					'assets/images/antenne.PNG'
 				);
 
+				$description = array (
+					'Production des maïs avec Madame Clarisse',
+					'Production des tomates avec Amshula Food',
+					'Conférence à la maison SAFINA',
+					'Le booster 4G est une antenne qui améliore l’ampli-tude'
+				);
+				
+				//<div><a href="#">March 31, 2020</a></div>
+				// <div><a href="#">Admin</a></div>
+				// <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
+				
 				$length = count($images);  
 
 				for ($i=0; $i < $length; $i++) { 
@@ -410,12 +432,11 @@
 					  <a href="blog-single.html" class="block-20 rounded" style="background-image: url('.$images[$i].');">
 					  </a>
 					  <div class="text p-4">
-						  <div class="meta mb-2">
-						  <div><a href="#">March 31, 2020</a></div>
-						  <div><a href="#">Admin</a></div>
-						  <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
+						  <div class="meta mb-2"> 
+						  
+						  
 						</div>
-						<h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+						<h3 class="heading"><a href="#">'. $description[$i] .'</a></h3>
 					  </div>
 					</div>
 				  </div> '; 

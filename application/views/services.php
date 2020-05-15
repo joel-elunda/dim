@@ -23,7 +23,7 @@
     <!-- END nav -->
 
 	
-    <section class="hero-wrap hero-wrap-2" style="background-image: url(<?=base_url('assets/images/photo_2020-05-12_14-51-20.jpg');?>);" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url(<?=base_url('assets/images/Business-Consulting.jpg');?>);" data-stellar-background-ratio="0.5">
       <div class="overlay  bg-light"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-end">

@@ -22,7 +22,7 @@
     <!-- END nav -->
 
 
-    <section class="hero-wrap hero-wrap-2" style="background-image: url(<?=base_url('assets/images/photo_2020-05-12_14-49-16.jpg');?>);" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url(<?=base_url('assets/images/consulting.jpg');?>);" data-stellar-background-ratio="0.5">
       <div class="overlay bg-light"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-end">
@@ -38,75 +38,52 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 ftco-animate">
-						<div class="cases-wrap d-md-flex align-items-center">
-							<div class="img" style="background-image: url(<?=base_url('assets/images/DSC_0086.JPG');?>);"></div>
-							<div class="text pl-md-5">
-								<span class="cat" style="color:#1d3163;">Strategy</span>
-								<h2>Business activities and care for the environment</h2>
-								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-								<p> 
-                  <ul class="ftco-footer-social p-0">  
-                    <li class="ftco-animate h5 pr-5">0  <i class="fa fa-heart fa-1x mb-3 text-center" style="color:red; cursor:pointer;" aria-hidden="true"></i></li>
-                  </ul>
-                </p>
-							</div>
-						</div>
 
-						<div class="cases-wrap d-md-flex align-items-center">
-							<div class="img" style="background-image: url(<?=base_url('assets/images/IMG_20191026_122120.jpg');?>);"></div>
-							<div class="text pl-md-5">
-								<span class="cat" style="color:#1d3163;">Strategy</span>
-								<h2>Business activities and care for the environment</h2>
-								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-								<p>
-                 <ul class="ftco-footer-social p-0">  
-                    <li class="ftco-animate h5 pr-5">0  <i class="fa fa-heart fa-1x mb-3 text-center" style="color:red; cursor:pointer;" aria-hidden="true"></i></li>
-                  </ul>
-                </p>
-							</div>
-						</div>
+            
+		<?php 
 
-						<div class="cases-wrap d-md-flex align-items-center">
-							<div class="img" style="background-image: url(<?=base_url('assets/images/IMG-20191231-WA0025.jpg');?>);"></div>
-							<div class="text pl-md-5">
-								<span class="cat" style="color:#1d3163;">Strategy</span>
-								<h2>Business activities and care for the environment</h2>
-								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-								<p>
-                  <ul class="ftco-footer-social p-0">  
-                    <li class="ftco-animate h5 pr-5">0  <i class="fa fa-heart fa-1x mb-3 text-center" style="color:red; cursor:pointer;" aria-hidden="true"></i></li>
-                  </ul>
-                </p>
-							</div>
-						</div>
+      // TODO : rest of date and the description projects
+      $images = array(
+        'assets/images/20200129_104308.jpg', 
+        'assets/images/IMG-20191231-WA0025.jpg',
+        'assets/images/IMG-20190621-WA0040.jpg',
+        'assets/images/antenne.PNG'
+      );
 
-						<div class="cases-wrap d-md-flex align-items-center">
-							<div class="img" style="background-image: url(<?=base_url('assets/images/Screenshot_2019-11-25-12-48-11-1.png');?>);"></div>
-							<div class="text pl-md-5">
-								<span class="cat" style="color:#1d3163;">Strategy</span>
-								<h2>Business activities and care for the environment</h2>
-								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-								<p>
-                  <ul class="ftco-footer-social p-0">  
-                    <li class="ftco-animate h5 pr-5">0  <i class="fa fa-heart fa-1x mb-3 text-center" style="color:red; cursor:pointer;" aria-hidden="true"></i></li>
-                  </ul>
-                </p>
-							</div>
-						</div>
+      $description = array (
+        'Production des maïs avec Madame Clarisse',
+        'Production des tomates avec Amshula Food',
+        'Conférence à la maison SAFINA',
+        'Le booster 4G est une antenne qui améliore l’ampli-tude'
+      );
 
-						<div class="cases-wrap d-md-flex align-items-center">
-							<div class="img" style="background-image: url(<?=base_url('assets/images/IMG-20191010-WA0023.jpg');?>);"></div>
-							<div class="text pl-md-5">
-								<span class="cat" style="color:#1d3163;">Strategy</span>
-								<h2>Business activities and care for the environment</h2>
-								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-								<p>
-                  <ul class="ftco-footer-social p-0">  
-                    <li class="ftco-animate h5 pr-5">0  <i class="fa fa-heart fa-1x mb-3 text-center" style="color:red; cursor:pointer;" aria-hidden="true"></i></li>
-                  </ul>
-                </p>
-							</div>
-						</div>
+      //<div><a href="#">March 31, 2020</a></div>
+      // <div><a href="#">Admin</a></div>
+      // <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
+
+      
+      // <span class="cat" style="color:#1d3163;">Strategy</span>
+      // <h2>Business activities and care for the environment</h2>
+
+
+      $length = count($images);  
+
+      for ($i=0; $i < $length; $i++) { 
+        
+        echo '
+          <div class="cases-wrap d-md-flex align-items-center">
+            <div class="img" style="background-image: url('.$images[$i].');"></div>
+            <div class="text pl-md-5">
+              <p>'.$description[$i].'</p>
+              <p>
+                <ul class="ftco-footer-social p-0">  
+                  <li class="ftco-animate h5 pr-5">0  <i class="fa fa-heart fa-1x mb-3 text-center" style="color:red; cursor:pointer;" aria-hidden="true"></i></li>
+                </ul>
+              </p>
+            </div>
+          </div>'; 
+      }
+      ?>
  
           </div> <!-- .col-md-8 -->
           <div class="col-lg-4 sidebar pl-lg-5 ftco-animate">

@@ -34,13 +34,27 @@
 					<div class="col-md-12">
 						<div class="bg-wrap">
 							<div class="row">
-								<div class="col-md-6 d-flex align-items-center">
+								<div class="col-md-6 d-flex align-items-center" style="background-color:#1d3163;">
 									<p class="mb-0 phone pl-md-2">
 										<a href="tel://+243906406797" class="mr-2"><span class="fa fa-phone mr-1"></span> +243906406797</a> 
 										<a href="mailto://dimbusinessfamily@gmail.com"><span class="fa fa-paper-plane mr-1"></span>dimbusinessfamily@gmail.com</a>
+										
+
+										<!-- <a href="<?=base_url('account/login');?>"><span class="fa fa-power-off mr-1 mf-2"></span>   -->
+										<?php  
+											/*
+											$segment = $this -> uri -> segment(2); 
+											if(strcmp($segment, 'sign_up') != 0 || strcmp($segment, 'login') != 0) { 
+												echo '';
+											} else {
+												echo '';
+											}
+											*/
+										?>
+										</a>
 									</p>
 								</div>
-								<div class="col-md-6 d-flex justify-content-md-end">
+								<div class="col-md-6 d-flex justify-content-md-end" style="background-color:#1d3163;">
 									<div class="social-media">
 										<p class="mb-0 d-flex">
 											<a href="https://web.facebook.com/dimeurclub/" target="_blank" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>

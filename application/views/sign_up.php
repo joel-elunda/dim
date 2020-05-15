@@ -63,6 +63,16 @@
 														<input type="submit" value="S'incrire" class="btn btn-primary w-100"> 
 													</div>
 												</div>
+
+												
+											 
+												<div class="col-md-12">
+													<div class="form-group">
+														<small class="form-text text-muted"><a href="<?=site_url('account/login');?>">Vous avec déjà un compte <strong>Connectez-vous</strong> </a> à l'équipe DIM BUSINESS</small>
+													</div>
+												</div>
+												 
+											
 												
 												<div class="col-md-12 text-left"> 
 														<small>En cliquant sur « S'inscrire », 
