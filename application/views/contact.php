@@ -15,7 +15,7 @@
 				<li class="nav-item"><a href="<?=site_url('release');?>" class="nav-link">Réalisations</a></li> 
             	<li class="nav-item"><a href="<?=site_url('actu');?>" class="nav-link">Actualités</a></li>
 				<li class="nav-item active"><a href="<?=site_url('contact');?>" class="nav-link">Contact</a></li>
-				<!-- <li class="nav-item"><a href="<?=site_url('blog');?>" class="nav-link">Blog</a></li>  -->
+				<li class="nav-item"><a href="<?=site_url('blog');?>" class="nav-link">Blog</a></li> 
 	        </ul>
 	      </div>
 	    </div>
@@ -47,7 +47,7 @@
 										<h3 class="mb-4">Entrer en contact avec l'équipe DIM BUSINESS</h3>
 										<div id="form-message-warning" class="mb-4"></div> 
 					      		<div id="form-message-success" class="mb-4">
-								  Votre message a été envoyeé, merci ! 
+								  <!-- Votre message a été envoyeé, merci !  -->
 					      		</div>
 										<form method="POST" action="<?=site_url('contact/send');?>" id="contactForm" name="contactForm" class="contactForm">
 											<div class="row">
@@ -55,28 +55,28 @@
 													<div class="form-group">
 														<label class="label" for="name">Nom Complet</label>
 														<input type="text" class="form-control" name="name"  value="<?=set_value('name');?>" id="name" placeholder="Nom Complet">
-														<small class="form-text text-muted"><?= form_error('name','<em>','</em>') ?></small>
+														<small class="form-text text-danger"><?= form_error('name','<em>','</em>') ?></small>
 													</div>
 												</div>
 												<div class="col-md-6"> 
 													<div class="form-group">
 														<label class="label" for="email">Adresse Email</label>
 														<input type="email" class="form-control" name="email"  value="<?=set_value('email');?>" id="email" placeholder="Email">
-														<small class="form-text text-muted"><?= form_error('email','<em>','</em>') ?></small>
+														<small class="form-text text-danger"><?= form_error('email','<em>','</em>') ?></small>
 													</div>
 												</div>
 												<div class="col-md-12">
 													<div class="form-group">
 														<label class="label" for="subject">Sujet</label>
 														<input type="text" class="form-control" name="subject"  value="<?=set_value('subject');?>" id="subject" placeholder="Sujet">
-														<small class="form-text text-muted"><?= form_error('subject','<em>','</em>') ?></small>
+														<small class="form-text text-danger"><?= form_error('subject','<em>','</em>') ?></small>
 													</div>
 												</div>
 												<div class="col-md-12">
 													<div class="form-group">
 														<label class="label" for="message">Message</label>
 														<textarea name="message" value="<?=set_value('message');?>" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
-														<small class="form-text text-muted"><?= form_error('message','<em>','</em>') ?></small>
+														<small class="form-text text-danger"><?= form_error('message','<em>','</em>') ?></small>
 													</div>
 												</div>
 												<div class="col-md-12">
@@ -136,22 +136,4 @@
 
    	<div  class="text-center">
 	   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7814.4956141642915!2d27.48197067107271!3d-11.676842125488713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19723eedb2cee413%3A0x31ed45b8a7f14bc5!2sInstitut%20Technique%20Salama!5e0!3m2!1sen!2scd!4v1589454804988!5m2!1sen!2scd" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-	</div>
-
-    <section class="ftco-section ftco-no-pb ftco-no-pt bg-secondary">
-      <div class="container py-5">
-    		<div class="row">
-          <div class="col-md-7 d-flex align-items-center">
-            <h2 class="mb-3 mb-sm-0" style="color:black; font-size: 22px;">Inscrivez-vous pour votre première consultation comptable gratuite</h2>
-          </div>
-          <div class="col-md-5 d-flex align-items-center">
-            <form action="<?=site_url('actu/suscribe');?>" class="subscribe-form">
-              <div class="form-group d-flex">
-                <input type="text" class="form-control" placeholder="Votre adresse email">
-                <input type="submit" value="Souscrire" class="submit px-3">
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
+	</div> 

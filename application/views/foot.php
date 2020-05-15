@@ -1,4 +1,24 @@
 
+	
+    <section class="ftco-section ftco-no-pb ftco-no-pt bg-secondary">
+      <div class="container py-5">
+    		<div class="row">
+          <div class="col-md-7 d-flex align-items-center">
+            <h2 class="mb-3 mb-sm-0" style="color:black; font-size: 22px;">Inscrivez-vous pour votre première consultation comptable gratuite</h2>
+          </div>
+          <div class="col-md-5 d-flex align-items-center">
+            <form action="<?=site_url('actu/suscribe');?>" class="subscribe-form">
+              <div class="form-group d-flex">
+                <input type="text" class="form-control" placeholder="Votre adresse email">
+                <input type="submit" value="Souscrire" class="submit px-3" style="color:#1d3163;">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
     <footer class="footer">
 			<div class="container-fluid px-lg-5">
 				<div class="row">
@@ -70,7 +90,7 @@
 								<textarea name="message" id="" cols="30" rows="3" class="form-control" placeholder="Message"></textarea>
 							</div>
 							<div class="form-group">
-								<button type="submit" class="form-control submit px-3">Envoyer</button>
+								<button type="submit" class="form-control submit px-3" style="background-color:#1d3163;">Envoyer</button>
 							</div>
 						</form>
 					</div>

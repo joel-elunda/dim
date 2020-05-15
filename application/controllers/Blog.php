@@ -20,7 +20,9 @@ class Blog extends CI_Controller {
 	 */
 	public function index() {
 		$this->load->view('head');
-		$this->load->view('blog-single');
+		$blog_data['data'] = $this -> BlogModel -> fetch_blog_messages();
+		$blog_data['user'] = $this -> UserModel -> fetch_single_user($this -> session -> id);
+		$this->load->view('blog-single', $blog_data);
 		$this->load->view('foot');
 	}
 
@@ -35,20 +37,14 @@ class Blog extends CI_Controller {
 
 	public function bloger_data() {
 		return array( 
-			'email' => $this -> input -> post('email'),
+			'email' => $this -> session -> email,
 			'message' => $this -> input -> post('message'),
 			'date' => get_current_date()
 		);
 	}
 
 	public function send_comment() {
-		 
-		$this -> form_validation -> set_rules('email', 'email',  'required|valid_email', 
-			array(
-				'required' => 'Le champ %s est obligatoire.',
-				'valid_email' => 'Saisissez un email valide.'
-			)
-		); 
+		  
 
 		$this -> form_validation -> set_rules('message', 'message', 'required', 
 			array(
@@ -58,8 +54,7 @@ class Blog extends CI_Controller {
 
 		if($this -> form_validation -> run()) {  
 
-			$this -> BlogModel -> add($this -> bloger_data());
-			$this -> BlogModel -> 
+			$this -> BlogModel -> add($this -> bloger_data()); 
 			$this -> index();
 			 			
 		} else { 
@@ -67,4 +62,5 @@ class Blog extends CI_Controller {
 		}
 
 	}
+
 }

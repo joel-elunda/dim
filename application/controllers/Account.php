@@ -28,6 +28,12 @@ class Account extends CI_Controller {
 		$this->load->view('head');
 		$this->load->view('login');
 		$this->load->view('foot');
+	} 
+
+	public function home_view() {
+		$this->load->view('head');
+		$this->load->view('index');
+		$this->load->view('foot');
 	}
 
 	private function sign_up_data() { 
@@ -69,15 +75,27 @@ class Account extends CI_Controller {
 		if($this -> form_validation -> run()) {  
 
 			$this -> UserModel -> add($this -> sign_up_data());
-			
-			$this -> load -> view('head');
-			$this -> load -> view('index');
-			$this -> load -> view('foot');
+
+			$user = $this -> sign_up_data();
+			$result = $this -> UserModel -> check_authentification($user);
+
+			if(count($result) > 0)  {
+				$user = $result[0];
+				$user = array(
+					'id' => $user -> id,
+					'name' => $user -> name,
+					'is_connected' => true
+				);
+				
+				$this -> session -> set_userdata($user);
+				redirect('account/home');
+			}
+
+
+			// $this -> home_view();
 			 			
 		} else { 
-            $this -> load -> view('head');
-            $this -> load -> view('sign_up');
-            $this -> load -> view('foot');
+            $this -> index();
 		}
 	}
 
@@ -121,9 +139,7 @@ class Account extends CI_Controller {
 
     public function home()  {
         if($this -> session -> is_connected)  {
-            $this -> load -> view('head');
-            $this -> load -> view('index');
-            $this -> load -> view('foot');
+            $this -> home_view();
         }
         else {
             redirect('account/home');
@@ -131,7 +147,7 @@ class Account extends CI_Controller {
     }
 
     public function logout()   {
-        $this -> session -> unset_userdata('is_connected');
-        redirect('account/home');
+		$this -> session -> unset_userdata('is_connected'); 
+        redirect();
     }
 }

@@ -13,7 +13,7 @@
 				<li class="nav-item  active"><a href="<?=site_url('release');?>" class="nav-link">Réalisations</a></li>
             	<li class="nav-item"><a href="<?=site_url('actu');?>" class="nav-link">Actualités</a></li>
 				<li class="nav-item"><a href="<?=site_url('contact');?>" class="nav-link">Contact</a></li>
-				<!-- <li class="nav-item"><a href="<?=site_url('blog');?>" class="nav-link">Blog</a></li>  -->
+				<li class="nav-item"><a href="<?=site_url('blog');?>" class="nav-link">Blog</a></li> 
 	        </ul>
 	      </div>
 	    </div>
@@ -22,7 +22,7 @@
 
 
 	
-    <section class="hero-wrap hero-wrap-2" style="background-image: url(<?=base_url('assets/images/photo_2020-05-12_14-50-14.jpg');?>);" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url(<?=base_url('assets/images/Untitled-design-3.jpg');?>);" data-stellar-background-ratio="0.5">
       <div class="overlay  bg-light"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-end">
@@ -34,68 +34,55 @@
       </div>
     </section>
 
-
-
-
-
-
-
+ 
 	<section class="ftco-section">
       <div class="container">
         <div class="row d-flex">
 
-			<?php 
+		<?php 
 
-				// TODO : rest of date and the description projects
-				$images = array(
-					'assets/images/20200129_104308.jpg', 
-					'assets/images/IMG-20191231-WA0025.jpg',
-					'assets/images/IMG-20190621-WA0040.jpg',
-					'assets/images/DSC_0086.JPG',
-					'assets/images/IMG_20191026_122120.jpg',
-					'assets/images/IMG_20191026_122032.jpg'
-				);
+			// TODO : rest of date and the description projects
+			$images = array(
+				'assets/images/20200129_104308.jpg', 
+				'assets/images/IMG-20191231-WA0025.jpg',
+				'assets/images/IMG-20190621-WA0040.jpg',
+				'assets/images/antenne.PNG'
+			);
 
-				$length = count($images);  
+			$description = array (
+				'Production des maïs avec Madame Clarisse',
+				'Production des tomates avec Amshula Food',
+				'Conférence à la maison SAFINA',
+				'Le booster 4G est une antenne qui améliore l’ampli-tude'
+			);
 
-				for ($i=0; $i < $length; $i++) { 
+			//<div><a href="#">March 31, 2020</a></div>
+			// <div><a href="#">Admin</a></div>
+			// <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
+
+			$length = count($images);  
+
+			for ($i=0; $i < $length; $i++) { 
+				
+				echo '
+				<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry align-self-stretch">
+				<a href="blog-single.html" class="block-20 rounded" style="background-image: url('.$images[$i].');">
+				</a>
+				<div class="text p-4">
+					<div class="meta mb-2"> 
 					
-					echo '
-					<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry align-self-stretch">
-					  <a href="blog-single.html" class="block-20 rounded" style="background-image: url('.$images[$i].');">
-					  </a>
-					  <div class="text p-4">
-						  <div class="meta mb-2">
-						  <div><a href="#">March 31, 2020</a></div>
-						  <div><a href="#">Admin</a></div>
-						  <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
-						</div>
-						<h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-					  </div>
+					
 					</div>
-				  </div> '; 
-				}
+					<h3 class="heading"><a href="#">'. $description[$i] .'</a></h3>
+				</div>
+				</div>
+			</div> '; 
+			}
 			?>
+
  
       </div>
     </section>
 
-	
-    <section class="ftco-section ftco-no-pb ftco-no-pt bg-secondary">
-      <div class="container py-5">
-    		<div class="row">
-          <div class="col-md-7 d-flex align-items-center">
-            <h2 class="mb-3 mb-sm-0" style="color:black; font-size: 22px;">Inscrivez-vous pour votre première consultation comptable gratuite</h2>
-          </div>
-          <div class="col-md-5 d-flex align-items-center">
-            <form action="<?=site_url('actu/suscribe');?>" class="subscribe-form">
-              <div class="form-group d-flex">
-                <input type="text" class="form-control" placeholder="Votre adresse email">
-                <input type="submit" value="Souscrire" class="submit px-3">
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
+	 

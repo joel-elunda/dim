@@ -23,7 +23,9 @@
 	<link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url('assets/images/logo.png');?>">
 
 	<style>
-	
+		.dim-color {
+			color: #1d3163 ;
+		}
 	</style>
   </head>
   <body>
@@ -34,13 +36,21 @@
 					<div class="col-md-12">
 						<div class="bg-wrap">
 							<div class="row">
-								<div class="col-md-6 d-flex align-items-center">
+								<div class="col-md-6 d-flex align-items-center" style="background-color:#1d3163;">
 									<p class="mb-0 phone pl-md-2">
 										<a href="tel://+243906406797" class="mr-2"><span class="fa fa-phone mr-1"></span> +243906406797</a> 
 										<a href="mailto://dimbusinessfamily@gmail.com"><span class="fa fa-paper-plane mr-1"></span>dimbusinessfamily@gmail.com</a>
+										
+										<?php
+											if(isset($this -> session -> id) && isset($this -> session -> name) && isset($this -> session -> is_connected)) {
+												echo '<a href="'.site_url('account/logout').'"><span class="fa fa-power-off mr-1 ml-3"></span>Deconnexion - '.$this -> session -> name.'</a>'; 
+											} else {
+												echo '<a href="'.site_url('account/login_view').'"><span class="fa fa-power-off mr-1 ml-3"></span>Connexion</a>';
+											}
+										?>
 									</p>
 								</div>
-								<div class="col-md-6 d-flex justify-content-md-end">
+								<div class="col-md-6 d-flex justify-content-md-end" style="background-color:#1d3163;">
 									<div class="social-media">
 										<p class="mb-0 d-flex">
 											<a href="https://web.facebook.com/dimeurclub/" target="_blank" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>

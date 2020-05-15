@@ -35,21 +35,29 @@
 													<div class="form-group">
 														<label class="label" for="email">Adresse Email *</label>
 														<input type="email" class="form-control" value="<?=set_value('email');?>" name="email" id="email" placeholder="Email">
-														<small class="form-text text-muted"><?= form_error('email','<em>','</em>') ?></small>
+														<small class="form-text text-danger"><?= form_error('email','<em>','</em>') ?></small>
 													</div>
 												</div>
 												<div class="col-md-12">
 													<div class="form-group">
 														<label class="label" for="password">Mot de passe *</label>
-														<input type="text" class="form-control" name="password" id="password" placeholder="Mot de passe">
-														<small class="form-text text-muted"><?= form_error('password','<em>','</em>') ?></small>
+														<input type="password" class="form-control" name="password" id="password" placeholder="Mot de passe">
+														<small class="form-text text-danger"><?= form_error('password','<em>','</em>') ?></small>
 														<small class="form-text text-muted">Assurez-vous qu'il s'agit d'au moins 15 caractères OU d'au moins 8 caractères.</small>
 													</div>
 												</div> 
 											 
 												<div class="col-md-12">
 													<div class="form-group">
-														<input type="submit" value="S'incrire" class="btn btn-primary w-100"> 
+														<input type="submit" value="Se connecter" class="btn btn-primary w-100 border-0" style="background-color: #1d3163;"> 
+													</div>
+												</div>
+												 
+											
+											 
+												<div class="col-md-12">
+													<div class="form-group">
+														<small class="form-text text-muted">Vous n'avez pas de compte,<a href="<?=site_url('account/sign_up');?>"> <strong style="color: #1d3163;">Inscrivez-vous</strong> </a> à l'équipe DIM BUSINESS</small>
 													</div>
 												</div>
 												 
@@ -66,23 +74,4 @@
 				</div>
     	</div>
     </section>
-
-
-	
-    <section class="ftco-section ftco-no-pb ftco-no-pt bg-secondary">
-      <div class="container py-5">
-    		<div class="row">
-          <div class="col-md-7 d-flex align-items-center">
-            <h2 class="mb-3 mb-sm-0" style="color:black; font-size: 22px;">Inscrivez-vous pour votre première consultation comptable gratuite</h2>
-          </div>
-          <div class="col-md-5 d-flex align-items-center">
-            <form action="<?=site_url('actu/suscribe');?>" class="subscribe-form">
-              <div class="form-group d-flex">
-                <input type="text" class="form-control" placeholder="Votre adresse email">
-                <input type="submit" value="Souscrire" class="submit px-3">
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
+ 

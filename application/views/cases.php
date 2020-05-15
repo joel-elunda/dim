@@ -11,10 +11,10 @@
 	        <ul class="navbar-nav m-auto">
 	        	<li class="nav-item"><a href="<?=site_url();?>" class="nav-link">Accueil</a></li>
 	        	<li class="nav-item"><a href="<?=site_url('services');?>" class="nav-link">Services</a></li>
-				<li class="nav-item"><a href="<?=site_url('release');?>" class="nav-link">Réalisations</a></li> 
-            	<li class="nav-item active"><a href="<?=site_url('actu');?>" class="nav-link">Actualités</a></li>
-				<li class="nav-item"><a href="<?=site_url('contact');?>" class="nav-link">Contact</a></li>
-				<!-- <li class="nav-item"><a href="<?=site_url('blog');?>" class="nav-link">Blog</a></li> -->
+				    <li class="nav-item"><a href="<?=site_url('release');?>" class="nav-link">Réalisations</a></li> 
+            <li class="nav-item active"><a href="<?=site_url('actu');?>" class="nav-link">Actualités</a></li>
+            <li class="nav-item"><a href="<?=site_url('contact');?>" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="<?=site_url('blog');?>" class="nav-link">Blog</a></li>
 	        </ul>
 	      </div>
 	    </div>
@@ -22,12 +22,12 @@
     <!-- END nav -->
 
 
-    <section class="hero-wrap hero-wrap-2" style="background-image: url(<?=base_url('assets/images/photo_2020-05-12_14-49-16.jpg');?>);" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url(<?=base_url('assets/images/consulting.jpg');?>);" data-stellar-background-ratio="0.5">
       <div class="overlay bg-light"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-end">
           <div class="col-md-9 ftco-animate pb-5">
-          	<p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.html">Accueil <i class="ion-ios-arrow-forward"></i></a></span> <span>Actualités <i class="ion-ios-arrow-forward"></i></span></p>
+          	<p class="breadcrumbs mb-2"><span class="mr-2"><a href="<?=site_url();?>">Accueil <i class="ion-ios-arrow-forward"></i></a></span> <span>Actualités <i class="ion-ios-arrow-forward"></i></span></p>
             <h1 class="mb-0 bread">Actualités</h1>
           </div>
         </div>
@@ -38,167 +38,70 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 ftco-animate">
-						<div class="cases-wrap d-md-flex align-items-center">
-							<div class="img" style="background-image: url(images/image_1.jpg);"></div>
-							<div class="text pl-md-5">
-								<span class="cat">Strategy</span>
-								<h2>Business activities and care for the environment</h2>
-								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-								<p><a href="#" class="btn btn-primary">Read more</a></p>
-							</div>
-						</div>
 
-						<div class="cases-wrap d-md-flex align-items-center">
-							<div class="img" style="background-image: url(<?=base_url('assets/images/photo_2020-05-12_14-49-16.jpg');?>);"></div>
-							<div class="text pl-md-5">
-								<span class="cat">Strategy</span>
-								<h2>Business activities and care for the environment</h2>
-								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-								<p><a href="#" class="btn btn-primary">Read more</a></p>
-							</div>
-						</div>
+            
+		<?php 
 
-						<div class="cases-wrap d-md-flex align-items-center">
-							<div class="img" style="background-image: url(images/image_3.jpg);"></div>
-							<div class="text pl-md-5">
-								<span class="cat">Strategy</span>
-								<h2>Business activities and care for the environment</h2>
-								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-								<p><a href="#" class="btn btn-primary">Read more</a></p>
-							</div>
-						</div>
+      // TODO : rest of date and the description projects
+      $images = array(
+        'assets/images/20200129_104308.jpg', 
+        'assets/images/IMG-20191231-WA0025.jpg',
+        'assets/images/IMG-20190621-WA0040.jpg',
+        'assets/images/antenne.PNG'
+      );
 
-						<div class="cases-wrap d-md-flex align-items-center">
-							<div class="img" style="background-image: url(images/image_4.jpg);"></div>
-							<div class="text pl-md-5">
-								<span class="cat">Strategy</span>
-								<h2>Business activities and care for the environment</h2>
-								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-								<p><a href="#" class="btn btn-primary">Read more</a></p>
-							</div>
-						</div>
+      $description = array (
+        'Production des maïs avec Madame Clarisse',
+        'Production des tomates avec Amshula Food',
+        'Conférence à la maison SAFINA',
+        'Le booster 4G est une antenne qui améliore l’ampli-tude'
+      );
 
-						<div class="cases-wrap d-md-flex align-items-center">
-							<div class="img" style="background-image: url(images/image_5.jpg);"></div>
-							<div class="text pl-md-5">
-								<span class="cat">Strategy</span>
-								<h2>Business activities and care for the environment</h2>
-								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-								<p><a href="#" class="btn btn-primary">Read more</a></p>
-							</div>
-						</div>
+      //<div><a href="#">March 31, 2020</a></div>
+      // <div><a href="#">Admin</a></div>
+      // <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
 
-						<div class="row mt-5">
-		          <div class="col">
-		            <div class="block-27">
-		              <ul>
-		                <li><a href="#">&lt;</a></li>
-		                <li class="active"><span>1</span></li>
-		                <li><a href="#">2</a></li>
-		                <li><a href="#">3</a></li>
-		                <li><a href="#">4</a></li>
-		                <li><a href="#">5</a></li>
-		                <li><a href="#">&gt;</a></li>
-		              </ul>
-		            </div>
-		          </div>
-		        </div>
+      
+      // <span class="cat" style="color:#1d3163;">Strategy</span>
+      // <h2>Business activities and care for the environment</h2>
 
+
+      $length = count($images);  
+
+      for ($i=0; $i < $length; $i++) { 
+        
+        echo '
+          <div class="cases-wrap d-md-flex align-items-center">
+            <div class="img" style="background-image: url('.$images[$i].');"></div>
+            <div class="text pl-md-5">
+              <p>'.$description[$i].'</p>
+              <p>
+                <ul class="ftco-footer-social p-0">  
+                  <li class="ftco-animate h5 pr-5">0  <i class="fa fa-heart fa-1x mb-3 text-center" style="color:red; cursor:pointer;" aria-hidden="true"></i></li>
+                </ul>
+              </p>
+            </div>
+          </div>'; 
+      }
+      ?>
+ 
           </div> <!-- .col-md-8 -->
           <div class="col-lg-4 sidebar pl-lg-5 ftco-animate">
-            <div class="sidebar-box">
-              <form action="#" class="search-form">
-                <div class="form-group">
-                  <span class="fa fa-search"></span>
-                  <input type="text" class="form-control" placeholder="Type a keyword and hit enter">
-                </div>
-              </form>
-            </div>
+            
             <div class="sidebar-box ftco-animate">
               <div class="categories">
-                <h3>Categories</h3>
-                <li><a href="#">Career &amp; Business <span class="ion-ios-arrow-forward"></span></a></li>
-                <li><a href="#">Mental &amp; Physical Care <span class="ion-ios-arrow-forward"></span></a></li>
-                <li><a href="#">People &amp; Relationships <span class="ion-ios-arrow-forward"></span></a></li>
-                <li><a href="#">Life Coaching <span class="ion-ios-arrow-forward"></span></a></li>
+                <h3>Catégories</h3>
+                <li><a>Agro DIM<span class="ion-ios-arrow-forward"></span></a></li>
+                <li><a>Hub Tech <span class="ion-ios-arrow-forward"></span></a></li>
+                <li><a>Média<span class="ion-ios-arrow-forward"></span></a></li>
+                <li><a>Coaching <span class="ion-ios-arrow-forward"></span></a></li>
               </div>
             </div>
-
-            <div class="sidebar-box ftco-animate">
-              <h3>Recent Blog</h3>
-              <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
-                <div class="text">
-                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                  <div class="meta">
-                    <div><a href="#"><span class="icon-calendar"></span> Jan. 30, 2020</a></div>
-                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
-                <div class="text">
-                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                  <div class="meta">
-                    <div><a href="#"><span class="icon-calendar"></span> Jan. 30, 2020</a></div>
-                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" style="background-image: url(images/image_3.jpg);"></a>
-                <div class="text">
-                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                  <div class="meta">
-                    <div><a href="#"><span class="icon-calendar"></span> Jan. 30, 2020</a></div>
-                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="sidebar-box ftco-animate">
-              <h3>Tag Cloud</h3>
-              <div class="tagcloud">
-                <a href="#" class="tag-cloud-link">home</a>
-                <a href="#" class="tag-cloud-link">builder</a>
-                <a href="#" class="tag-cloud-link">build</a>
-                <a href="#" class="tag-cloud-link">create</a>
-                <a href="#" class="tag-cloud-link">make</a>
-                <a href="#" class="tag-cloud-link">construction</a>
-                <a href="#" class="tag-cloud-link">house</a>
-                <a href="#" class="tag-cloud-link">architect</a>
-              </div>
-            </div>
-
-            <div class="sidebar-box ftco-animate">
-              <h3>Paragraph</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur similique, inventore eos fugit cupiditate numquam!</p>
-            </div>
+  
+ 
           </div>
 
         </div>
       </div>
     </section> <!-- .section -->
-
-    <section class="ftco-section ftco-no-pb ftco-no-pt bg-secondary">
-      <div class="container py-5">
-    		<div class="row">
-          <div class="col-md-7 d-flex align-items-center">
-            <h2 class="mb-3 mb-sm-0" style="color:black; font-size: 22px;">Inscrivez-vous pour votre première consultation comptable gratuite</h2>
-          </div>
-          <div class="col-md-5 d-flex align-items-center">
-            <form action="<?=site_url('actu/suscribe');?>" class="subscribe-form">
-              <div class="form-group d-flex">
-                <input type="text" class="form-control" placeholder="Votre adresse email">
-                <input type="submit" value="Souscrire" class="submit px-3">
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
+ 
