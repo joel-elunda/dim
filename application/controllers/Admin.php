@@ -22,8 +22,8 @@ class Admin extends CI_Controller {
 		$this->load->view('admin/profile'); 
 	}
 
-	public function _404() {
-		$this->load->view('admin/404.php'); 
+	public function error() {
+		$this->load->view('admin/error'); 
 	}
 
 	public function basic_table() {
