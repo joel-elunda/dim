@@ -7,18 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?=base_url('assets/admin/plugins/images/favicon.png');?>">
     <title>Pixel Admin - Responsive Admin Dashboard Template build with Twitter Bootstrap</title>
     <!-- Bootstrap Core CSS -->
-    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?=base_url('assets/admin/bootstrap/dist/css/bootstrap.min.css');?>" rel="stylesheet">
     <!-- Menu CSS -->
-    <link href="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+    <link href="<?=base_url('assets/admin/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css');?>" rel="stylesheet">
     <!-- animation CSS -->
-    <link href="css/animate.css" rel="stylesheet">
+    <link href="<?=base_url('assets/admin/css/animate.css');?>" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="<?=base_url('assets/admin/css/style.css');?>" rel="stylesheet">
     <!-- color CSS -->
-    <link href="css/colors/blue-dark.css" id="theme" rel="stylesheet">
+    <link href="<?=base_url('assets/admin/css/colors/blue-dark.css');?>" id="theme" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -36,7 +36,7 @@
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-static-top m-b-0">
             <div class="navbar-header"> <a class="navbar-toggle hidden-sm hidden-md hidden-lg " href="javascript:void(0)" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars"></i></a>
-                <div class="top-left-part"><a class="logo" href="index.html"><b><img src="../plugins/images/pixeladmin-logo.png" alt="home" /></b><span class="hidden-xs"><img src="../plugins/images/pixeladmin-text.png" alt="home" /></span></a></div>
+                <div class="top-left-part"><a class="logo" href="index.html"><b><img src="<?=base_url('assets/admin/plugins/images/pixeladmin-logo.png');?>" alt="home" /></b><span class="hidden-xs"><img src="<?=base_url('assets/admin/plugins/images/pixeladmin-text.png');?>" alt="home" /></span></a></div>
                 <ul class="nav navbar-top-links navbar-left m-l-20 hidden-xs">
                     <li>
                         <form role="search" class="app-search hidden-xs">
@@ -46,7 +46,7 @@
                 </ul>
                 <ul class="nav navbar-top-links navbar-right pull-right">
                     <li>
-                        <a class="profile-pic" href="#"> <img src="../plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">Steave</b> </a>
+                        <a class="profile-pic" href="#"> <img src="<?=base_url('assets/admin/plugins/images/users/varun.jpg');?>" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">Steave</b> </a>
                     </li>
                 </ul>
             </div>
@@ -815,17 +815,17 @@
     </div>
     <!-- /#wrapper -->
     <!-- jQuery -->
-    <script src="../plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="<?=base_url('assets/admin/plugins/bower_components/jquery/dist/jquery.min.js');?>"></script>
     <!-- Bootstrap Core JavaScript -->
-    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="<?=base_url('assets/admin/bootstrap/dist/js/bootstrap.min.js');?>"></script>
     <!-- Menu Plugin JavaScript -->
-    <script src="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+    <script src="<?=base_url('assets/admin/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js');?>"></script>
     <!--slimscroll JavaScript -->
-    <script src="js/jquery.slimscroll.js"></script>
+    <script src="<?=base_url('assets/admin/js/jquery.slimscroll.js');?>"></script>
     <!--Wave Effects -->
-    <script src="js/waves.js"></script>
+    <script src="<?=base_url('assets/admin/js/waves.js');?>"></script>
     <!-- Custom Theme JavaScript -->
-    <script src="js/custom.min.js"></script>
+    <script src="<?=base_url('assets/admin/js/custom.min.js');?>"></script>
 </body>
 
 </html>

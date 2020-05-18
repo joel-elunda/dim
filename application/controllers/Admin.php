@@ -31,7 +31,7 @@ class Admin extends CI_Controller {
 	}
 
 	public function fontawesome() {
-		$this->laod->view('admin/fontawesome');
+		$this->load->view('admin/fontawesome');
 	}
 
 	public function blank() {
