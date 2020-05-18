@@ -19,11 +19,11 @@ class Blog extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 	public function index() {
-		$this->load->view('head');
-		$blog_data['data'] = $this -> BlogModel -> fetch_blog_messages();
-		$blog_data['user'] = $this -> UserModel -> fetch_single_user($this -> session -> id);
-		$this->load->view('blog-single', $blog_data);
-		$this->load->view('foot');
+		$this -> load -> view('head');
+		$blog_data['data'] = $this -> BlogModel -> fetch_blog_messages(); 
+		$blog_data['entries'] = $this -> BlogModel -> count_entries();
+		$this -> load -> view('blog-single', $blog_data);
+		$this -> load -> view('foot');
 	}
 
 	private function get_current_date() {
@@ -37,6 +37,7 @@ class Blog extends CI_Controller {
 
 	public function bloger_data() {
 		return array( 
+			'name' => $this -> session -> name,
 			'email' => $this -> session -> email,
 			'message' => $this -> input -> post('message'),
 			'date' => date("F j, Y, g:i a")
@@ -54,14 +55,20 @@ class Blog extends CI_Controller {
 
 		if($this -> form_validation -> run()) {  
 			
-			// $this -> BlogModel -> add($this -> bloger_data()); 
+			$this -> BlogModel -> add($this -> bloger_data()); 
 			// print_r($this -> bloger_data());
 			$this -> index();
 			 			
 		} else { 
-			print_r($this -> bloger_data());
+			// print_r($this -> bloger_data());
             $this -> index();
 		}
+
+	}
+
+
+	public function reply() {
+		$id = $this -> uri -> segment(3);
 
 	}
 

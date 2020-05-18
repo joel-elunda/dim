@@ -10,8 +10,9 @@ class BlogModel extends CI_Model {
         return $this -> db -> insert($this -> table, $data);
     }
 
-    public function count_rows() {
-        return $this -> db -> table($this -> table) -> countAll();
+    public function count_entries() {
+        // return $this -> db -> table($this -> table) -> countAll();
+        return $this -> db -> count_all($this -> table);
     }
 
     public function fetch_data() {

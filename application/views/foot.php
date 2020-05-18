@@ -10,7 +10,7 @@
             <form action="<?=site_url('actu/suscribe');?>" class="subscribe-form">
               <div class="form-group d-flex">
                 <input type="text" class="form-control" placeholder="Votre adresse email">
-                <input type="submit" value="Souscrire" class="submit px-3" style="color:#1d3163;">
+                <input type="submit" value="Souscrire" class="submit px-3 dim-btn-color"  >
               </div>
             </form>
           </div>
@@ -43,11 +43,11 @@
 											<div class="col-md-6 mb-md-0 mb-4">
 												<h2 class="footer-heading">Services</h2>
 												<ul class="list-unstyled">
-												<li><a href="#" class="py-1 d-block">Média</a></li>
-												<li><a href="#" class="py-1 d-block">Cabinet d'étude des projets</a></li>
-												<li><a href="#" class="py-1 d-block">Numérisation et transformation</a></li>
-												<li><a href="#" class="py-1 d-block">Crowd Funding</a></li>
-												<li><a href="#" class="py-1 d-block">Sucess Full</a></li>
+												<li><a class="py-1 d-block">Média</a></li>
+												<li><a class="py-1 d-block">Cabinet d'étude des projets</a></li>
+												<li><a class="py-1 d-block">Numérisation et transformation</a></li>
+												<li><a class="py-1 d-block">Crowd Funding</a></li>
+												<li><a class="py-1 d-block">Sucess Full</a></li>
 												</ul>
 											</div>
 											
@@ -69,14 +69,14 @@
 						<div class="row mt-md-5">
 							<div class="col-md-12">
 								<p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous droits réservées | créé avec <i class="fa fa-heart" aria-hidden="true"></i> par <a href="<?=site_url();?>">DIM BUSINESS</a>
+					  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous droits réservées | créé avec <i class="fa fa-heart" aria-hidden="true"></i> par <a href="www.andreamediastech.com" target="_blank" style="color:#FFF;">Andrea Medias Tech</a>
 					  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-3 py-md-5 py-4 aside-stretch-right pl-lg-5">
 						<h2 class="footer-heading">Pour toutes vos requetes</h2>
-						<form action="#" class="form-consultation">
+						<form action="<?=site_url('');?>" class="form-consultation">
 							<div class="form-group">
 								<input type="text" name="name" class="form-control" placeholder="Votre nom">
 							</div>
@@ -90,7 +90,7 @@
 								<textarea name="message" id="" cols="30" rows="3" class="form-control" placeholder="Message"></textarea>
 							</div>
 							<div class="form-group">
-								<button type="submit" class="form-control submit px-3" style="background-color:#1d3163;">Envoyer</button>
+								<button type="submit" class="form-control submit px-3 ">Envoyer</button>
 							</div>
 						</form>
 					</div>

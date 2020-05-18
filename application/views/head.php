@@ -26,6 +26,23 @@
 		.dim-color {
 			color: #1d3163 ;
 		}
+
+		.dim-text-color {
+			color: #1d3163 ;
+		}
+
+		.dim-btn-color {
+			border: none;
+			color: #FFF;
+			background-color: #1d3163 ;
+		}
+		
+
+		.ftco-footer-social > .ftco-animate a {
+			background-color: #FFF;
+			color: #1d3163;
+		}
+		
 	</style>
   </head>
   <body>
