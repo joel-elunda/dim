@@ -10,7 +10,7 @@
             <form action="<?=site_url('actu/suscribe');?>" class="subscribe-form">
               <div class="form-group d-flex">
                 <input type="text" class="form-control" placeholder="Votre adresse email">
-                <input type="submit" value="Souscrire" class="submit px-3 dim-btn-color"  >
+                <input type="submit" value="Souscrire" class="submit px-3 dim-color"  >
               </div>
             </form>
           </div>
