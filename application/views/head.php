@@ -23,9 +23,13 @@
 	<link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url('assets/images/logo.png');?>">
 
 	<style>
-		.dim-color {
-			color: #1d3163 ;
+		 
+		.ftco-footer-social > .ftco-animate a {
+			background-color: #FFF;
+			color: #1d3163;
 		}
+
+
 	</style>
   </head>
   <body>

@@ -116,7 +116,8 @@ class Account extends CI_Controller {
             $user = $result[0];
             $user = array(
                 'id' => $user -> id,
-                'name' => $user -> name,
+				'name' => $user -> name,
+				'email' => $user -> email,
                 'is_connected' => true
 			);
 			

@@ -24,7 +24,7 @@
 
 	
 	
-    <section class="hero-wrap hero-wrap-2" style="background-image: url(<?=base_url('assets/images/kindpng_2549715.png');?>);" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url(<?=base_url('assets/images/business-consult1562157427578.jpg');?>);" data-stellar-background-ratio="0.5">
       <div class="overlay  bg-light"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-end">

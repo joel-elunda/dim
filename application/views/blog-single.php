@@ -2,7 +2,7 @@
 		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
         <img  src="<?=site_url('assets/images/logo - Copie.png');?>" alt="" srcset="">
-	    	<a class="pl-3 navbar-brand" href="index.html">DIM BUSINESS</a>
+	    	<a class="pl-3 navbar-brand" href="<?=site_url();?>">DIM BUSINESS</a>
         
         
 
@@ -63,116 +63,27 @@
 
 
             <div class="pt-5 mt-5">
-              <h3 class="mb-5">0 Comments</h3>
-              <ul class="comment-list">
-                <li class="comment">
-                  <div class="vcard bio">
-                    <img src="<?=base_url('assets/images/person_1.jpg');?>" alt="Image placeholder">
-                  </div>
-                  <div class="comment-body">
-                    <h3>John Doe</h3>
-                    <div class="meta">March 31, 2020 at 2:21pm</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
-                    <p><a href="#" class="reply">Reply</a></p>
-                  </div>
-                </li>
-
-                <li class="comment">
-                  <div class="vcard bio">
-                    <img src="<?=base_url('assets/images/person_1.jpg');?>" alt="Image placeholder">
-                  </div>
-                  <div class="comment-body">
-                    <h3>John Doe</h3>
-                    <div class="meta">March 31, 2020 at 2:21pm</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
-                    <p><a href="#" class="reply">Reply</a></p>
-                  </div>
-
-                  <ul class="children">
-                    <li class="comment">
-                      <div class="vcard bio">
-                        <img src="<?=base_url('assets/images/person_1.jpg');?>" alt="Image placeholder">
-                      </div>
-                      <div class="comment-body">
-                        <h3>John Doe</h3>
-                        <div class="meta">March 31, 2020 at 2:21pm</div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
-                        <p><a href="#" class="reply">Reply</a></p>
-                      </div>
-
-
-                      <ul class="children">
-                        <li class="comment">
-                          <div class="vcard bio">
-                            <img src="<?=base_url('assets/images/person_1.jpg');?>" alt="Image placeholder">
-                          </div>
-                          <div class="comment-body">
-                            <h3>John Doe</h3>
-                            <div class="meta">March 31, 2020 at 2:21pm</div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
-                            <p><a href="#" class="reply">Reply</a></p>
-                          </div>
-
-                            <ul class="children">
-                              <li class="comment">
-                                <div class="vcard bio">
-                                  <img src="<?=base_url('assets/images/person_1.jpg');?>" alt="Image placeholder">
-                                </div>
-                                <div class="comment-body">
-                                  <h3>John Doe</h3>
-                                  <div class="meta">March 31, 2020 at 2:21pm</div>
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
-                                  <p><a href="#" class="reply">Reply</a></p>
-                                </div>
-                              </li>
-                            </ul>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-
-                <li class="comment">
-                  <div class="vcard bio">
-                    <img src="<?=base_url('assets/images/person_1.jpg');?>" alt="Image placeholder">
-                  </div>
-                  <div class="comment-body">
-                    <h3>John Doe</h3>
-                    <div class="meta">March 31, 2020 at 2:21pm</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
-                    <p><a href="#" class="reply">Reply</a></p>
-                  </div>
-                </li>
-
+              <h3 class="mb-3"> <?php   if(isset($entries)) {   echo $entries ;  } ?> Commentaire(s)</h3>
+              <ul class="">
+               
+              <!-- <p><a href="'.site_url('blog/reply/').$row-> id.'" class="reply" style="color:#1d3163;">Répondre</a></p> -->
                 <?php 
-
-                  $user_data = array();
-
-                  if(isset($user)) {
-                    foreach ($user -> result() as $row) {
-                      $user_data['id'] = $row -> id;
-                      $user_data['name'] = $row -> id;
-                      $user_data['email'] = $row -> id;
-                    }
-                  }
-                  
+ 
                   if(isset($data)) {
                     if($data -> num_rows() > 0) {
                       foreach ($data -> result() as $row) {
                         echo '<li class="comment">
-                          <div class="vcard bio">
-                            <img src="'.base_url('assets/images/IMG_20191026_122120.jpg').'" alt="Image placeholder">
-                          </div>
+                         
                           <div class="comment-body">
-                            <h3>'. $user_data['name'] .'</h3>
+                            <h3>'. $row -> name .'</h3>
                             <div class="meta">'. $row -> date.'</div>
                             <p>'. $row -> message .'</p>
-                            <p><a href="#" class="reply">Répondre</a></p>
+                            
                           </div>
                         </li>'; 
                       }
                     } else {
-                      echo '<h3>Aucun commentaire !</h3>';
+                      echo '<h4>Aucun commentaire !</h4>';
                     }
                   } 
                    
@@ -192,16 +103,14 @@
                     echo '
                     <div class="comment-form-wrap pt-5">
                       <h3 class="mb-5">Laisser un commentaire</h3>
-                      <form action="'.site_url('blog/send_comment').'" class="">
+                      <form method="POST" action="'.site_url('blog/send_comment').'" class="">
                        
                         <div class="form-group">
-                          <label for="message">Message *</label>
-                          <textarea name="" id="message" cols="30" rows="10" class="form-control rounded-0"></textarea>
-                        </div>
-                       
-                        <div class="form-group">
+                          <label for="message">Message</label>
+                          <textarea name="message" id="message" value="'.set_value('message').'" cols="30" rows="10" class="form-control rounded-0"></textarea>
                           <small class="form-text text-danger">'. form_error('message','.<em>.','.</em>.').'</small> 
                         </div>
+                        
                         <div class="form-group">
                           <input type="submit" value="Poster votre commentaire" class="btn py-3 px-4 btn-primary rounded-0">
                         </div>
@@ -214,7 +123,7 @@
                     <div class="comment-form-wrap pt-5">
                         <h3 class="mb-5">Connectez-vous pour blogger avec l\'équipe DIM BUSINESS</h3>
                         <div class="form-group">
-                          <a href="'.site_url('account/login_view').'" class="btn py-3 px-4 btn-primary rounded-0">Se connecter</a> 
+                          <a href="'.site_url('account/login_view').'" class="btn py-3 px-4 btn-primary rounded-0 border-0" style="background-color: #1d3163;">Se connecter</a> 
                         </div>
                     </div> 
                   ';
