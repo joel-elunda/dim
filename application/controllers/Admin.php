@@ -23,7 +23,7 @@ class Admin extends CI_Controller {
 	}
 
 	public function _404() {
-		$this->load->view('admin/404'); 
+		$this->load->view('admin/404.php'); 
 	}
 
 	public function basic_table() {
