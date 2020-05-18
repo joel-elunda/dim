@@ -17,7 +17,10 @@ class Admin extends CI_Controller {
 
 
 
-	
+
+	public function profile() {
+		$this->load->view('admin/profile'); 
+	}
 
 	public function _404() {
 		$this->load->view('admin/404'); 
@@ -25,6 +28,10 @@ class Admin extends CI_Controller {
 
 	public function basic_table() {
 		$this->load->view('admin/basic-table'); 
+	}
+
+	public function fontawesome() {
+		$this->laod->view('admin/fontawesome');
 	}
 
 	public function blank() {
@@ -35,7 +42,4 @@ class Admin extends CI_Controller {
 		$this->load->view('admin/map-google'); 
 	}
 
-	public function profile() {
-		$this->load->view('admin/profile'); 
-	}
 }
