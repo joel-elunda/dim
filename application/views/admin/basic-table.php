@@ -63,22 +63,26 @@
                         <a href="<?=site_url('admin');?>" class="waves-effect"><i class="fa fa-clock-o fa-fw" aria-hidden="true"></i><span class="hide-menu">Dashboard</span></a>
                     </li>
                     <li>
-                        <a href="<?=site_url('admin/profile');?>" class="waves-effect"><i class="fa fa-user fa-fw" aria-hidden="true"></i><span class="hide-menu">Profile</span></a>
+                        <a href="<?=site_url('admin/release');?>" class="waves-effect"><i class="fa fa-columns fa-fw" aria-hidden="true"></i><span class="hide-menu">Réalisation</span></a>
                     </li>
                     <li>
-                        <a href="<?=site_url('admin/basic_table');?>" class="waves-effect"><i class="fa fa-table fa-fw" aria-hidden="true"></i><span class="hide-menu">Basic Table</span></a>
+                        <a href="<?=site_url('admin/actu');?>" class="waves-effect"><i class="fa fa-columns fa-fw" aria-hidden="true"></i><span class="hide-menu">Actualité</span></a>
                     </li>
                     <li>
-                        <a href="<?=site_url('admin/fontawesome');?>" class="waves-effect"><i class="fa fa-font fa-fw" aria-hidden="true"></i><span class="hide-menu">Icons</span></a>
+                        <a href="<?=site_url('admin/profile');?>" class="waves-effect"><i class="fa fa-user fa-fw" aria-hidden="true"></i><span class="hide-menu">Profile Admin</span></a>
                     </li>
                     <li>
-                        <a href="<?=site_url('admin/map_google');?>" class="waves-effect"><i class="fa fa-globe fa-fw" aria-hidden="true"></i><span class="hide-menu">Google Map</span></a>
+                        <a href="<?=site_url('admin/basic_table');?>" class="waves-effect"><i class="fa fa-table fa-fw" aria-hidden="true"></i><span class="hide-menu">Utilisateur</span></a>
                     </li>
                     <li>
-                        <a href="<?=site_url('admin/blank');?>" class="waves-effect"><i class="fa fa-columns fa-fw" aria-hidden="true"></i><span class="hide-menu">Blank Page</span></a>
+                        <!-- <a href="<?=site_url('admin/fontawesome');?>" class="waves-effect"><i class="fa fa-font fa-fw" aria-hidden="true"></i><span class="hide-menu">Icons</span></a> -->
                     </li>
                     <li>
-                        <a href="<?=site_url('admin/error');?>" class="waves-effect"><i class="fa fa-info-circle fa-fw" aria-hidden="true"></i><span class="hide-menu">Error 404</span></a>
+                        <!-- <a href="<?=site_url('admin/map_google');?>" class="waves-effect"><i class="fa fa-globe fa-fw" aria-hidden="true"></i><span class="hide-menu">Google Map</span></a>     -->
+                    </li>
+                  
+                    <li>
+                        <!-- <a href="<?=site_url('admin/error');?>" class="waves-effect"><i class="fa fa-info-circle fa-fw" aria-hidden="true"></i><span class="hide-menu">Error 404</span></a> -->
                     </li>
                 </ul>
                 <div class="center p-20">

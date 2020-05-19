@@ -16,6 +16,7 @@ class Admin extends CI_Controller {
 
 
 	public function login() {
+		 
 		$this -> form_validation -> set_rules('email', 'email',  'required|valid_email', 
 			array(
 				'required' => 'Le champ %s est obligatoire.',
@@ -29,7 +30,7 @@ class Admin extends CI_Controller {
 				'min_length' => 'Le champ %s doit comporter au mois 8 caractères.'
 			)
 		); 
-
+		
 		if($this -> form_validation -> run()) {
 			print_r($this -> admin_data());
 
@@ -51,6 +52,7 @@ class Admin extends CI_Controller {
 				$this -> session -> set_userdata($data);
 				redirect('account/home');
 			*/
+			$this -> index();
 		} else {
 			print_r($this -> admin_data());
 			$this -> login_view();
@@ -85,8 +87,13 @@ class Admin extends CI_Controller {
 		$this->load->view('admin/blank'); 
 	}
 
-	public function map_google() {
-		$this->load->view('admin/map-google'); 
+	public function release() {
+		$this->load->view('admin/release'); 
 	}
+
+	public function actu() {
+		$this->load->view('admin/actu'); 
+	}
+ 
 
 }
