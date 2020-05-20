@@ -81,7 +81,7 @@
 												</div>
 												<div class="col-md-12">
 													<div class="form-group">
-														<input type="submit" value="Envoyer" class="btn btn-primary">
+														<input type="submit" value="Envoyer" class="btn btn-primary border" >
 														<div class="submitting"></div>
 													</div>
 												</div>
@@ -122,7 +122,7 @@
 											<span class="fa fa-globe"></span>
 										</div>
 										<div class="text pl-3">
-											<p><span>Our Crowd Fundind</span> <a href="<?=site_url();?>">www.dimbusiness.online</a></p>
+											<p><span>Our Crowd Fundind</span> <a href="www.dimbusiness.online">www.dimbusiness.online</a></p>
 										</div>
 									</div>
 								</div>

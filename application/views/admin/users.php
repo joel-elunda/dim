@@ -72,7 +72,7 @@
                         <a href="<?=site_url('admin/profile');?>" class="waves-effect"><i class="fa fa-user fa-fw" aria-hidden="true"></i><span class="hide-menu">Profile Admin</span></a>
                     </li>
                     <li>
-                        <a href="<?=site_url('admin/basic_table');?>" class="waves-effect"><i class="fa fa-table fa-fw" aria-hidden="true"></i><span class="hide-menu">Utilisateur</span></a>
+                        <a href="<?=site_url('admin/users');?>" class="waves-effect"><i class="fa fa-table fa-fw" aria-hidden="true"></i><span class="hide-menu">Utilisateur</span></a>
                     </li>
                     <li>
                         <!-- <a href="<?=site_url('admin/fontawesome');?>" class="waves-effect"><i class="fa fa-font fa-fw" aria-hidden="true"></i><span class="hide-menu">Icons</span></a> -->
@@ -100,7 +100,7 @@
                     <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12"> <a href="http://wrappixel.com/templates/pixeladmin/" target="_blank" class="btn btn-danger pull-right m-l-20 btn-rounded btn-outline hidden-xs hidden-sm waves-effect waves-light">Upgrade to Pro</a>
                         <ol class="breadcrumb">
                             <li><a href="#">Dashboard</a></li>
-                            <li class="active">Basic Table</li>
+                            <li class="active">Utilisateurs</li>
                         </ol>
                     </div>
                     <!-- /.col-lg-12 -->
@@ -109,62 +109,45 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="white-box">
-                            <h3 class="box-title">Basic Table</h3>
-                            <p class="text-muted">Add class <code>.table</code></p>
+                            <h3 class="box-title">Utilisateurs inscrits</h3>
+                            <!-- <p class="text-muted">Add class <code>.table</code></p> -->
                             <div class="table-responsive">
                                 <table class="table">
                                     <thead>
                                         <tr>
                                             <th>#</th>
-                                            <th>First Name</th>
-                                            <th>Last Name</th>
-                                            <th>Username</th>
-                                            <th>Role</th>
+                                            <th>Nom complet</th>
+                                            <th>Email</th>
+                                            <th>Mot de passe</th> 
+                                            <th>Option</th> 
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Deshmukh</td>
-                                            <td>Prohaska</td>
-                                            <td>@Genelia</td>
-                                            <td>admin</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Deshmukh</td>
-                                            <td>Gaylord</td>
-                                            <td>@Ritesh</td>
-                                            <td>member</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Sanghani</td>
-                                            <td>Gusikowski</td>
-                                            <td>@Govinda</td>
-                                            <td>developer</td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>Roshan</td>
-                                            <td>Rogahn</td>
-                                            <td>@Hritik</td>
-                                            <td>supporter</td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>Joshi</td>
-                                            <td>Hickle</td>
-                                            <td>@Maruti</td>
-                                            <td>member</td>
-                                        </tr>
-                                        <tr>
-                                            <td>6</td>
-                                            <td>Nigam</td>
-                                            <td>Eichmann</td>
-                                            <td>@Sonu</td>
-                                            <td>supporter</td>
-                                        </tr>
+                                    <?php
+                                        $i = 1;
+                                        if(isset($users)) {
+                                            if($users -> num_rows() > 0) {
+                                                foreach ($users -> result() as $row) {
+                                                    echo '
+                                                        <tr>
+                                                        <td>'.$i++.'</td>
+                                                        <td>'.$row -> name.'</td>
+                                                        <td>'.$row -> email.'</td>
+                                                        <td>'.$row -> password.'</td>
+                                                        <td>
+                                                            <a class="btn btn-primary" href="#" role="button">Supprimer</a>
+                                                            <a class="btn btn-primary" href="#" role="button">Bloquer</a>
+                                                        </td> 
+                                                        
+                                                    </tr> ';
+                                                } 
+                                            } else {
+                                                echo ''; 
+                                            }
+                                        } else {
+
+                                        } 
+                                    ?>
                                     </tbody>
                                 </table>
                             </div>

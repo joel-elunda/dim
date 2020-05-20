@@ -33,7 +33,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -46,16 +47,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <nav class="navbar navbar-default navbar-static-top m-b-0">
             <div class="navbar-header"> <a class="navbar-toggle hidden-sm hidden-md hidden-lg " href="javascript:void(0)" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars"></i></a>
                 <div class="top-left-part"><a class="logo" href="index.html"><b><img src="<?=base_url('assets/admin/plugins/images/pixeladmin-logo.png');?>" alt="home" /></b><span class="hidden-xs"><img src="<?=base_url('assets/admin/plugins/images/pixeladmin-text.png');?>" alt="home" /></span></a></div>
-                <ul class="nav navbar-top-links navbar-left m-l-20 hidden-xs">
-                    <li>
-                        <form role="search" class="app-search hidden-xs">
-                            <input type="text" placeholder="Search..." class="form-control"> <a href=""><i class="fa fa-search"></i></a>
-                        </form>
-                    </li>
-                </ul>
+                
                 <ul class="nav navbar-top-links navbar-right pull-right">
                     <li>
-                        <a class="profile-pic" href="#"> <img src="<?=base_url('assets/admin/plugins/images/users/varun.jpg');?>" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">Steave</b> </a>
+                        <a class="profile-pic" href="#"> <img src="<?=base_url('assets/admin/plugins/images/users/varun.jpg');?>" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">Jhon Doe</b> </a>
                     </li>
                 </ul>
             </div>
@@ -93,9 +88,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <!-- <a href="<?=site_url('admin/error');?>" class="waves-effect"><i class="fa fa-info-circle fa-fw" aria-hidden="true"></i><span class="hide-menu">Error 404</span></a> -->
                     </li>
                 </ul>
-                <div class="center p-20">
-                    <span class="hide-menu"><a href="http://wrappixel.com/templates/pixeladmin/" target="_blank" class="btn btn-danger btn-block btn-rounded waves-effect waves-light">Upgrade to Pro</a></span>
-                </div>
+              
+                
             </div>
         </div>
         <!-- Left navbar-header end -->
@@ -104,24 +98,73 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <div class="container-fluid">
                 <div class="row bg-title">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title">Blank Page </h4> </div>
-                    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12"> <a href="http://wrappixel.com/templates/pixeladmin/" target="_blank" class="btn btn-danger pull-right m-l-20 btn-rounded btn-outline hidden-xs hidden-sm waves-effect waves-light">Upgrade to Pro</a>
+                        <h4 class="page-title">Publier une réalisation </h4> </div>
+                    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                        
                         <ol class="breadcrumb">
                             <li><a href="#">Dashboard</a></li>
-                            <li class="active">Blank Page</li>
+                            <li class="active">Publier une réalisation</li>
                         </ol>
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="white-box">
-                            <h3 class="box-title">Blank page</h3> </div>
+
+
+                
+                    <div class="col-md-4 col-xs-12">
+                            <div class="white-box">
+                            <!-- action="<?=site_url('admin/ajax_upload');?>" -->
+                                <form  id="upload_form" method="post" enctype="multipart/form-data">
+                                    <input type="file" name="image_file" id="image_file">
+                                    <br>
+                                    <input type="submit" value="Charger l'image" name="upload" id="upload" class="btn">
+                                </form>
+                                <br><br>
+                                <div id="uploaded_image">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-xs-12">
+                            <div class="white-box">
+                                <form method="POST" action="<?=site_url('admin/upload_release');?>" class="form-horizontal form-material">
+                                    <div class="form-group">
+                                        <label class="col-md-12">Titre de l'image</label>
+                                        <div class="col-md-12">
+                                            <input type="text" value="<?=set_value('titre');?>" name="titre" class="form-control form-control-line"> </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="example-description" class="col-md-12">Description de l'image</label>
+                                        <div class="col-md-12">
+                                            <input type="text"  value="<?=set_value('description');?>"  class="form-control form-control-line" name="description" id="example-description"> </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-12">Date de l'evenement</label>
+                                        <div class="col-md-12">
+                                            <input type="date"  name="date" value="<?=set_value('date');?>" class="form-control form-control-line"> </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <div class="col-sm-12">
+                                            <button class="btn btn-success">Publier</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
+
+
+
+
                 </div>
-            </div>
             <!-- /.container-fluid -->
-            <footer class="footer text-center"> 2017 &copy; Pixel Admin brought to you by wrappixel.com </footer>
+            <footer class="footer text-center"> 
+            <p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous droits réservées | créé avec <i class="fa fa-heart" aria-hidden="true"></i> par <a href="www.andreamediastech.com" target="_blank" style="color:#505050;">Andrea Medias Tech</a>
+					  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+            </footer>
         </div>
         <!-- /#page-wrapper -->
     </div>
@@ -138,6 +181,30 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script src="<?=base_url('assets/admin/js/waves.js');?>"></script>
     <!-- Custom Theme JavaScript -->
     <script src="<?=base_url('assets/admin/js/custom.min.js');?>"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#upload_image').on('submit', function(e) {
+                e.preventDefault();
+                if($('#image_file').val() == '') {
+                    alert('Please Select the file');
+                } else {
+                    $.ajax({
+                        url: '<?= base_url(); ?>admin/ajax_upload',
+                        method: "POST",
+                        data: new FormData(this),
+                        contentType: false,
+                        cache: false,
+                        processData: false,
+                        success: function(data) {
+                            $('#uploaded_image').html(data);
+                        }
+                    });
+                }
+            });
+        });
+
+    </script>
 </body>
 
 </html>

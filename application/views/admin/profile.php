@@ -108,16 +108,18 @@
                 <div class="row">
                     <div class="col-md-4 col-xs-12">
                         <div class="white-box">
-                            <div class="user-bg"> <img width="100%" alt="user" src="<?=base_url('assets/admin/plugins/images/large/img1.jpg');?>">
+                            <div class="user-bg"> 
+                            <img width="100%" alt="user" src="<?=base_url('assets/admin/plugins/images/large/img1.jpg');?>">
                                 <div class="overlay-box">
                                     <div class="user-content">
                                         <a href="javascript:void(0)"><img src="<?=base_url('assets/admin/plugins/images/users/genu.jpg');?>" class="thumb-lg img-circle" alt="img"></a>
-                                        <h4 class="text-white">User Name</h4>
-                                        <h5 class="text-white">info@myadmin.com</h5> </div>
+                                        <h4 class="text-white"></h4>
+                                        <h5 class="text-white"></h5> </div>
                                 </div>
                             </div>
                             <div class="user-btm-box">
-                                <div class="col-md-4 col-sm-4 text-center">
+
+                                <div class="col-md-4 col-sm-4 text-center"> 
                                     <p class="text-purple"><i class="ti-facebook"></i></p>
                                     <h1>258</h1> </div>
                                 <div class="col-md-4 col-sm-4 text-center">

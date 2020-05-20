@@ -55,7 +55,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </ul>
                 <ul class="nav navbar-top-links navbar-right pull-right">
                     <li>
-                        <a class="profile-pic" href="#"> <img src="<?=base_url('assets/admin/plugins/images/users/varun.jpg');?>" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">Steave</b> </a>
+                        <a class="profile-pic" href="#"> <img src="<?=base_url('assets/admin/plugins/images/users/varun.jpg');?>" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">Jhon Doe</b> </a>
                     </li>
                 </ul>
             </div>
@@ -104,20 +104,66 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <div class="container-fluid">
                 <div class="row bg-title">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title">Blank Page </h4> </div>
-                    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12"> <a href="http://wrappixel.com/templates/pixeladmin/" target="_blank" class="btn btn-danger pull-right m-l-20 btn-rounded btn-outline hidden-xs hidden-sm waves-effect waves-light">Upgrade to Pro</a>
+                        <h4 class="page-title">Publier une actualité </h4> </div>
+                        <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12"> 
+                        
                         <ol class="breadcrumb">
                             <li><a href="#">Dashboard</a></li>
-                            <li class="active">Blank Page</li>
+                            <li class="active">Publier une actualité</li>
                         </ol>
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="white-box">
-                            <h3 class="box-title">Blank page</h3> </div>
-                    </div>
+
+
+
+                    
+                    <div class="col-md-4 col-xs-12">
+                                <div class="white-box">
+                                <!-- action="<?=site_url('admin/ajax_upload');?>" -->
+                                    <form  id="upload_form" method="post" enctype="multipart/form-data">
+                                        <input type="file" name="image_file" id="image_file">
+                                        <br>
+                                        <input type="submit" value="Charger l'image" name="upload" id="upload" class="btn">
+                                    </form>
+                                    <br><br>
+                                    <div id="uploaded_image">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-xs-12">
+                                <div class="white-box">
+                                    <form method="POST" action="<?=site_url('admin/upload_release');?>" class="form-horizontal form-material">
+                                        <div class="form-group">
+                                            <label class="col-md-12">Titre de l'image</label>
+                                            <div class="col-md-12">
+                                                <input type="text" value="<?=set_value('titre');?>" name="titre" class="form-control form-control-line"> </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="example-description" class="col-md-12">Description de l'image</label>
+                                            <div class="col-md-12">
+                                                <input type="text"  value="<?=set_value('description');?>"  class="form-control form-control-line" name="description" id="example-description"> </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-12">Date de l'evenement</label>
+                                            <div class="col-md-12">
+                                                <input type="date"  name="date" value="<?=set_value('date');?>" class="form-control form-control-line"> </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <div class="col-sm-12">
+                                                <button class="btn btn-success">Publier</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    
                 </div>
             </div>
             <!-- /.container-fluid -->
