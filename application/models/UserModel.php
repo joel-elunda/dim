@@ -24,7 +24,7 @@ class UserModel extends CI_Model {
     }
 
     public function fetch_all_users() {
-        $query = $this -> db -> query('SELECT * FROM' . $this -> table .' LIMIT 1;');
+        $query = $this -> db -> query('SELECT * FROM ' . $this -> table );
         return $query;
     }
 

@@ -93,12 +93,15 @@
                                 <div class="form-group">
                                     <label for="email" class="col-md-12">Email</label>
                                     <div class="col-md-12">
-                                        <input type="email" placeholder="name@domain.com" class="form-control form-control-line" name="email" id="email"> </div>
+                                        <input type="email" value="<?=set_value('email');?>" placeholder="name@domain.com" class="form-control form-control-line" name="email" id="email"> </div>
+                                        <small class="form-text text-danger"><?= form_error('email','<em>','</em>') ?></small>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-md-12">Password</label>
                                     <div class="col-md-12">
                                         <input type="password" name="password" class="form-control form-control-line"> </div>
+                                        <small class="form-text text-danger"><?= form_error('password','<em>','</em>') ?></small>
+                                        <small  class="form-text text-muted">Assurez-vous qu'il s'agit d'au moins 15 caractères OU d'au moins 8 caractères.</small>
                                 </div> 
                                 <div class="form-group">
                                     <div class="col-sm-12">
@@ -114,7 +117,12 @@
                 <!-- /.row -->
             </div>
             <!-- /.container-fluid -->
-            <footer class="footer text-center"> 2017 &copy; Pixel Admin brought to you by wrappixel.com </footer>
+            <footer class="footer text-center">
+            
+            <p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous droits réservées | créé avec <i class="fa fa-heart" aria-hidden="true"></i> par <a href="www.andreamediastech.com" target="_blank" style="color:#909090;"> <strong>Andrea Medias Tech</strong> </a>
+					  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+              </footer>
         </div>
         <!-- /#page-wrapper -->
     </div>

@@ -18,23 +18,7 @@ class Account extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index() {
-		$this->load->view('head');
-		$this->load->view('sign_up');
-		$this->load->view('foot');
-	}
 
-	public function login_view() {
-		$this->load->view('head');
-		$this->load->view('login');
-		$this->load->view('foot');
-	} 
-
-	public function home_view() {
-		$this->load->view('head');
-		$this->load->view('index');
-		$this->load->view('foot');
-	}
 
 	private function sign_up_data() { 
 		return array(
@@ -150,5 +134,23 @@ class Account extends CI_Controller {
     public function logout()   {
 		$this -> session -> unset_userdata('is_connected'); 
         redirect();
-    }
+	}
+	
+	public function index() {
+		$this->load->view('head');
+		$this->load->view('sign_up');
+		$this->load->view('foot');
+	}
+
+	public function login_view() {
+		$this->load->view('head');
+		$this->load->view('login');
+		$this->load->view('foot');
+	} 
+
+	public function home_view() {
+		$this->load->view('head');
+		$this->load->view('index');
+		$this->load->view('foot');
+	}
 }

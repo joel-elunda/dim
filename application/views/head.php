@@ -29,6 +29,10 @@
 			color: #1d3163;
 		}
 
+		.bg-primary {
+			background-color: #1d3163;
+		}
+
 
 	</style>
   </head>
