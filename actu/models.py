@@ -5,7 +5,7 @@ class ActuModel(models.Model):
 
     title = models.CharField('Titre', max_length=255, blank=False, )
     description = models.TextField('Description', blank=False)
-    category = models.CharField('Categorie', max_length=255, blank=False)
+    category = models.ForeignKey('CategoryModel', blank=False, on_delete=models.CASCADE)
     slug = models.SlugField(max_length=100, unique=True, help_text='Unique value for user page URL, created from name.')
     image = models.ImageField(blank=False, upload_to="static/actus-images/") 
     is_active = models.BooleanField(default=True)
@@ -15,7 +15,20 @@ class ActuModel(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return '%s' % (self.user.username)
+        return '%s' % (self.title, self.description)
     
     def __unicode__(self):
-        return '%s %s %s' % (self.user.username, self.user.email, self.gender)
+        return '%s %s %s' % (self.title, self.description, self.is_active, self.created_at)
+
+class CategoryModel(models.Model):
+    title = models.CharField('Nom', max_length=255, blank=False, )
+    description = models.CharField('Description', max_length=1000, help_text='Pas plus de 1000 caractères.')
+    slug = models.SlugField(max_length=100, unique=True, help_text='Unique value for user page URL, created from name.')
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return '%s' % (self.title, self.description)
+    
+    def __unicode__(self):
+        return '%s %s %s' % (self.title, self.description, self.is_active, self.created_at)

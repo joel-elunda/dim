@@ -14,6 +14,7 @@ COUNTRY_CODES = (
 
 class UserModel(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
+    descriptiono = models.CharField('Description', max_length=255, blank=True)
     gender = models.CharField('Genre', blank=True, max_length=1, choices=GENDERS,)
     country = models.CharField('Pays', max_length=100, choices=COUNTRY_CODES, default='+243', )
     birthday = models.DateField('Date de naissance', blank=True, auto_now=False, auto_now_add=False)
