@@ -18,7 +18,7 @@ class UserModel(models.Model):
     gender = models.CharField('Genre', blank=True, max_length=1, choices=GENDERS,)
     country = models.CharField('Pays', max_length=100, choices=COUNTRY_CODES, default='+243', )
     birthday = models.DateField('Date de naissance', blank=True, auto_now=False, auto_now_add=False)
-    slug = models.SlugField(max_length=100, unique=True, help_text='Unique value for user page URL, created from name.')
+    slug = models.SlugField(max_length=100, unique=True, help_text='Unique value for user page URL, created from name.', prepopulate_from=('title',))
     website = models.URLField('Site Web', null=True, blank=True)
     avatar = models.ImageField(blank=True, upload_to="static/avatars/") 
     description = models.TextField(blank=True)
