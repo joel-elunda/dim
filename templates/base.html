@@ -594,54 +594,16 @@
         </div>
 
         <ul class="faq-list accordion" data-aos="fade-up">
-
-          <li>
-            <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq1">Qu'est-ce que DIM BUSINESS ? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
-            <div id="faq1" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Nous sommes une pépinière des créateurs d'entreprises jouant le rôle de pivot-majeur du business en Afrique et donnant un sens aux projets et startups grâce à notre business-solutions.
-              </p>
-            </div>
-          </li>
-          <li>
-            <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq1">Qu'est-ce que Le Crowdfunding ? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
-            <div id="faq1" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Terme anglais utilisé pour parler du “ financement participatif”, le Crowdfunding existe depuis maintenant de nombreuses années. Sa définition générale ne change pas : il s'agit du financement de projets donnés par un grand nombre de personnes (particuliers, entreprises ...).
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-bs-toggle="collapse" data-bs-target="#faq2" class="collapsed">Pourquoi passer par un incubateur avant de l'avant son projet ? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
-            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Dans le secteur d’innovation, le développement et la commercialisation de chaque projet nécessite d’unir les compétences avec les professionnelles et experts qui accompagnent les futurs entrepreneurs dans la concrétisation de leurs projets.
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-bs-toggle="collapse" data-bs-target="#faq3" class="collapsed">Pourquoi DIM BUSINESS a choisi l'agriculture et le numérique comme domaine de base ? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
-            <div id="faq3" class="collapse" data-bs-parent=".faq-list">
-              <p> 
-                DIM BUSSINESS en tant que pépinière de créateurs d’entreprises et stimulateur de l’écosystème entrepreneurial congolais s’est mis sur la voie de l’expansion économique à travers la création d’une chaine de valeurs agricoles en mettant au point un cabinet d’agronomes (AGRODIM) avec diverses spécialités pour encadrer et accompagner tous les acteurs du domaines.
-              </p>
-              <p>
-               Aujourd’hui le numérique est en expansion et rend la vie intelligente à travers plusieurs solutions intégrées dans divers domaines notamment dans le finance, la médecine, la communication, l’agriculture, l’armée, l’industrie…, tout cela dans l’objectif de simplifier certaines tâches quotidiennes. Vu sa capacité de croissance rapide dans tous les domaines sans exception, DIM a trouvé ce secteur l’un des moyens efficaces pour participer au développement.
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-bs-toggle="collapse" data-bs-target="#faq4" class="collapsed">Comment se passe l'incubation ? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
-            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                L’incubation se passe en niveau selon l’apport du propriétaire du projet et celui de DIM, et ces apports sont sous forme d’aspects suivants : Idée, Amélioration de l’idée, Compétences techniques, Financement, Marketing, commercialisation et Coaching.
-              </p>
-            </div>
-          </li>
-
+          {% for item in faqs %}
+            <li>
+              <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#{{item.slug}}">{{item.title}}<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+              <div id="{{item.slug}}" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  {{item.description}}
+                </p>
+              </div>
+            </li> 
+          {% endfor %}
         </ul>
 
       </div>
