@@ -2,6 +2,12 @@ from django.contrib import admin
 from actu.models import ActuModel, CategoryModel
 
 # Register your models here.
+class CategoryAdmin(admin.ModelAdmin):
+    prepopulated_fields = {'slug': ('title',)}
 
-admin.site.register(ActuModel)
-admin.site.register(CategoryModel)
+class ActuAdmin(admin.ModelAdmin):
+    prepopulated_fields = {'slug': ('title',)}
+
+
+admin.site.register(ActuModel, ActuAdmin)
+admin.site.register(CategoryModel, CategoryAdmin)

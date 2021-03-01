@@ -3,4 +3,8 @@ from user.models import UserModel
 # Register your models here.
 
 
-admin.site.register(UserModel)
+class UserAdmin(admin.ModelAdmin):
+    prepopulated_fields = {'slug': ('cellphone',), 'meta_keywords': ('description',), 'meta_description': ('bio',)}
+
+
+admin.site.register(UserModel, UserAdmin)

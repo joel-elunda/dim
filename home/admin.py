@@ -3,6 +3,13 @@ from home.models import BusinessSolutionModel, FAQModel
 # Register your models here.
 
 
-admin.site.register(BusinessSolutionModel)
+class BusinessSolutionAdmin(admin.ModelAdmin):
+    prepopulated_fields = {'slug': ('title',), 'meta_keywords': ('title',), 'meta_description': ('description',)}
 
-admin.site.register(FAQModel)
+class FAQAdmin(admin.ModelAdmin):
+    prepopulated_fields = {'slug': ('title',), 'meta_keywords': ('title',), 'meta_description': ('description',)}
+
+
+admin.site.register(BusinessSolutionModel, BusinessSolutionAdmin)
+
+admin.site.register(FAQModel, FAQAdmin)
