@@ -3,12 +3,9 @@
     <div class="container" data-aos="zoom-in">
     <div class="owl-carousel clients-carousel">
         {% comment %} <img src="{% static 'assets/img/clients/client-1.png' %}" alt=""> {% endcomment %}
-        <img src="{% static 'assets/img/clients/photo_2020-05-25_12-22-51.jpg' %}" alt="">
-        <img src="{% static 'assets/img/clients/photo_2020-05-25_12-22-52.jpg' %}" alt="">
-        <img src="{% static 'assets/img/clients/photo_2020-05-25_12-22-53 (3).jpg' %}" alt="">
-        <img src="{% static 'assets/img/clients/photo_2020-05-25_12-22-53 (2).jpg' %}" alt="">
-        <img src="{% static 'assets/img/clients/photo_2020-05-25_12-22-53.jpg' %}" alt="">
-        <img src="{% static 'assets/img/clients/photo_2020-05-25_12-22-54.jpg' %}" alt="">
+        {% for item in partners %}
+        <img src="{{ MEDIA_URL }}{{ item.image }}" alt="{{ MEDIA_URL }}{{ item.image }}"> 
+        {% endfor %}
     </div>
     </div>
 </section>

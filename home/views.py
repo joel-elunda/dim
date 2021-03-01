@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.core.paginator import Paginator 
 
 from actu.models import ActuModel 
-from home.models import BusinessSolutionModel, FAQModel
+from home.models import BusinessSolutionModel, FAQModel, PartnersImageModel
 
 
 def home(request):
@@ -13,8 +13,14 @@ def home(request):
 
     businesssolution_list = BusinessSolutionModel.objects.all()
     faqs_lit = FAQModel.objects.all()
+    partners_list = PartnersImageModel.objects.all()
  
  
-    return render(request, 'base.html', {'actus': actus, 'businesssolution': businesssolution_list, 'faqs':  faqs_lit,})
+    return render(request, 'base.html', {
+        'actus': actus, 
+        'businesssolution': businesssolution_list, 
+        'faqs':  faqs_lit,
+        'partners': partners_list
+    })
     
     

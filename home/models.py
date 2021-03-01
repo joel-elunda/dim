@@ -43,3 +43,21 @@ class FAQModel(models.Model):
     
     def __unicode__(self):
         return '%s %s %s %s' % (self.title, self.description, self.is_active, self.created_at)
+
+class PartnersImageModel(models.Model):
+    name = models.CharField('Titre', max_length=255, blank=True, )
+    description = models.TextField('Description', blank=True)
+    image = models.ImageField(blank=False, upload_to="static/assets/img/clients/") 
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    is_active = models.BooleanField(default=True)
+
+    class Meta:
+        # prepopulated_fields = {'slug': ('title',), }
+        pass
+
+    def __str__(self):
+        return '%s %s' % (self.name, self.created_at)
+    
+    def __unicode__(self):
+        return '%s %s %s %s' % (self.name, self.description, self.is_active, self.created_at)
