@@ -4,6 +4,7 @@ from django.db import models
 class BusinessSolutionModel(models.Model):
     title = models.CharField('Titre', max_length=255, blank=False, )
     description = models.TextField('Description', blank=False)
+    icon = models.CharField('Icone', max_length=255, null=True, blank=True)
     slug = models.SlugField(max_length=100, unique=True, help_text='Unique value for user page URL, created from name.',)
     meta_keywords = models.CharField("Meta Keywords", max_length=255, help_text='Comma-delimited set of SEO keywords for meta tag')
     meta_description = models.CharField("Meta Description", max_length=255, help_text='Content for description meta tag')

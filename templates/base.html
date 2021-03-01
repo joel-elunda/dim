@@ -15,8 +15,8 @@
   
   {% block links %}
     <!-- Favicons -->
-  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
-  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+  <link href="{% static 'assets/img/logo-dim.png' %}" rel="icon">
+  <link href="{% static 'assets/img/logo-dim.png' %}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -309,54 +309,79 @@
           <h4>Pourquoi passer par un incubateur avant de lancer son projet ?</h4>
           <p>Dans le secteur d’innovation, le développement et la commercialisation de chaque projet nécessite d’unir les compétences nécessaires avec les professionnelles et experts qui accompagnent les futurs entrepreneurs dans la concrétisation de leurs projets, ceci requiert ce qui suit :</p>
         </div>
-
-        <div class="row">
-          <div class="col-md-6">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <i class="icofont-computer"></i>
-              <h4><a href="#">Agriculture et Numérique</a></h4>
-              <p>Aujourd’hui le numérique est en expansion et rend la vie incroyablement intelligente à travers plusieurs solutions facilement intégrées dans divers domaines notamment dans le finance, la médecine, la communication, l’agriculture, l’armée et l’industrie.</p>
-              
-            </div>
-          </div>
-          <div class="col-md-6 mt-4 mt-md-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-              <i class="icofont-chart-bar-graph"></i>
-              <h4><a href="#">L’incubation</a></h4>
-              <p>L’incubation se passe en niveau selon l’apport du propriétaire du projet et celui de DIM BUSINESS, et ces apports sont sous forme d'dées, d'amélioration de l’idée, de compétences techniques, de financement, de marketing, de commercialisation et de coaching.</p>
-            </div>
-          </div>
-          <div class="col-md-6 mt-4 mt-md-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-              <i class="icofont-image"></i>
-              <h4><a href="#">Affiliation à notre plateforme</a></h4>
-              <p>DIM dispose d’un réseau d’entrepreneurs moyennement large, répartis dans 10 pays différents : la RDC, Zambie, Burkina-Faso, Inde, Pologne, Chypre, France, Chine, Afrique du sud, USA pouvant vous permettre de développer votre business et faciliter vos échanges entre plusieurs zones commerciales</p>
-            </div>
-          </div>
-          <div class="col-md-6 mt-4 mt-md-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
-              <i class="icofont-settings"></i>
-              <h4><a href="#">Accompagnent des futurs entrepreneurs</a></h4>
-              <p>Les compétences techniques qui cadrent avec les domaines de réalisation du projet.
-                L’étude du marché et le préfinancement de la structure ou du projet.
-                Les compétences marketing pour répondre exactement aux attentes de concernés pour faciliter la commercialisation.</p>
-            </div>
-          </div>
-           
+      
+        <div class="row"> 
+            {% for item in businesssolution %}
+            <div class="col-md-6 mt-4 mt-md-0 ">
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <i class="{{item.icon}}"></i>
+                  <h4><a href="#">{{item.title}}</a></h4>
+                  <p>{{item.description}}</p>
+                </div>
+              </div>
+          {% endfor %}
         </div>
 
       </div>
     </section><!-- End Services Section -->
 
+  {% comment %} {% block port %}
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>L'équipe DIM BUSINESS</h2>
+           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
+        </div>
+
+        <div class="row">
+
+    
+            {% for actu in actus %}
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                <div class="member" data-aos="fade-up" data-aos-delay="100">
+                  <div class="member-img">
+                    <img src="{{ MEDIA_URL }}{{ actu.image }}" class="img-fluid" alt="{{ MEDIA_URL }}{{ actu.image }}">
+                    <div class="social">
+                      {% comment %} <a href=""><i class="icofont-twitter"></i></a>
+                      <a href=""><i class="icofont-facebook"></i></a>
+                      <a href=""><i class="icofont-instagram"></i></a>
+                      <a href=""><i class="icofont-linkedin"></i></a>  
+                    </div>
+                  </div>
+                  <div class="member-info">
+                    <h4>{{actu.title}}</h4>
+                    <span>{{actu.description|truncatewords:40}}</span>
+                  </div>
+                </div>
+              </div>
+          {% endfor %}
+          </div>
+        </div>
+    </section>
+ 
+
+    {% endblock port %}  {% endcomment %}
+
+
+
+
+{% block portfolio %} 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
       <div class="container" data-aos="fade-up">
+
+
 
         <div class="section-title">
           <h2>Actualités et projets réalisés</h2>
           <h4>Affiliation d’une structure à notre plateforme</h4>
           <p>DIM dispose d’un réseau d’entrepreneurs moyennement large, répartis dans 10 pays différents : la RDC, Zambie, Burkina-Faso, Inde, Pologne, Chypre, France, Chine, Afrique du sud, USA pouvant vous permettre de développer votre business et faciliter vos échanges entre plusieurs zones commerciales.</p>
         </div>
+
+         
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12 d-flex justify-content-center">
@@ -371,137 +396,48 @@
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="{% static 'assets/img/portfolio/portfolio-1.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="{% static 'assets/img/portfolio/portfolio-1.jpg' %}" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+          {% for actu in actus %}
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img src="{{ MEDIA_URL }}{{ actu.image }}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>{{actu.title}}</h4>
+                  <p>{{actu.description}}</p>
+                  <div class="portfolio-links">
+                    <a href="{{ MEDIA_URL }}{{ actu.image }}" data-gall="portfolioGallery" class="venobox" title="{{actu.title}}"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
+            </div> 
+ 
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="{% static 'assets/img/portfolio/portfolio-2.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="{% static 'assets/img/portfolio/portfolio-2.jpg' %}" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+          {% endfor %}
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="{% static 'assets/img/portfolio/portfolio-3.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="{% static 'assets/img/portfolio/portfolio-3.jpg' %}" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="{% static 'assets/img/portfolio/portfolio-4.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="{% static 'assets/img/portfolio/portfolio-4.jpg' %}" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="{% static 'assets/img/portfolio/portfolio-5.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 2</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="{% static 'assets/img/portfolio/portfolio-5.jpg' %}" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+        </div> 
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="{% static 'assets/img/portfolio/portfolio-6.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="{% static 'assets/img/portfolio/portfolio-6.jpg' %}" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="pagination">
+              <span class="step-links">
+                  {% if page_obj.has_previous %}
+                      <a href="?page=1">&laquo; premier</a>
+                      <a href="?page={{ page_obj.previous_page_number }}">précédent</a>
+                  {% endif %}
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="{% static 'assets/img/portfolio/portfolio-7.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="{% static 'assets/img/portfolio/portfolio-7.jpg' %}" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+                  <span class="current">
+                      Page {{ page_obj.number }} sur {{ page_obj.paginator.num_pages }}.
+                  </span>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="{% static 'assets/img/portfolio/portfolio-8.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="{% static 'assets/img/portfolio/portfolio-8.jpg' %}" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="{% static 'assets/img/portfolio/portfolio-9.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="{% static 'assets/img/portfolio/portfolio-9.jpg' %}" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
+                  {% if page_obj.has_next %}
+                      <a href="?page={{ page_obj.next_page_number }}">suivant</a>
+                      <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+                  {% endif %}
+              </span>
+          </div> 
       </div>
     </section><!-- End Portfolio Section -->
-
+{% endblock portfolio %}
     <!-- ======= Testimonials Section ======= -->
     {% comment %} <section id="testimonials" class="testimonials">
       <div class="container" data-aos="fade-up">
