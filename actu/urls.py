@@ -1,10 +1,11 @@
 from django.contrib import admin
 from django.urls import path, include 
+from actu.views import ActuDetailView, ActusListView
 from . import views
 
-
 app_name = 'actu'
+
 urlpatterns = [
-    path('', views.actu, name='actus', ),
-    path('details/', views.details, name='details', ),
+    path('<slug:slug>/', ActuDetailView.as_view(), name='actu-details'),
+    path('actus-list/', ActusListView.as_view(), name='actus-list'), 
 ]  

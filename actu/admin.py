@@ -6,7 +6,7 @@ class CategoryAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ('title',)}
 
 class ActuAdmin(admin.ModelAdmin):
-    prepopulated_fields = {'slug': ('title',)}
+    prepopulated_fields = {'slug': ('category',)}
 
 
 admin.site.register(ActuModel, ActuAdmin)

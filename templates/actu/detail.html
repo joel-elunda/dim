@@ -1,0 +1,157 @@
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="{% url 'home:home' %}">Acceuil</a></li>
+          <li>Blog</li>
+        </ol>
+        {% if actu %}
+        <h2>{{actu.title}}</h2> 
+        {% else %}
+        <h2>Blog</h2>
+        {% endif %}
+        
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Blog Section ======= -->
+    <section id="blog" class="blog">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-8 entries">
+
+            <article class="entry border">
+
+              <div class="entry-img">
+                <img src="{{ MEDIA_URL }}{{ actu.image.url }}" alt="{{actu.title}}" title="{{actu.title}}" class="img-fluid">
+              </div>
+
+              <h2 class="entry-title">
+                <a href="blog-single.html">{{actu.title|upper }}</a>
+              </h2>
+
+              <div class="entry-meta">
+                <ul>
+                  <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="blog-single.html">John Doe</a></li>
+                  <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a href="blog-single.html"><time datetime="{{actu.updated_at}}">{{actu.updated_at}}</time></a></li>
+                  <li class="d-flex align-items-center"><i class="icofont-comment"></i> <a href="blog-single.html">12 Commentaires</a></li>
+                </ul>
+              </div>
+
+              <div class="entry-content">
+                <p> {{actu.description|linebreaks }}</p>
+                {% comment %} <div class="read-more">
+                  <a href="blog-single.html">Read More</a>
+                </div> {% endcomment %}
+              </div> 
+
+            </article><!-- End blog entry -->
+
+            <hr>
+
+            {% for item in actus %}
+
+            <article class="entry mt-5 border">
+
+              <div class="entry-img">
+                <img src="{{ MEDIA_URL }}{{ item.image.url }}" alt="{{item.title}}" title="{{item.title}}" class="img-fluid">
+              </div>
+
+              <h2 class="entry-title">
+                <a href="{% url 'actu:actu_detail' item.slug %}">{{item.title}}</a>
+              </h2>
+
+              <div class="entry-meta">
+                <ul>
+                  <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="blog-single.html">John Doe</a></li>
+                  <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a href="blog-single.html"><time datetime="{{item.updated_at}}">{{item.updated_at}}</time></a></li>
+                  <li class="d-flex align-items-center"><i class="icofont-comment"></i> <a href="blog-single.html">12 Comments</a></li>
+                </ul>
+              </div>
+
+              <div class="entry-content">
+                <p>{{ item.description }} </p>
+                <div class="read-more">
+                  {% comment %} <a href="blog-single.html">Read More</a> {% endcomment %}
+                </div>
+              </div>
+
+            </article><!-- End blog entry -->
+
+            {% empty %} 
+                <p> Actualités en cours de mise à jour... </p>
+            {% endfor %}
+ 
+
+            <div class="blog-pagination">
+              <ul class="justify-content-center">
+                <li class="disabled"><i class="icofont-rounded-left"></i></li>
+                <li><a href="#">1</a></li>
+                <li class="active"><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#"><i class="icofont-rounded-right"></i></a></li>
+              </ul>
+            </div>
+
+          </div><!-- End blog entries list -->
+
+          <div class="col-lg-4">
+
+            <div class="sidebar border">
+
+              {% comment %} <h3 class="sidebar-title">Chercher</h3>
+              <div class="sidebar-item search-form">
+                <form action="">
+                  <input type="text">
+                  <button type="submit"><i class="icofont-search"></i></button>
+                </form>
+              </div><!-- End sidebar search formn--> {% endcomment %}
+              
+              <h3 class="sidebar-title">Tags</h3>
+              <div class="sidebar-item tags">
+                <ul>
+                {% for category in categories %}
+                  <li><a href="#">{{category.title}}</a></li>
+                  {% empty %}
+                  <li><a>Tags en cours de mise à jour...</a></li>
+                {% endfor %}
+                </ul>
+              </div><!-- End sidebar tags-->
+
+              <h3 class="sidebar-title">Actualités récentes</h3>
+              <div class="sidebar-item recent-posts">
+                {% for actu in actus %}
+                <div class="post-item clearfix">
+                  <img src="{{ MEDIA_URL }}{{ actu.image.url }}" alt="">
+                  <h6><a href="{% url 'actu:actu_detail' actu.slug %}">{{actu.title|truncatechars:40}}</a></h6>
+                  {% comment %} <small>{{actu.description|truncatewords:10}}</small> {% endcomment %}
+                  <time datetime="2020-01-01">{{actu.created_at}}</time>
+                </div>
+                {% empty %}
+                <div class="post-item clearfix"> 
+                  <h4><a href="#">Actualités en cours de mise à jour...</a></h4> 
+                </div>
+                {% endfor %} 
+              </div><!-- End sidebar recent posts-->
+
+            
+
+            </div><!-- End sidebar -->
+
+          </div><!-- End blog sidebar -->
+
+        </div>
+
+      </div>
+    </section><!-- End Blog Section -->
+
+  </main><!-- End #main -->
+
+{% endblock content %}

@@ -1,0 +1,75 @@
+{% block style %}
+ <style>
+  .empty {
+    
+  }
+ </style> 
+{% endblock style %}
+
+
+    {% block portfolio %} 
+    <!-- ======= Portfolio Section ======= --> 
+ 
+    <section id="portfolio" class="team bg-white">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Actualités et projets</h2>
+          <h4>Affiliation d’une structure à notre plateforme</h4>
+          <p>DIM BUSINESS dispose d’un réseau d’entrepreneurs moyennement large, répartis dans 10 pays différents : la RDC, Zambie, Burkina-Faso, Inde, Pologne, Chypre, France, Chine, Afrique du sud, USA pouvant vous permettre de développer votre business et faciliter vos échanges entre plusieurs zones commerciales.</p>
+        </div>
+
+
+        <div class="row">
+
+          {% for item in actus %}
+          
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member border" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="{{ MEDIA_URL }}{{ item.image }}" class="img-fluid" id="img-actus" alt="{{item.slug}}" title="{{item.title}}">
+              </div>
+              <div class="member-info">
+                <h4 class="entry-title">{{item.title|truncatewords:5 }}</h4>
+                <span>{{item.description|truncatewords:30}}   
+                  <a href="{% url 'actu:actu-details' item.slug %}" class="hidden stretched-link"><b>Lire plus</b></a> 
+                </span> 
+              </div>
+            </div>
+          </div>
+
+          {% empty %}
+            <h5 class="empty">Actualités en cours de mise à jour...</h5>
+          
+          {% endfor %}
+
+         {% comment %} <div class="pagination">
+            <span class="step-links">
+                {% if actus.has_previous %}
+                    <a href="?page=1">&laquo; first</a>
+                    <a href="?page={{ actus.previous_page_number }}">previous</a>
+                {% endif %}
+
+                <span class="current">
+                    Page {{ actus.number }} of {{ actus.paginator.num_pages }}.
+                </span>
+
+                {% if actus.has_next %}
+                    <a href="?page={{ actus.next_page_number }}">next</a>
+                    <a href="?page={{ actus.paginator.num_pages }}">last &raquo;</a>
+                {% endif %}
+            </span>
+        </div> {% endcomment %}
+ 
+        </div>
+
+        <div class="row mt-3"> 
+          <div class="col d-flex justify-content-center">
+            <h5 class="empty"><a href="{% url 'actu:actus-list' %}" class="btn btn-danger btn-sm">Voir tous les projets</a></h5>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section --> 
+    
+    {% endblock portfolio %}

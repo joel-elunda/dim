@@ -1,0 +1,37 @@
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>L'équipe DIM BUSINESS</h2>
+          {% comment %} <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p> {% endcomment %}
+        </div>
+
+        <div class="row">
+
+          {% for item in users %}
+          
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="{{ MEDIA_URL }}{{ item.avatar }}" class="img-fluid" alt="{{item.slug}}">
+                <div class="social">
+                  {% comment %} <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a> {% endcomment %}
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>{{item.user.first_name }} {{item.user.last_name}}</h4>
+                <span>{{item.description}}</span>
+              </div>
+            </div>
+          </div>
+          
+          {% endfor %}
+ 
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
